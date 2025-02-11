@@ -9,16 +9,12 @@ _این ریپوزیتوری شامل مجموعه‌ای از سوالات پا
 
 ## 🚀 نحوه‌ی استفاده  
 
-1. ریپوزیتوری را کلون کنید:
+- ریپوزیتوری را کلون کنید:
 
 ```bash
 git clone https://github.com/ahmad-mirzaei/python-questions-that-i-solved.git
 
 ```
-<br />
-<br />
-
-2.  به [فایل مورد نظر](Questions-&-answers.md) بروید و سوالات را ببینید: `Questions-&-answers.md`
 <br />
 <br />
 

@@ -9,15 +9,11 @@ _This repository contains a collection of Python questions that I have solved, r
 
 ## 🚀 How to Use
 
-1. Clone the repository:
+- Clone the repository:
 ```bash
 git clone https://github.com/ahmad-mirzaei/python-questions-that-i-solved.git
 
 ```
-<br />
-<br />
-
-2. [Navigate to the file](Questions-&-answers.md) and check the questions: `Questions-&-answers.md`
 <br />
 <br />
 
