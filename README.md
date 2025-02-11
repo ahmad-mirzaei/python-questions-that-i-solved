@@ -1,16 +1,15 @@
 
-# 🐍 سوالات پایتونی که من حل کردم  
+# 🐍 Python Questions I Solved
 <br />
 
-## توضیحات
-_این ریپوزیتوری شامل مجموعه‌ای از سوالات پایتون است که من از سطح مقدماتی و پیشرفته حل کرده ام که باعث شد در حل مسائل پایتونی پیشرفت خوبی داشته باشم. هدف از این پروژه، آشنایی با چالش های مختلف و توانا شدن در حل مسائل است._
+## Description
+_This repository contains a collection of Python questions that I have solved, ranging from beginner to advanced levels. Solving these problems has helped me improve my Python problem-solving skills. The goal of this project is to get familiar with different challenges and become proficient in solving problems._
 <br />
 <br />
 
-## 🚀 نحوه‌ی استفاده  
+## 🚀 How to Use
 
-1. ریپوزیتوری را کلون کنید:
-
+1. Clone the repository:
 ```bash
 git clone https://github.com/username/repository-name.git
 
@@ -18,13 +17,10 @@ git clone https://github.com/username/repository-name.git
 <br />
 <br />
 
-2.  به [فایل مورد نظر](Questions-&-answers.md) بروید و سوالات را ببینید: `Questions-&-answers.md`
+2. [Navigate to the file](Questions-&-answers.md) and check the questions: Questions-&-answers.md
 <br />
 <br />
 
----
+## 🤝 Contribution
 
-## 🤝 مشارکت
-
-__اگر سوالات بیشتری دارید یا می‌خواهید راه‌حل‌های بهتری پیشنهاد دهید، خوشحال می‌شوم که مشارکت کنید! لطفاً یک Pull Request ارسال کنید.__
-
+__If you have more questions or would like to suggest better solutions, I’d be happy to collaborate! Please feel free to submit a Pull Request.__
