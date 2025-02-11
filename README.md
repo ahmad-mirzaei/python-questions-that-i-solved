@@ -11,7 +11,7 @@ _This repository contains a collection of Python questions that I have solved, r
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/ahmad-mirzaei/python-questions-that-i-solved.git
 
 ```
 <br />

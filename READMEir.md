@@ -12,7 +12,7 @@ _این ریپوزیتوری شامل مجموعه‌ای از سوالات پا
 1. ریپوزیتوری را کلون کنید:
 
 ```bash
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/ahmad-mirzaei/python-questions-that-i-solved.git
 
 ```
 <br />
