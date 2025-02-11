@@ -15,7 +15,7 @@ git clone https://github.com/username/repository-name.git
 
 ```
 
-2 . به (Questions-&-answers.md)[فایل موردنظر] بروید و سوالات را ببینید
+2 . به [فایل موردنظر](Questions-&-answers.md) بروید و سوالات را ببینید
 <br />
 
 ## 🤝 مشارکت
