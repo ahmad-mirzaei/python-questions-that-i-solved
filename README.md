@@ -17,11 +17,11 @@ git clone https://github.com/username/repository-name.git
 <br />
 <br />
 
----
-
 2. [Navigate to the file](Questions-&-answers.md) and check the questions: Questions-&-answers.md
 <br />
 <br />
+
+---
 
 ## 🤝 Contribution
 
