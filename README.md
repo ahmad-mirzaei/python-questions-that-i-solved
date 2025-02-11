@@ -25,4 +25,4 @@ git clone https://github.com/username/repository-name.git
 
 ## 🤝 Contribution
 
-__If you have more questions or would like to suggest better solutions, I’d be happy to collaborate! Please feel free to submit a Pull Request.__
+__If you have more questions or would like to suggest better solutions, I’d be happy to collaborate! Please feel free to submit a `Pull Request`.__
