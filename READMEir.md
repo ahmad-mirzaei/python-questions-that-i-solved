@@ -32,9 +32,9 @@ __اگر سوالات بیشتری دارید یا می‌خواهید راه‌
 
 **`1`**. برنامه ای بنویسید که اطلاعات ۳ دانشجو (شامل شماره دانشجویی، نام ، نام خانوادگی و معدل) را درون یک لیستی از دیکشنری (Dictionary) ذخیره کرده و سپس آنها را به شکل زیر چاپ کنید.
 
-Input : ندارد
+`Input` : ندارد
 
-Output :
+`Output` :
 
 9823567      ali          ahmadi      16.25
 
@@ -65,9 +65,9 @@ for student in nested_dictionaries:
 
 **`2`**. برنامه ای بنویسید که عدد N را از ورودی گرفته و یک دیکشنری ایجاد کند، که کلیدها اعداد بین ۱ تا N باشند و مقادیر مربع کلیدها.
 
-Input : Enter Number : 9
+`Input` : Enter Number : 9
 
-Output : {1: 1, 2: 4, 3: 9, 4: 16, 5: 15, 6: 36, 7: 49, 8: 64, 9: 81}
+`Output` : {1: 1, 2: 4, 3: 9, 4: 16, 5: 15, 6: 36, 7: 49, 8: 64, 9: 81}
 
 <br />
 
@@ -90,7 +90,7 @@ print(dictionary)
 
 **`3`**. برنامه ای بنویسید که عدد صحیح و مثبت N را از ورودی گرفته و سپس دیکشنری (انگلیسی به فارسی) با N لغت را با دریافت لغات و معانی آنها از کاربر ایجاد کرده و در انتها آنرا چاپ کند.
 
-Input :
+`Input` :
 
 Enter Number : 3
 
@@ -107,7 +107,7 @@ Enter English word 3: bag
 Enter Persian word 3: kif
 
 
-Output : {'book': 'ketab', 'chair': 'sandali' , 'bag': 'kif'}
+`Output` : {'book': 'ketab', 'chair': 'sandali' , 'bag': 'kif'}
 
 <br />
 
@@ -127,7 +127,7 @@ print(dictionary)
 
 **`4`**. برنامه ای بنویسید که ۵ عدد صحیح مثبت از ورودی گرفته و درون یک لیست قرار دهد، سپس توسط یک تابع همه عناصر لیست را ۱۰ برابر کرده و توسط برنامه اصلی لیست حاصل را چاپ کند.
 
-Input :
+`Input` :
 
 Enter Number : 143
 
@@ -140,7 +140,7 @@ Enter Number : 567
 Enter Number : 48
 
 
-Output : [1430 , 690 , 210 , 5670 , 480]
+`Output` : [1430 , 690 , 210 , 5670 , 480]
 
 <br />
 
@@ -161,3 +161,49 @@ print(multiply_list_elements(lst))
 
 ---
 
+**`5`**. برنامه ای بنویسید که توسط تابع یک لیست از اعداد صحیح غیر از صفر از ورودی گرفته و سپس توسط تابع دیگر بزرگترین و کوچکترین عنصر لیست را پیدا کرده و چاپ کند (شرط پایان دریافت اعداد وارد شدن عدد صفر توسط کاربر باشد)
+
+`Input` :
+
+Enter Number : 25
+
+Enter Number : 9
+
+Enter Number : 83
+
+Enter Number : 6
+
+Enter Number : -12
+
+Enter Number : 17
+
+Enter Number : 0
+
+
+`Output` :
+
+Max is : 83
+
+Min is  : -12
+
+<br />
+
+```python
+list_of_numbers = []
+def get_number(list_of_numbers):
+    while True:
+        n = int(input("Enter Number : "))
+        list_of_numbers.append(n)
+        if n == 0:
+            break
+def min_and_max():
+    print(f"max is : {max(list_of_numbers)}")
+    print(f"min is : {min(list_of_numbers)}")
+
+get_number(list_of_numbers)
+min_and_max()
+```
+
+<br />
+
+---
