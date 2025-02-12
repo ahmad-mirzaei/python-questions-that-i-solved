@@ -36,11 +36,11 @@ Input : ندارد
 
 Output :
 
-۹۸۲۳۵۶۷      ali          ahmadi        ۱۶٫۲۵
+9823567      ali          ahmadi      16.25
 
-۹۷۸۱۲۹۴      reza       ghasemi      ۱۳٫۷۵
+9781294      reza        ghasemi      13.75
 
-۹۹۷۶۲۳۹      mehdi    tavakoli        ۱۸٫۳۲
+9976239      mehdi       tavakoli     18.32
 
 <br />
 
@@ -59,3 +59,31 @@ for student in nested_dictionaries:
         print(item, end= " ")
     print()
 ```
+<br />
+---
+
+**`2`**. برنامه ای بنویسید که عدد N را از ورودی گرفته و یک دیکشنری ایجاد کند، که کلیدها اعداد بین ۱ تا N باشند و مقادیر مربع کلیدها.
+
+Input : Enter Number : 9
+
+Output : {1: 1, 2: 4, 3: 9, 4: 16, 5: 15, 6: 36, 7: 49, 8: 64, 9: 81}
+
+<br />
+
+```python
+# step 1
+n = int(input("Enter Number : "))
+dictionary = {}
+for i in range(1, n+1):
+    dictionary[i] = i*i
+print(dictionary)
+
+# step 2
+n = int(input("Enter Number : "))
+dictionary = {x: x*x for x in range(1, n+1)}
+print(dictionary)
+```
+<br />
+---
+
+<!-- **`3`**.  -->
