@@ -88,4 +88,76 @@ print(dictionary)
 
 ---
 
-<!-- **`3`**.  -->
+**`3`**. برنامه ای بنویسید که عدد صحیح و مثبت N را از ورودی گرفته و سپس دیکشنری (انگلیسی به فارسی) با N لغت را با دریافت لغات و معانی آنها از کاربر ایجاد کرده و در انتها آنرا چاپ کند.
+
+Input :
+
+Enter Number : 3
+
+Enter English word 1 : book
+
+Enter Persian word 1: ketab
+
+Enter English word 2: chair
+
+Enter Persian word 2: sandali
+
+Enter English word 3: bag
+
+Enter Persian word 3: kif
+
+
+Output : {'book': 'ketab', 'chair': 'sandali' , 'bag': 'kif'}
+
+<br />
+
+```python
+dictionary = {}
+n = int(input("Enter Number : "))
+for myDict in range(1, n+1):
+    en_to_ir = input("Enter English Word : ")
+    ir_to_en = input("Enter Persian Word : ")
+    dictionary[en_to_ir] = ir_to_en
+print(dictionary)
+```
+
+<br />
+
+---
+
+**`4`**. برنامه ای بنویسید که ۵ عدد صحیح مثبت از ورودی گرفته و درون یک لیست قرار دهد، سپس توسط یک تابع همه عناصر لیست را ۱۰ برابر کرده و توسط برنامه اصلی لیست حاصل را چاپ کند.
+
+Input :
+
+Enter Number : 143
+
+Enter Number : 69
+
+Enter Number : 21
+
+Enter Number : 567
+
+Enter Number : 48
+
+
+Output : [1430 , 690 , 210 , 5670 , 480]
+
+<br />
+
+```python
+def multiply_list_elements(lst):
+    lst = [i * 10 for i in lst]
+    return lst
+
+lst = []
+for i in range(1, 6):
+    n = int(input("Enter Number : "))
+    lst.append(n)
+
+print(multiply_list_elements(lst))
+```
+
+<br />
+
+---
+
