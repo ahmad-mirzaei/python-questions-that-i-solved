@@ -60,6 +60,7 @@ for student in nested_dictionaries:
     print()
 ```
 <br />
+
 ---
 
 **`2`**. برنامه ای بنویسید که عدد N را از ورودی گرفته و یک دیکشنری ایجاد کند، که کلیدها اعداد بین ۱ تا N باشند و مقادیر مربع کلیدها.
@@ -84,6 +85,7 @@ dictionary = {x: x*x for x in range(1, n+1)}
 print(dictionary)
 ```
 <br />
+
 ---
 
 <!-- **`3`**.  -->
