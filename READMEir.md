@@ -369,3 +369,44 @@ else:
 <br />
 
 ---
+
+**`10`**. برنامه ای بنویسید که عدد صحیح n را از ورودی گرفته و n جمله اول دنباله فیبوناچی زیر را چاپ کند.
+
+(دنباله فیبوناچی به این ترتیب تولید میشود که دو جمله اول آن یک و برای تولید جملات بعدی هر جمله از جمع دو جمله قبلی خودش بدست می آید)
+
+ 
+`Input` : 8
+`Output` : 1 - 2 - 3 - 5 - 8 - 13 - 21
+<br />
+
+```python
+# step_1 ----> with function
+def fibo(n):
+    if (n < 0):
+        print("Error")
+    elif (n == 0):
+        return 0
+    elif (n == 1):
+        return 1
+    else:
+        return fibo(n-1) + fibo(n-2)
+user_number = int(input("Enter Number : "))
+print(fibo(user_number))
+
+# step_2 ----> with while
+f1 = 1
+f2 = 1
+i = 3
+user_number = int(input("enter number : "))
+print(f1, f2)
+while (i <= user_number):
+    f3 = (f1 + f2)
+    print(f3, end=" ")
+    f1 = f2
+    f2 = f3
+    i += 1
+```
+
+<br />
+
+---
