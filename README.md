@@ -128,6 +128,7 @@ print(dictionary)
 ---
 
 **`4`**. Write a program that takes 5 positive integers as input and stores them in a list. Then, using a function, multiply all elements of the list by 10, and finally, print the resulting list in the main program.
+<br />
 
 `Input` :
 
@@ -140,10 +141,9 @@ Enter Number : 21
 Enter Number : 567
 
 Enter Number : 48
-
+<br />
 
 `Output` : [1430 , 690 , 210 , 5670 , 480]
-
 <br />
 
 ```python
@@ -164,6 +164,7 @@ print(multiply_list_elements(lst))
 ---
 
 **`5`**. Write a program that takes a list of nonzero integers as input using a function. Then, using another function, find and print the largest and smallest elements of the list. (The input process should stop when the user enters zero.)
+<br />
 
 `Input` :
 
@@ -204,6 +205,27 @@ def min_and_max():
 
 get_number(list_of_numbers)
 min_and_max()
+```
+
+<br />
+
+---
+
+**`6`**. Write a program that prints the largest input number. The input numbers are between 10 and 90, and the input process should continue until -1 is entered.
+<br />
+
+```python
+lst = []
+print("pleas select number from 10 to 90")
+while True:
+    n = int(input("Enter Number : "))
+    if n in range(10, 91):
+        lst.append(n)
+    elif n < 0:
+        break
+    else:
+        print("pleas select number from 10 to 90")
+print("max is : ", max(lst))
 ```
 
 <br />
