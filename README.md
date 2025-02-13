@@ -65,4 +65,29 @@ for student in nested_dictionaries:
 
 ---
 
-**`2`**. 
+**`2`**. Write a program that takes the number N as input and creates a dictionary where the keys are the numbers from 1 to N, and the values are the squares of the keys.
+
+`Input` : Enter Number : 9
+<br />
+
+`Output` : {1: 1, 2: 4, 3: 9, 4: 16, 5: 15, 6: 36, 7: 49, 8: 64, 9: 81}
+<br />
+
+```python
+# step 1
+n = int(input("Enter Number : "))
+dictionary = {}
+for i in range(1, n+1):
+    dictionary[i] = i*i
+print(dictionary)
+
+# step 2
+n = int(input("Enter Number : "))
+dictionary = {x: x*x for x in range(1, n+1)}
+print(dictionary)
+```
+<br />
+
+---
+
+
