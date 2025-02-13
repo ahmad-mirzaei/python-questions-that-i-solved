@@ -207,3 +207,24 @@ min_and_max()
 <br />
 
 ---
+
+**`6`**. برنامه ای بنویسید که بزرگترین عدد وردی را چاپ کند؛ عدد ورودی بین 10 تا 90 است و تا زمانی که در ورودی -1 وارد نشده است، گرفتن ورودی ادامه داشته باشد.
+<br />
+
+```python
+lst = []
+print("pleas select number from 10 to 90")
+while True:
+    n = int(input("Enter Number : "))
+    if n in range(10, 91):
+        lst.append(n)
+    elif n < 0:
+        break
+    else:
+        print("pleas select number from 10 to 90")
+print("max is : ", max(lst))
+```
+
+<br />
+
+---
