@@ -162,3 +162,50 @@ print(multiply_list_elements(lst))
 <br />
 
 ---
+
+**`5`**. Write a program that takes a list of nonzero integers as input using a function. Then, using another function, find and print the largest and smallest elements of the list. (The input process should stop when the user enters zero.)
+
+`Input` :
+
+Enter Number : 25
+
+Enter Number : 9
+
+Enter Number : 83
+
+Enter Number : 6
+
+Enter Number : -12
+
+Enter Number : 17
+
+Enter Number : 0
+<br />
+
+`Output` :
+
+Max is : 83
+
+Min is  : -12
+
+<br />
+
+```python
+list_of_numbers = []
+def get_number(list_of_numbers):
+    while True:
+        n = int(input("Enter Number : "))
+        list_of_numbers.append(n)
+        if n == 0:
+            break
+def min_and_max():
+    print(f"max is : {max(list_of_numbers)}")
+    print(f"min is : {min(list_of_numbers)}")
+
+get_number(list_of_numbers)
+min_and_max()
+```
+
+<br />
+
+---
