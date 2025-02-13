@@ -228,3 +228,21 @@ print("max is : ", max(lst))
 <br />
 
 ---
+
+**`7`**. برنامه ای بنویسید که یک رشته شامل چند کلمه از ورودی بگیرد و حرف اول تمامی کلمات را با حروف بزرگ به خروجی ببرد.
+<br />
+
+```python
+# step 1
+user_input = input("Enter a word : ")
+print(user_input.title())
+
+# step 2
+user_input = input("Enter a word : ").split()
+print(" ".join([word.capitalize() for word in user_input]))
+```
+
+<br />
+
+---
+
