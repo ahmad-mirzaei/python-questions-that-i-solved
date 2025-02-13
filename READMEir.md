@@ -16,7 +16,9 @@ git clone https://github.com/ahmad-mirzaei/python-questions-that-i-solved.git
 
 ```
 <br />
-<br />
+
+- ### **نسخه های ترجمه شده**
+    - [Persian Version - فارسی](READMEir.md)
 
 ---
 
