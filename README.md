@@ -231,3 +231,20 @@ print("max is : ", max(lst))
 <br />
 
 ---
+
+**`7`**. Write a program that takes a string containing multiple words as input and outputs the string with the first letter of each word capitalized.
+<br />
+
+```python
+# step 1
+user_input = input("Enter a word : ")
+print(user_input.title())
+
+# step 2
+user_input = input("Enter a word : ").split()
+print(" ".join([word.capitalize() for word in user_input]))
+```
+
+<br />
+
+---
