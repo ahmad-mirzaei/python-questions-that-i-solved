@@ -90,4 +90,39 @@ print(dictionary)
 
 ---
 
+**`3`**. Write a program that takes a positive integer N as input, then creates an English-to-Persian dictionary with N words by receiving words and their meanings from the user, and finally prints the dictionary.
 
+`Input` :
+
+Enter Number : 3
+
+Enter English word 1 : book
+
+Enter Persian word 1: ketab
+
+Enter English word 2: chair
+
+Enter Persian word 2: sandali
+
+Enter English word 3: bag
+
+Enter Persian word 3: kif
+<br />
+
+`Output` : {'book': 'ketab', 'chair': 'sandali' , 'bag': 'kif'}
+
+<br />
+
+```python
+dictionary = {}
+n = int(input("Enter Number : "))
+for myDict in range(1, n+1):
+    en_to_ir = input("Enter English Word : ")
+    ir_to_en = input("Enter Persian Word : ")
+    dictionary[en_to_ir] = ir_to_en
+print(dictionary)
+```
+
+<br />
+
+---
