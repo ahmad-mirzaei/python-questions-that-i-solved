@@ -246,3 +246,41 @@ print(" ".join([word.capitalize() for word in user_input]))
 
 ---
 
+**`8`**. برنامه ای بنویسید که یک عدد به عنوان شماره روز سال ازورودی گرفته مشخص کند آن روز در چه فصلی از سال می باشد؟
+
+`Input` : 154
+`Output` : Summer
+<br />
+
+```python
+# step_1
+number_of_day = int(input("Enter Number Of Day : "))
+# spring, summer, fall, winter = 93 + 93 + 90 + 89 = 365
+if number_of_day in range(1, 94): 
+    print("spring")
+elif number_of_day in range(94, 187):
+    print("summer")
+elif number_of_day in range(187, 277):
+    print("fall")
+elif number_of_day in range(277, 366):
+    print("winter")
+else:
+    print("Your Number Is Wrong!!!\nPlease Try Again")
+
+# step_2
+number_of_day = int(input("Enter Number Of Day : "))
+if (1 <= number_of_day <= 93):
+    print("spring")
+elif (94 <= number_of_day <= 186):
+    print("summer")
+elif (187 <= number_of_day <= 276):
+    print("fall")
+elif (276 <= number_of_day <= 365):
+    print("winter")
+else:
+    print("Your Number Is Wrong!!!\nPlease Try Again")
+```
+
+<br />
+
+---
