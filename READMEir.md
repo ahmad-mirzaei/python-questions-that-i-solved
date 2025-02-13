@@ -69,11 +69,12 @@ for student in nested_dictionaries:
 ---
 
 **`2`**. برنامه ای بنویسید که عدد N را از ورودی گرفته و یک دیکشنری ایجاد کند، که کلیدها اعداد بین ۱ تا N باشند و مقادیر مربع کلیدها.
+<br />
 
 `Input` : Enter Number : 9
+<br />
 
 `Output` : {1: 1, 2: 4, 3: 9, 4: 16, 5: 15, 6: 36, 7: 49, 8: 64, 9: 81}
-
 <br />
 
 ```python
@@ -94,6 +95,7 @@ print(dictionary)
 ---
 
 **`3`**. برنامه ای بنویسید که عدد صحیح و مثبت N را از ورودی گرفته و سپس دیکشنری (انگلیسی به فارسی) با N لغت را با دریافت لغات و معانی آنها از کاربر ایجاد کرده و در انتها آنرا چاپ کند.
+<br />
 
 `Input` :
 
@@ -110,10 +112,9 @@ Enter Persian word 2: sandali
 Enter English word 3: bag
 
 Enter Persian word 3: kif
-
+<br />
 
 `Output` : {'book': 'ketab', 'chair': 'sandali' , 'bag': 'kif'}
-
 <br />
 
 ```python
@@ -125,12 +126,12 @@ for myDict in range(1, n+1):
     dictionary[en_to_ir] = ir_to_en
 print(dictionary)
 ```
-
 <br />
 
 ---
 
 **`4`**. برنامه ای بنویسید که ۵ عدد صحیح مثبت از ورودی گرفته و درون یک لیست قرار دهد، سپس توسط یک تابع همه عناصر لیست را ۱۰ برابر کرده و توسط برنامه اصلی لیست حاصل را چاپ کند.
+<br />
 
 `Input` :
 
@@ -143,10 +144,9 @@ Enter Number : 21
 Enter Number : 567
 
 Enter Number : 48
-
+<br />
 
 `Output` : [1430 , 690 , 210 , 5670 , 480]
-
 <br />
 
 ```python
@@ -161,12 +161,12 @@ for i in range(1, 6):
 
 print(multiply_list_elements(lst))
 ```
-
 <br />
 
 ---
 
 **`5`**. برنامه ای بنویسید که توسط تابع یک لیست از اعداد صحیح غیر از صفر از ورودی گرفته و سپس توسط تابع دیگر بزرگترین و کوچکترین عنصر لیست را پیدا کرده و چاپ کند (شرط پایان دریافت اعداد وارد شدن عدد صفر توسط کاربر باشد)
+<br />
 
 `Input` :
 
@@ -183,14 +183,11 @@ Enter Number : -12
 Enter Number : 17
 
 Enter Number : 0
-
+<br />
 
 `Output` :
-
 Max is : 83
-
 Min is  : -12
-
 <br />
 
 ```python
@@ -208,7 +205,6 @@ def min_and_max():
 get_number(list_of_numbers)
 min_and_max()
 ```
-
 <br />
 
 ---
@@ -229,7 +225,6 @@ while True:
         print("pleas select number from 10 to 90")
 print("max is : ", max(lst))
 ```
-
 <br />
 
 ---
@@ -246,12 +241,12 @@ print(user_input.title())
 user_input = input("Enter a word : ").split()
 print(" ".join([word.capitalize() for word in user_input]))
 ```
-
 <br />
 
 ---
 
 **`8`**. برنامه ای بنویسید که یک عدد به عنوان شماره روز سال ازورودی گرفته مشخص کند آن روز در چه فصلی از سال می باشد؟
+<br />
 
 `Input` : 154
 <br />
@@ -287,14 +282,13 @@ elif (276 <= number_of_day <= 365):
 else:
     print("Your Number Is Wrong!!!\nPlease Try Again")
 ```
-
 <br />
 
 ---
 
 **`9`**. برنامه ای بنویسید که سه عدد از ورودی گرفته عدد وسطی یا max دوم راچاپ کند.
+<br />
 
- 
 `Input` : 20 - 35 - 17
 <br />
 
@@ -313,7 +307,6 @@ elif (num_1 < num_2 > num_3):
 else:
     print(max(num_1, num_2))
 
-
 # step 2 
 mylist = []
 for i in range(0, 3):
@@ -323,7 +316,6 @@ mylist.remove(max(mylist))
 mylist.remove(min(mylist))
 print(f"your number is : {mylist}")
 
-
 # step 3 ----> with array, remove() max() and min()
 num_1 = int(input("Enter Your Number : "))
 num_2 = int(input("Enter Your Number : "))
@@ -332,7 +324,6 @@ array = [num_1, num_2, num_3]
 array.remove(max(array))
 array.remove(min(array))
 print(array)
-
 
 # step 4
 num_1 = int(input("enter number : "))
@@ -366,7 +357,6 @@ elif a > c > b or b > c > a:
 else:
     print("wrong!")
 ```
-
 <br />
 
 ---
@@ -374,8 +364,8 @@ else:
 **`10`**. برنامه ای بنویسید که عدد صحیح n را از ورودی گرفته و n جمله اول دنباله فیبوناچی زیر را چاپ کند.
 
 (دنباله فیبوناچی به این ترتیب تولید میشود که دو جمله اول آن یک و برای تولید جملات بعدی هر جمله از جمع دو جمله قبلی خودش بدست می آید)
+<br />
 
- 
 `Input` : 8
 <br />
 
@@ -409,7 +399,6 @@ while (i <= user_number):
     f2 = f3
     i += 1
 ```
-
 <br />
 
 ---

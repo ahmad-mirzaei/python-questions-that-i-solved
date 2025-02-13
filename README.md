@@ -34,8 +34,10 @@ __If you have more questions or would like to suggest better solutions, I’d be
 ## ❓ Questions
 
 **`1`**. Write a program that stores the information of three students (including student ID, first name, last name, and GPA) in a list of dictionaries and then prints them in the following format.
+<br />
 
 `Input` : None
+<br />
 
 `Output` :
 
@@ -66,6 +68,7 @@ for student in nested_dictionaries:
 ---
 
 **`2`**. Write a program that takes the number N as input and creates a dictionary where the keys are the numbers from 1 to N, and the values are the squares of the keys.
+<br />
 
 `Input` : Enter Number : 9
 <br />
@@ -91,6 +94,7 @@ print(dictionary)
 ---
 
 **`3`**. Write a program that takes a positive integer N as input, then creates an English-to-Persian dictionary with N words by receiving words and their meanings from the user, and finally prints the dictionary.
+<br />
 
 `Input` :
 
@@ -110,7 +114,6 @@ Enter Persian word 3: kif
 <br />
 
 `Output` : {'book': 'ketab', 'chair': 'sandali' , 'bag': 'kif'}
-
 <br />
 
 ```python
@@ -122,7 +125,6 @@ for myDict in range(1, n+1):
     dictionary[en_to_ir] = ir_to_en
 print(dictionary)
 ```
-
 <br />
 
 ---
@@ -158,7 +160,6 @@ for i in range(1, 6):
 
 print(multiply_list_elements(lst))
 ```
-
 <br />
 
 ---
@@ -184,11 +185,8 @@ Enter Number : 0
 <br />
 
 `Output` :
-
 Max is : 83
-
 Min is  : -12
-
 <br />
 
 ```python
@@ -206,7 +204,6 @@ def min_and_max():
 get_number(list_of_numbers)
 min_and_max()
 ```
-
 <br />
 
 ---
@@ -227,7 +224,6 @@ while True:
         print("pleas select number from 10 to 90")
 print("max is : ", max(lst))
 ```
-
 <br />
 
 ---
@@ -244,12 +240,12 @@ print(user_input.title())
 user_input = input("Enter a word : ").split()
 print(" ".join([word.capitalize() for word in user_input]))
 ```
-
 <br />
 
 ---
 
 **`8`**. Write a program that takes a number as the day of the year from the input and determines in which season that day falls.
+<br />
 
 `Input` : 154
 <br />
@@ -285,7 +281,81 @@ elif (276 <= number_of_day <= 365):
 else:
     print("Your Number Is Wrong!!!\nPlease Try Again")
 ```
+<br />
 
+---
+
+**`9`**. Write a program that takes three numbers as input and prints the middle number (the second largest).
+<br />
+
+`Input` : 20 - 35 - 17
+<br />
+
+`Output` : 20
+<br />
+
+```python
+# step 1 ----> max(), min() 
+num_1 = int(input(" Enter Your Number : "))
+num_2 = int(input(" Enter Your Number : "))
+num_3 = int(input(" Enter Your Number : "))
+if (num_2 < num_1 > num_3):
+    print(max(num_2, num_3))
+elif (num_1 < num_2 > num_3):
+    print(max(num_1, num_3))
+else:
+    print(max(num_1, num_2))
+
+# step 2 
+mylist = []
+for i in range(0, 3):
+    number = int(input("enter number : "))
+    mylist.append(number)
+mylist.remove(max(mylist))
+mylist.remove(min(mylist))
+print(f"your number is : {mylist}")
+
+# step 3 ----> with array, remove() max() and min()
+num_1 = int(input("Enter Your Number : "))
+num_2 = int(input("Enter Your Number : "))
+num_3 = int(input("Enter Your Number : "))
+array = [num_1, num_2, num_3]
+array.remove(max(array))
+array.remove(min(array))
+print(array)
+
+# step 4
+num_1 = int(input("enter number : "))
+num_2 = int(input("enter number : "))
+num_3 = int(input("enter number : "))
+if (num_1 > num_2) and (num_1 > num_3) and (num_2 > num_3):
+    print(num_2)
+elif (num_1 > num_2) and (num_1 > num_3) and (num_3 > num_2):
+    print(num_3)
+elif (num_2 > num_1) and (num_2 > num_3) and (num_1 > num_3):
+    print(num_1)
+elif (num_2 > num_1) and (num_2 > num_3) and (num_3 > num_1):
+    print(num_3)
+elif (num_3 > num_1) and (num_3 > num_2) and (num_1 > num_2):
+    print(num_1)
+elif (num_3 > num_1) and (num_3 > num_2) and (num_2 > num_1):
+    print(num_2)
+else:
+    print("error")
+
+# step 5
+a = int(input("enter number : "))
+b = int(input("enter number : "))
+c = int(input("enter number : "))
+if a > b > c or c > b > a:
+    print(b)
+elif b > a > c or c > a > b:
+    print(a)
+elif a > c > b or b > c > a:
+    print(c)
+else:
+    print("wrong!")
+```
 <br />
 
 ---
