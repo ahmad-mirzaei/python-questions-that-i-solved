@@ -126,3 +126,39 @@ print(dictionary)
 <br />
 
 ---
+
+**`4`**. Write a program that takes 5 positive integers as input and stores them in a list. Then, using a function, multiply all elements of the list by 10, and finally, print the resulting list in the main program.
+
+`Input` :
+
+Enter Number : 143
+
+Enter Number : 69
+
+Enter Number : 21
+
+Enter Number : 567
+
+Enter Number : 48
+
+
+`Output` : [1430 , 690 , 210 , 5670 , 480]
+
+<br />
+
+```python
+def multiply_list_elements(lst):
+    lst = [i * 10 for i in lst]
+    return lst
+
+lst = []
+for i in range(1, 6):
+    n = int(input("Enter Number : "))
+    lst.append(n)
+
+print(multiply_list_elements(lst))
+```
+
+<br />
+
+---
