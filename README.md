@@ -401,3 +401,30 @@ while (i <= user_number):
 <br />
 
 ---
+
+
+**`11`**. 11. Write a program that takes two positive integers, a and b, as input, then raises a to the power of b and prints the result.
+<br />
+
+`Input` : 2 - 6
+<br />
+
+`Output` : 64
+<br />
+
+```python
+# step 1
+a = int(input("Enter Number : "))
+b = int(input("Enter Number : "))
+print(a**b)
+
+# step 2
+def expoent(a, b):
+    return a ** b
+a = int(input("Enter Number : "))
+b = int(input("Enter Number : "))
+print(expoent(a, b))
+```
+<br />
+
+---
