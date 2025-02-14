@@ -480,3 +480,41 @@ print(sum)
 <br />
 
 ---
+
+**`14`**. برنامه ای بنویسید که تعدادی عدد صحیح مثبت از ورودی گرفته و سپس مجموع و میانگین اعداد را چاپ کند(نکته: در محاسبه اعداد تکراری در نظر گرفته نشوند، و همچنین شرط پایان دریافت عدد از کاربر وارد کردن عدد منفی توسط کاربر می باشد)
+<br />
+
+`Input` : \
+Enter Number : 8 \
+Enter Number : 2 \
+Enter Number : 3 \
+Enter Number : 8 \
+Enter Number : 1 \
+Enter Number : 2 \
+Enter Number : -4 \
+<br />
+
+`Output` : \
+sum : 14 \
+avg  : 3.5
+<br />
+
+```python
+mySet = set()
+while True:
+    n = int(input("Enter Your Number : "))
+    mySet.add(n)
+    if n < 0:
+        break
+mySum = sum(mySet)
+len_mySet = len(mySet)
+avg = mySum / len_mySet
+print(f"sum is : {mySum} and avg is : {avg}")
+
+# print("sum is :", mySum, "and avg is : ", avg)
+# print("sum is : %i and avg is : %d" %(mySum, avg))
+# print("sum is : {0} and avg is : {1}".format(mySum, avg))
+```
+<br />
+
+---
