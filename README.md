@@ -465,3 +465,18 @@ for i in range(n):
 
 ---
 
+**`13`**. Write a program using a while loop that takes 20 numbers as input and then outputs their sum.
+<br />
+
+```python
+sum = 0
+i = 1
+while i <= 20:
+    n = int(input("Enter Your Number : "))
+    sum += n
+    i += 1
+print(sum)
+```
+<br />
+
+---
