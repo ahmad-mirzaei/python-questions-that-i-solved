@@ -402,3 +402,30 @@ while (i <= user_number):
 <br />
 
 ---
+
+**`11`**. برنامه ای بنویسید که دو عدد صحیح و مثبت a و b را از ورودی گرفته و سپس عدد a را به توان عدد b رسانده و نتیجه را چاپ کند.
+<br />
+
+`Input` : 2 - 6
+<br />
+
+`Output` : 64
+<br />
+
+```python
+# step 1
+a = int(input("Enter Number : "))
+b = int(input("Enter Number : "))
+print(a**b)
+
+# step 2
+def expoent(a, b):
+    return a ** b
+a = int(input("Enter Number : "))
+b = int(input("Enter Number : "))
+print(expoent(a, b))
+```
+<br />
+
+---
+
