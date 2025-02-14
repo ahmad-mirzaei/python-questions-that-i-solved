@@ -429,3 +429,37 @@ print(expoent(a, b))
 
 ---
 
+**`12`**. برنامه ای بنویسید که از ورودی یک عدد بگیرد و در محدوده ی آن عدد شبیه خروجی زیر را تولید کند.
+<br />
+
+*
+**
+***
+****
+*****
+<br />
+
+```python
+# step 1 ----> with for
+n = int(input("Enter Number : "))
+for i in range(n + 1):
+    print("* " * i)
+
+# step 2 ----> with while
+i = 0
+n = int(input("Enter Number : "))
+while i <= n:
+    print("* " * i)
+    i+=1
+
+#step 3 ----> nested loops
+n = int(input(" Enter Number : "))
+for i in range(n):
+    for j in range(i+1):
+        print("*" * 1, end=" ")
+    print()
+```
+<br />
+
+---
+
