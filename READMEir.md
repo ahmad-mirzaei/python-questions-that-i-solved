@@ -434,10 +434,10 @@ print(expoent(a, b))
 
 ```bash
 *
-**
-***
-****
-*****
+* *
+* * *
+* * * *
+* * * * *
 ```
 <br />
 
@@ -519,3 +519,37 @@ print(f"sum is : {mySum} and avg is : {avg}")
 
 ---
 
+**`15`**. برنامه ای بنویسید که هشت نام از ورودی گرفته و درون یک لیست ذخیره کند، سپس اسامی که ابتدای آنها حرف m و انتهای آنها حرف d یا i وجود دارد را درون یک مجموعه (Set) ذخیره کرده و چاپ کند.
+<br />
+
+```python
+lst = []
+mySet = set()
+i = 0
+while (i < 8):
+    userName = input("Enter Your Name : ")
+    lst.append(userName)
+    i += 1
+#List Comprehension
+list2 = [item for item in lst if 'm' == item[0] and 'd' == item[-1] or 'm' == item[0] and 'i' == item[-1]] 
+mySet.update(list2)
+print(mySet)
+
+# step 2
+lst = []
+mySet = set()
+i = 0
+while (i < 8):
+    userName = input("Enter Your Name : ")
+    lst.append(userName)
+    i += 1
+#startswith() and endswith()
+for item in lst:
+    if item.startswith('m') and item.endswith('d') or\
+        item.startswith('m') and item.endswith('i'):
+        mySet.add(item)
+print(mySet)
+```
+<br />
+
+---
