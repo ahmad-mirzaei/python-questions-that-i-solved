@@ -523,3 +523,38 @@ print(f"sum is : {mySum} and avg is : {avg}")
 <br />
 
 ---
+
+**`15`**. Write a program that takes eight names as input and stores them in a list. Then, it filters the names that start with the letter **'m'** and end with either **'d'** or **'i'**, storing them in a **set**, and finally prints the set.
+<br />
+
+```python
+lst = []
+mySet = set()
+i = 0
+while (i < 8):
+    userName = input("Enter Your Name : ")
+    lst.append(userName)
+    i += 1
+#List Comprehension
+list2 = [item for item in lst if 'm' == item[0] and 'd' == item[-1] or 'm' == item[0] and 'i' == item[-1]] 
+mySet.update(list2)
+print(mySet)
+
+# step 2
+lst = []
+mySet = set()
+i = 0
+while (i < 8):
+    userName = input("Enter Your Name : ")
+    lst.append(userName)
+    i += 1
+#startswith() and endswith()
+for item in lst:
+    if item.startswith('m') and item.endswith('d') or\
+        item.startswith('m') and item.endswith('i'):
+        mySet.add(item)
+print(mySet)
+```
+<br />
+
+---
