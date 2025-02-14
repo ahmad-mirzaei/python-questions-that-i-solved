@@ -483,17 +483,17 @@ print(sum)
 <br />
 
 `Input` :
-Enter Number : 8
-Enter Number : 2
-Enter Number : 3
-Enter Number : 8
-Enter Number : 1
-Enter Number : 2
-Enter Number : -4
+Enter Number : 8 \
+Enter Number : 2 \
+Enter Number : 3 \
+Enter Number : 8 \
+Enter Number : 1 \
+Enter Number : 2 \
+Enter Number : -4 \
 <br />
 
 `Output` :
-sum : 14
+sum : 14 \
 avg  : 3.5
 <br />
 
