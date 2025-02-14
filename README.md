@@ -403,7 +403,7 @@ while (i <= user_number):
 ---
 
 
-**`11`**. 11. Write a program that takes two positive integers, a and b, as input, then raises a to the power of b and prints the result.
+**`11`**. Write a program that takes two positive integers, a and b, as input, then raises a to the power of b and prints the result.
 <br />
 
 `Input` : 2 - 6
@@ -428,3 +428,40 @@ print(expoent(a, b))
 <br />
 
 ---
+
+**`12`**. Write a program that takes a number as input and generates an output similar to the example within the range of that number.
+<br />
+
+```bash
+*
+* *
+* * *
+* * * *
+* * * * *
+```
+<br />
+
+```python
+# step 1 ----> with for
+n = int(input("Enter Number : "))
+for i in range(n + 1):
+    print("* " * i)
+
+# step 2 ----> with while
+i = 0
+n = int(input("Enter Number : "))
+while i <= n:
+    print("* " * i)
+    i+=1
+
+#step 3 ----> nested loops
+n = int(input(" Enter Number : "))
+for i in range(n):
+    for j in range(i+1):
+        print("*" * 1, end=" ")
+    print()
+```
+<br />
+
+---
+
