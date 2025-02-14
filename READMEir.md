@@ -519,12 +519,7 @@ print(f"sum is : {mySum} and avg is : {avg}")
 
 ---
 
-**`15`**. Write a program that takes multiple positive integers as input, then calculates and prints the sum and average of the unique numbers.  
-<br />
-
-**Notes:**  
-- Duplicate numbers should be counted only once.  
-- The input process stops when the user enters a negative number.
+**`15`**. برنامه ای بنویسید که هشت نام از ورودی گرفته و درون یک لیست ذخیره کند، سپس اسامی که ابتدای آنها حرف m و انتهای آنها حرف d یا i وجود دارد را درون یک مجموعه (Set) ذخیره کرده و چاپ کند.
 <br />
 
 ```python
@@ -558,4 +553,3 @@ print(mySet)
 <br />
 
 ---
-

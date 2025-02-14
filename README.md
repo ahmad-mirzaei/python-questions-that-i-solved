@@ -481,7 +481,12 @@ print(sum)
 
 ---
 
-**`14`**. برنامه ای بنویسید که تعدادی عدد صحیح مثبت از ورودی گرفته و سپس مجموع و میانگین اعداد را چاپ کند(نکته: در محاسبه اعداد تکراری در نظر گرفته نشوند، و همچنین شرط پایان دریافت عدد از کاربر وارد کردن عدد منفی توسط کاربر می باشد)
+**`14`**. Write a program that takes multiple positive integers as input, then calculates and prints the sum and average of the unique numbers.  
+<br />
+
+**Notes:**  
+- Duplicate numbers should be counted only once.  
+- The input process stops when the user enters a negative number. 
 <br />
 
 `Input` : \
