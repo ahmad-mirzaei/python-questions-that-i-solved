@@ -463,3 +463,18 @@ for i in range(n):
 
 ---
 
+**`13`**. با حلقه ی while برنامه ای بنویسید که 20 عدد دریافت کند و سپس مجمون آنها را به خروجی ببرد
+<br />
+
+```python
+sum = 0
+i = 1
+while i <= 20:
+    n = int(input("Enter Your Number : "))
+    sum += n
+    i += 1
+print(sum)
+```
+<br />
+
+---
