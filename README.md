@@ -678,3 +678,16 @@ for i in n:
 <br />
 
 ---
+
+**`23`**. Write a program that takes two numbers, `a` and `b`, as input. It raises the smaller number to the power of the larger number and displays the result.
+<br />
+
+```python
+a = int(input("Enter Number : "))
+b = int(input("Enter Number : "))
+print(a**b) if a < b else print(b**a)
+```
+<br />
+
+---
+
