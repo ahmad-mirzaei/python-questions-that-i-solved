@@ -691,3 +691,20 @@ print(a**b) if a < b else print(b**a)
 
 ---
 
+**`24`**. Write a program that takes the first name, last name, and salary of 10 people as input. It then displays the name and surname of the person with the highest salary.
+<br />
+
+```python
+lst = []
+for counter in range(1, 11):
+    full_name = input("Enter Your First Name And Last Name: ")
+    salary = int(input("Enter Your Salary : "))
+    lst.append([full_name, salary])
+# print(lst)
+for i in lst:
+    for j in lst:
+        print("Most Salaries : ", j) if j[1] > i[1] else print()
+```
+<br />
+
+---
