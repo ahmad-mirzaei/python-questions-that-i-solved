@@ -603,3 +603,17 @@ for j in range(n, 0, -1):
 
 ---
 
+**`18`**. Write a program that reads the number of items and the price of each item, then calculates and displays the total sales amount (total sales = number of items * price per item).
+<br />
+
+```python
+sum = 0
+number_of_goods = int(input("Enter The Number Of Goods : "))
+for counter in range(number_of_goods):
+    cost_of_goods = int(input("Enter The Cost Of Goods : "))
+    sum += cost_of_goods
+print(number_of_goods * sum)
+```
+<br />
+
+---
