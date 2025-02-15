@@ -650,3 +650,15 @@ print("YES") if number[0] * number[3] == number[1] + number[2] else print("NO")
 
 ---
 
+**`21`**.  برنامه ای‌ که‌ یک‌ عدد‌ ‌سه‌ رقمی‌ را‌ خوانده،‌ اگر‌ مجموع‌ رقم های‌ اول‌ و‌ سوم‌ برابر‌ رقم‌
+دوم‌ باشد‌ `Yes` وگرنه‌ `No` را‌ چاپ‌ می کند‌
+<br />
+
+```python
+number = [int(i) for i in input("Please enter a three-digit number : ")]
+print("YES") if number[0] + number[2] == number[1] else print("NO")
+```
+<br />
+
+---
+
