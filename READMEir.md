@@ -677,3 +677,16 @@ for i in n:
 
 ---
 
+**`23`**. برنامه ای بنویسید a و b را بگیرد سپس عدد کوچکتر را به توان عدد بزرگتر رسانیده و حاصل را
+نمایش دهد.
+<br />
+
+```python
+a = int(input("Enter Number : "))
+b = int(input("Enter Number : "))
+print(a**b) if a < b else print(b**a)
+```
+<br />
+
+---
+
