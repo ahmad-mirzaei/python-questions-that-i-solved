@@ -652,3 +652,14 @@ print("YES") if number[0] * number[3] == number[1] + number[2] else print("NO")
 <br />
 
 ---
+
+**`21`**. Write a program that reads a three-digit number. If the sum of the first and third digits equals the second digit, print `Yes`; otherwise, print `No`.
+<br />
+
+```python
+number = [int(i) for i in input("Please enter a three-digit number : ")]
+print("YES") if number[0] + number[2] == number[1] else print("NO")
+```
+<br />
+
+---
