@@ -708,3 +708,19 @@ for i in lst:
 
 ---
 
+**`25`**. برنامه ای‌ که‌ نمره های‌ دانشجویی‌ را‌ دریافت‌ کرده،‌ اگر‌ نمره‌ کمتر‌ ‌از‌‌ ۱۱ بود،‌ کلمه‌
+`Failed` و گرنه‌ کلمه‌ `Passed` را‌ نمایش ‌میدهد.
+<br />
+
+```python
+i = 1
+number_of_lessons = int(input("Enter The Number Of Lessons : "))
+while i <= number_of_lessons:
+    score = int(input("Enter Your Score : "))
+    print("Failed") if score < 11 else print("Passed")
+    i+=1
+print("Finish")
+```
+<br />
+
+---
