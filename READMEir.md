@@ -639,7 +639,7 @@ for i in range(1, n + 1):
 ---
 
 **`20`**.  برنامه ای‌ که‌ یک ‌عدد‌ چهار رقمی‌ را‌ خوانده، ‌اگر‌ حاصل‌ ضرب رقم های‌ ‌اول‌ و‌ چهارم،‌
-برابر‌ حاصل‌ جمع‌ ارقام‌ دوم‌ و‌ سوم‌ باشد‌ `yes` و گرنه‌، `no` را‌ نمایش ‌میدهد‌‌‌
+برابر‌ حاصل‌ جمع‌ ارقام‌ دوم‌ و‌ سوم‌ باشد‌ `Yes` و گرنه‌، `No` را‌ نمایش ‌میدهد‌‌‌
 <br />
 
 ```python
@@ -657,6 +657,21 @@ print("YES") if number[0] * number[3] == number[1] + number[2] else print("NO")
 ```python
 number = [int(i) for i in input("Please enter a three-digit number : ")]
 print("YES") if number[0] + number[2] == number[1] else print("NO")
+```
+<br />
+
+---
+
+**`22`**. برنامه ای بنویسید که عددی از ورودی دریافت و صفر های عدد را حذف کند.
+<br />
+
+```python
+n = [int(i) for i in input("Enter Number : ")]
+for i in n:
+    if i == 0:
+        n.remove(0)
+for i in n:
+    print(i, end='')
 ```
 <br />
 
