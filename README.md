@@ -663,3 +663,18 @@ print("YES") if number[0] + number[2] == number[1] else print("NO")
 <br />
 
 ---
+
+**`22`**. Write a program that takes a number as input and removes all zeros from it.
+<br />
+
+```python
+n = [int(i) for i in input("Enter Number : ")]
+for i in n:
+    if i == 0:
+        n.remove(0)
+for i in n:
+    print(i, end='')
+```
+<br />
+
+---
