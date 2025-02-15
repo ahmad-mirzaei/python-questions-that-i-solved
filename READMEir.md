@@ -553,3 +553,20 @@ print(mySet)
 <br />
 
 ---
+
+**`16`**. یک حلقه ی for بنویسید که در آن از ورودی اعدادی دریافت کند و درون یک لیست قرار دهد و هر زمان مجموع آن اعداد بیشتر از 50 شد، break کردهو برنامه را متوقف کند.
+<br />
+
+```python
+lst = []
+
+while True:
+    lst.append(int(input("enter number : ")))
+    if sum(lst) >= 50:
+        print("sum is >= 50")
+        break
+```
+<br />
+
+---
+
