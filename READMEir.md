@@ -634,4 +634,19 @@ for i in range(1, n + 1):
 		print(j, end=' ')
 	print()
 ```
+<br />
+
+---
+
+**`20`**.  برنامه ای‌ که‌ یک ‌عدد‌ چهار رقمی‌ را‌ خوانده، ‌اگر‌ حاصل‌ ضرب رقم های‌ ‌اول‌ و‌ چهارم،‌
+برابر‌ حاصل‌ جمع‌ ارقام‌ دوم‌ و‌ سوم‌ باشد‌ `yes` و گرنه‌، `no` را‌ نمایش ‌میدهد‌‌‌
+<br />
+
+```python
+number = [int(i) for i in input("Please enter a four-digit number : ")]
+print("YES") if number[0] * number[3] == number[1] + number[2] else print("NO")
+```
+<br />
+
+---
 
