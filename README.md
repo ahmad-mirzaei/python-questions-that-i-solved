@@ -575,3 +575,31 @@ while True:
 
 ---
 
+**`17`**. Write a program that takes a number as input and returns an output similar to the following.
+<br />
+
+```bash
+*         
+* *       
+* * *     
+* * * *   
+* * * * * 
+* * * *
+* * *
+* *
+*
+```
+<br />
+
+```python
+n = int(input("enter number : "))
+
+for i in range(n):
+    print("* " * i)
+for j in range(n, 0, -1):
+    print("* " * j)
+```
+<br />
+
+---
+
