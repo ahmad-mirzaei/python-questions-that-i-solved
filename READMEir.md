@@ -598,3 +598,19 @@ for j in range(n, 0, -1):
 
 ---
 
+**`18`**.  برنامه ای‌ که‌ تعداد‌ کالا‌ و‌ قیمت‌ هر‌  کالا‌را‌ خوانده،‌ مبلغ‌ فروش‌ را‌ نمایش ‌میدهد‌(مبلغ ‌
+فروش‌ برابر‌ با‌ تعداد‌ کالا‌ *‌ قیمت ‌کالا‌ است‌.)
+<br />
+
+```python
+sum = 0
+number_of_goods = int(input("Enter The Number Of Goods : "))
+for counter in range(number_of_goods):
+    cost_of_goods = int(input("Enter The Cost Of Goods : "))
+    sum += cost_of_goods
+print(number_of_goods * sum)
+```
+<br />
+
+---
+
