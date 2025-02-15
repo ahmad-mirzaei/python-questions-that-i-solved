@@ -690,3 +690,21 @@ print(a**b) if a < b else print(b**a)
 
 ---
 
+**`24`**. برنامه ای بنویسید که نام و نام خانوادگی و حقوق ۱۰ نفر را از ورودی دریافت نماید و نام و نام خانوادگی فردی که بیشترین حقوق را دارد در خروجی نمایش دهد.
+<br />
+
+```python
+myList = []
+for counter in range(1, 11):
+    FirstAndLastName = input("Enter Your First Name And Last Name: ")
+    userSalary = int(input("Enter Your Salary : "))
+    myList.append([FirstAndLastName, userSalary])
+# print(myList)
+for i in myList:
+    for j in myList:
+        print("Most Salaries : ", j) if j[1] > i[1] else print()
+```
+<br />
+
+---
+
