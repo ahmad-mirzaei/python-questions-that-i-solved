@@ -558,3 +558,20 @@ print(mySet)
 <br />
 
 ---
+
+**`16`**. Write a `for` loop that takes numbers as input and stores them in a list. The loop should stop (using `break`) when the sum of the numbers exceeds 50.
+<br />
+
+```python
+lst = []
+
+while True:
+    lst.append(int(input("enter number : ")))
+    if sum(lst) >= 50:
+        print("sum is >= 50")
+        break
+```
+<br />
+
+---
+
