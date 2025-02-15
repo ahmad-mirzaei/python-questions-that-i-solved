@@ -642,3 +642,13 @@ for i in range(1, n + 1):
 
 ---
 
+**`20`**. Write a program that reads a four-digit number. If the product of the first and fourth digits equals the sum of the second and third digits, print `Yes`; otherwise, print `No`.
+<br />
+
+```python
+number = [int(i) for i in input("Please enter a four-digit number : ")]
+print("YES") if number[0] * number[3] == number[1] + number[2] else print("NO")
+```
+<br />
+
+---
