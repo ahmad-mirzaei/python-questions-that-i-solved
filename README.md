@@ -708,3 +708,19 @@ for i in lst:
 <br />
 
 ---
+
+**`25`**. Write a program that receives a student's grade. If the grade is less than 11, it displays the word `Failed`; otherwise, it displays `Passed`.
+<br />
+
+```python
+i = 1
+number_of_lessons = int(input("Enter The Number Of Lessons : "))
+while i <= number_of_lessons:
+    score = int(input("Enter Your Score : "))
+    print("Failed") if score < 11 else print("Passed")
+    i+=1
+print("Finish")
+```
+<br />
+
+---
