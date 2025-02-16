@@ -758,3 +758,14 @@ while True:
 
 ---
 
+**`28`**. Write a program that takes a string as input and removes any extra spaces between its words.
+<br />
+
+```python
+user_input = ''.join(input("Enter Your String : ").split(' '))
+print(user_input)
+```
+<br />
+
+---
+
