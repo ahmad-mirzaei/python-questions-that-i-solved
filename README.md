@@ -797,3 +797,14 @@ print(f"sum is : {sum(lst)}")
 
 ---
 
+**`31`**. Write a program that takes a six-digit number as input and outputs the largest digit within the number.
+<br />
+
+```python
+n = [int(i) for i in input("Enter number : ")] 
+print(max(n))
+```
+<br />
+
+---
+
