@@ -788,6 +788,22 @@ print(max_number(n))
 
 ---
 
+
+**``**. برنامه ای بنویسید که سه ورودی از کاربر بگیرد و بزرگترین , کوچکترین و مجموع آنها را به خروجی ببرد.
+<br />
+
+```python
+lst = []
+for n in range(3):
+    lst.append(int(input("Enter number : ")))
+print(f"max is : {max(lst)}")
+print(f"min is : {min(lst)}")
+print(f"sum is : {sum(lst)}")
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />
