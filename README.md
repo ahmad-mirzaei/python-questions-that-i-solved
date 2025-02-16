@@ -860,3 +860,25 @@ multiple is : {num1 * num2}\nexponet is : {num1 - num2}")
 <br />
 
 ---
+
+**`35`**. Write a program that takes three numbers as input, calculates the sum of the odd numbers, and displays the result.
+<br />
+
+```python
+odd_number = 0
+
+try:
+    for _ in range(3):
+        x = int(input("Enter number : "))
+        if x % 2 != 0:
+            odd_number += x
+    if odd_number != 0:
+        print(f"odd number : {odd_number}")
+    elif odd_number == 0:
+        print("No odd numbers")
+except ValueError as error:
+    print(error)
+```
+<br />
+
+---
