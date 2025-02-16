@@ -808,3 +808,28 @@ print(max(n))
 
 ---
 
+**`32`**. Write a program that takes 10 numbers as input and displays the count of zero, positive, and negative numbers.
+<br />
+
+```python
+zero = 0
+positive = 0
+negative = 0
+
+try:
+    for i in range(10):
+        n = int(input("Enter number : "))
+        if n == 0:
+            zero += 1
+        elif n > 0:
+            positive += 1
+        elif n < 0:
+            negative += 1
+    print(f"zero : {zero} - positive : {positive} - negative : {negative}")
+except ValueError as error:
+    print(error)
+```
+<br />
+
+---
+
