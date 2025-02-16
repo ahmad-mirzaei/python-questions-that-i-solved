@@ -872,11 +872,23 @@ multiple is : {num1 * num2}\nexponet is : {num1 - num2}")
 ---
 
 
-**`35`**. 
+**`35`**. برنامه ای بنویسید که سه عدد بگیرد و مجموع اعداد فرد را محاسبه کرده و نمایش دهد.
 <br />
 
 ```python
+odd_number = 0
 
+try:
+    for _ in range(3):
+        x = int(input("Enter number : "))
+        if x % 2 != 0:
+            odd_number += x
+    if odd_number != 0:
+        print(f"odd number : {odd_number}")
+    elif odd_number == 0:
+        print("No odd numbers")
+except ValueError as error:
+    print(error)
 ```
 <br />
 
