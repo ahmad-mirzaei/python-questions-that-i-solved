@@ -857,6 +857,32 @@ diameter is : {diameter}")
 
 ---
 
+
+**`34`**. برنامه ای بنویسید که دو عدد از ورودی بگیرد و سپس 4 عمل جمع، تفریق، ضرب و تقسیم را روی آن انجام داده و به خروجی ببرد.
+<br />
+
+```python
+num1 = int(input("Enter First Number : "))
+num2 = int(input("Enter Second Number : "))
+print(f"addition is : {num1 + num2}\ndivition is : {num1 // num2}\n\
+multiple is : {num1 * num2}\nexponet is : {num1 - num2}")
+```
+<br />
+
+---
+
+
+**`35`**. 
+<br />
+
+```python
+
+```
+<br />
+
+---
+
+
 <!-- 
 **``**. 
 <br />
