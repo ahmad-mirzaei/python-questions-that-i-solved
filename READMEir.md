@@ -724,3 +724,30 @@ print("Finish")
 <br />
 
 ---
+
+
+**`26`**. برنامه ای بنویسید که دو عدد دو رقمی بگیرد و بگوید آیا هیچ رقم مشابهی بین دو عدد وجود دارد یا خیر؟
+<br />
+
+```python
+num1 =[int(i) for i in input("Please enter a two-digit number :  ")]
+num2 = [int(i) for i in input("Please enter a two-digit number : ")]
+for i in num1:
+	for j in num2:
+		if i == j:
+			print("Similar Number is -> ", i)
+```
+<br />
+
+---
+
+<!-- 
+**``**. 
+<br />
+
+```python
+
+```
+<br />
+
+--- -->
