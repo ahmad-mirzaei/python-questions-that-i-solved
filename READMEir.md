@@ -773,6 +773,21 @@ print(user_input)
 ---
 
 
+
+**`29`**. برنامه ای بنویسید که پس از دریافت عددی در برنامه اصلی، بزرگترین رقم عدد را در تابع فرعی
+محاسبه و سپس در برنامه اصلی نمایش دهد.
+<br />
+
+```python
+def max_number(n):
+    return max(n)
+n = [int(i) for i in input("Enter Number : ")]
+print(max_number(n))
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />
