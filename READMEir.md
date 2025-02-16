@@ -838,17 +838,16 @@ except ValueError as error:
 <br />
 
 ```python
-radius = eval(input("Enter The Radius of The Circle : "))  ## شعاع
-area = ((radius**2)*3.14) ## مساحت
-circumference = ((3.14*2)*radius)  ## محیط
-diameter = radius*2 ## قطر
+radius = eval(input("Enter The Radius of The Circle : ")) # شعاع
+area = ((radius**2)*3.14) # مساحت
+circumference = ((3.14*2)*radius)  # محیط
+diameter = radius*2 # قطر
 print(f"area is : {area}\ncircumference is : {circumference}\n\
 diameter is : {diameter}")
 ```
 <br />
 
 ---
-
 
 **`34`**. برنامه ای بنویسید که دو عدد از ورودی بگیرد و سپس 4 عمل جمع، تفریق، ضرب و تقسیم را روی آن انجام داده و به خروجی ببرد.
 <br />
@@ -862,7 +861,6 @@ multiple is : {num1 * num2}\nexponet is : {num1 - num2}")
 <br />
 
 ---
-
 
 **`35`**. برنامه ای بنویسید که سه عدد بگیرد و مجموع اعداد فرد را محاسبه کرده و نمایش دهد.
 <br />

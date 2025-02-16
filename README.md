@@ -833,3 +833,17 @@ except ValueError as error:
 
 ---
 
+**`33`**. Write a program that takes the radius of a circle as input and displays its circumference, area, and diameter.
+<br />
+
+```python
+radius = eval(input("Enter The Radius of The Circle : "))  # Radius
+area = ((radius**2)*3.14) # Area
+circumference = ((3.14*2)*radius)  # Circumference
+diameter = radius*2 # Diameter
+print(f"area is : {area}\ncircumference is : {circumference}\n\
+diameter is : {diameter}")
+```
+<br />
+
+---
