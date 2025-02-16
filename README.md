@@ -769,3 +769,16 @@ print(user_input)
 
 ---
 
+**`29`**. Write a program that takes a number as input in the main program, calculates the largest digit of the number in a separate function, and then displays the result in the main program.
+<br />
+
+```python
+def max_number(n):
+    return max(n)
+n = [int(i) for i in input("Enter Number : ")]
+print(max_number(n))
+```
+<br />
+
+---
+
