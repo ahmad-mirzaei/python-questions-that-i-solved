@@ -847,3 +847,16 @@ diameter is : {diameter}")
 <br />
 
 ---
+
+**`34`**. Write a program that takes two numbers as input, performs the four operations (addition, subtraction, multiplication, and division) on them, and displays the results.
+<br />
+
+```python
+num1 = int(input("Enter First Number : "))
+num2 = int(input("Enter Second Number : "))
+print(f"addition is : {num1 + num2}\ndivition is : {num1 // num2}\n\
+multiple is : {num1 * num2}\nexponet is : {num1 - num2}")
+```
+<br />
+
+---
