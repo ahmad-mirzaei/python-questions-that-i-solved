@@ -739,3 +739,22 @@ for i in num1:
 <br />
 
 ---
+
+**`27`**. Write a program that takes a number as input and determines how many digits it has. The input number will have a maximum of 5 digits.
+<br />
+
+```python
+lst = []
+while True:
+	user_input = [int(i) for i in input("Please Enter a 5-Digit Number : ")]
+	lst = user_input
+	if len(lst) in range(1, 6):
+		print(f"The number entered is {len(lst)} digits")
+		break
+	else:
+		print("Error\nPlease Try Again")
+```
+<br />
+
+---
+
