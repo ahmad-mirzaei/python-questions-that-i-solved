@@ -842,6 +842,21 @@ except ValueError as error:
 ---
 
 
+**`33`**. برنامه ای‌ که‌ شعاع‌ دایره‌ را‌ خوانده‌، محیط‌، مساحت‌ و‌ قطر‌ آن‌ را‌ نمایش ‌می‌دهد‌
+<br />
+
+```python
+radius = eval(input("Enter The Radius of The Circle : "))  ## شعاع
+area = ((radius**2)*3.14) ## مساحت
+circumference = ((3.14*2)*radius)  ## محیط
+diameter = radius*2 ## قطر
+print(f"area is : {area}\ncircumference is : {circumference}\n\
+diameter is : {diameter}")
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />
