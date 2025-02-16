@@ -741,6 +741,25 @@ for i in num1:
 
 ---
 
+
+**`27`**. رنامه ای بنویسید تا عددی را از ورودی دریافت نموده و بگوید عدد چند رقمی است، عدد وارد شده از سوی کاربر حداکثر ۵ رقمی خواهد بود.
+<br />
+
+```python
+lst = []
+while True:
+	user_input = [int(i) for i in input("Please Enter a 5-Digit Number : ")]
+	lst = user_input
+	if len(lst) in range(1, 6):
+		print(f"The number entered is {len(lst)} digits")
+		break
+	else:
+		print("Error\nPlease Try Again")
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />
