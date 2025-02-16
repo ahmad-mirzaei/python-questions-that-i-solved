@@ -760,6 +760,19 @@ while True:
 
 ---
 
+
+**`28`**. برنامه ای بنویسید که یک رشته را به عنوان ورودی گرفته و فاصله های اضافی بین کلمات آن را حذف کند.
+<br />
+
+```python
+user_input = ''.join(input("Enter Your String : ").split(' '))
+print(user_input)
+```
+<br />
+
+---
+
+
 <!-- 
 **``**. 
 <br />
