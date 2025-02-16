@@ -724,3 +724,18 @@ print("Finish")
 <br />
 
 ---
+
+**`26`**. Write a program that takes two two-digit numbers and determines whether they share any common digits.
+<br />
+
+```python
+num1 =[int(i) for i in input("Please enter a two-digit number :  ")]
+num2 = [int(i) for i in input("Please enter a two-digit number : ")]
+for i in num1:
+	for j in num2:
+		if i == j:
+			print("Similar Number is -> ", i)
+```
+<br />
+
+---
