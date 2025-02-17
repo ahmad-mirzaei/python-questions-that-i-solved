@@ -996,3 +996,23 @@ print([i for i in range(x+1, y)])
 <br />
 
 ---
+
+**`42`**. Write a program that outputs the two-digit numbers between 10 and 100 where the first and second digits are equal.
+<br />
+
+```python
+# step 1
+for i in range(10, 100):
+    if str(i)[0] == str(i)[1]:
+        print(i, end = '  ')
+
+# step 2
+n = [str(i) for i in range(10, 100)]
+for i in n:
+    if i[0] == i[1]:
+        print(int(i), end = '  ')
+```
+<br />
+
+---
+
