@@ -1016,3 +1016,16 @@ for i in n:
 
 ---
 
+**`43`**. Write a program that takes four numbers as input and displays the smallest one.
+<br />
+
+```python
+num_list = []
+for i in range(1, 5):
+    n = int(input("Enter Numbers : "))
+    num_list.append(n)
+print("min is : ", min(num_list))
+```
+<br />
+
+---
