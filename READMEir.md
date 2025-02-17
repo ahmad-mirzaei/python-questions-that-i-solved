@@ -884,6 +884,21 @@ except ValueError as error:
 
 ---
 
+
+**`36`**. تابعی بنویسید که با ورودی گرفتن عدد صحیح n، مجموع اعداد ۱ تا n را به عنوان خروجی بازگرداند.
+<br />
+
+```python
+def sum_of_numbers():
+	n = int(input("Enter Number : "))
+	return sum(range(1, n + 1))
+
+print(sum_of_numbers())
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />
