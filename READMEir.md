@@ -931,6 +931,26 @@ print(sum)
 
 ---
 
+
+**`39`**. برنامه ای بنویسید که یک عدد چند رقمی از ورودی بگیرد و در خروجی معکوس آن عدد را نمایش دهد
+<br />
+
+```python
+#step 1
+n = input("Enter Number : ")
+# print(type(userNumber))
+print(n[::-1])
+
+#step 2
+n_list = [int(i) for i in input("Enter Number : ")]
+# print(type(userNumber))
+n_list.reverse()
+print(n_list)
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />
