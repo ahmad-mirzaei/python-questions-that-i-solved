@@ -990,6 +990,22 @@ print(f"x : {x} and y: {y}")
 
 ---
 
+
+**`41`**. برنامه ای بنویسید که اعداد بین دو عدد را نمایش دهد.
+<br />
+
+```python
+x = int(input("Enter First Number : "))
+y = int(input("Enter Second Number : "))
+
+print([i for i in range(x+1, y)])
+```
+<br />
+
+---
+
+
+
 <!-- 
 **``**. 
 <br />
