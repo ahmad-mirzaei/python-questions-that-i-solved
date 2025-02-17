@@ -897,3 +897,17 @@ print(sum_of_numbers())
 
 ---
 
+**`37`**. Write a program that takes the two parallel sides and the height of a trapezoid as input and calculates its area.
+<br />
+
+```python
+def Trapezoid(a, b , h):
+    return (((a+b)/2)*h)
+a = float(input("Enter The Big Rule : "))
+b = float(input("Enter The Small Rule : "))
+h = float(input("Enter The Height : "))
+print(Trapezoid(a, b, h))
+```
+<br />
+
+---
