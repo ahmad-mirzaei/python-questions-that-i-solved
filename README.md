@@ -927,3 +927,21 @@ print(sum)
 
 ---
 
+**`39`**. Write a program that takes a multi-digit number as input and outputs its reverse.
+<br />
+
+```python
+#step 1
+n = input("Enter Number : ")
+# print(type(userNumber))
+print(n[::-1])
+
+#step 2
+n_list = [int(i) for i in input("Enter Number : ")]
+# print(type(userNumber))
+n_list.reverse()
+print(n_list)
+```
+<br />
+
+---
