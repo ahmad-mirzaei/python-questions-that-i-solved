@@ -882,3 +882,18 @@ except ValueError as error:
 <br />
 
 ---
+
+**`36`**. Write a function that takes an integer `n` as input and returns the sum of the numbers from 1 to `n`.
+<br />
+
+```python
+def sum_of_numbers():
+	n = int(input("Enter Number : "))
+	return sum(range(1, n + 1))
+
+print(sum_of_numbers())
+```
+<br />
+
+---
+
