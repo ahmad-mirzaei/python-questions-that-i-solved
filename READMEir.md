@@ -916,6 +916,20 @@ print(Trapezoid(a, b, h))
 ---
 
 
+**`38`**. برنامه ای بنویسید که عددی بگیرد و جمع دهگان و صدگان آن را حساب کرده و نمایش دهد. 
+<br />
+
+```python
+sum = 0
+n = [int(i) for i in input("Enter Yor Number : ")]
+n.pop()
+sum += n.pop()
+sum += n.pop()
+print(sum)
+```
+<br />
+
+---
 
 <!-- 
 **``**. 
