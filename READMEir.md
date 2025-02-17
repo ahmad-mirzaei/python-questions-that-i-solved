@@ -899,6 +899,24 @@ print(sum_of_numbers())
 
 ---
 
+
+**`37`**. برنامه ای ‌که ‌دو‌ ضلع ‌موازی‌ و‌ ارتفاع‌ ذوزنقه‌ را‌ دریافت‌ کرده،‌ مساحت‌ آن‌ را‌ محاسبه‌ می کند.
+<br />
+
+```python
+def Trapezoid(a, b , h):
+    return (((a+b)/2)*h)
+a = float(input("Enter The Big Rule : "))
+b = float(input("Enter The Small Rule : "))
+h = float(input("Enter The Height : "))
+print(Trapezoid(a, b, h))
+```
+<br />
+
+---
+
+
+
 <!-- 
 **``**. 
 <br />
