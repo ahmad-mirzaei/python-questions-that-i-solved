@@ -945,3 +945,42 @@ print(n_list)
 <br />
 
 ---
+
+**`40`**. Write a program that takes two numbers, `x` and `y`, as input and swaps their values.
+<br />
+
+```python
+# Swapping variables.
+x = int(input("Enter x : "))
+y = int(input("Enter y : "))
+x, y = y, x  
+print(f"x : {x} and y : {y}")
+
+# Swapping values using a temporary variable.
+x = int(input("Enter x : "))
+y = int(input("Enter y : "))
+temp = x 
+x = y
+y = temp
+print(f"x : {x} and y : {y}")
+
+# Swapping values using addition and subtraction operations.
+x = int(input("x : "))
+y = int(input("y : "))
+x = x + y   
+y = x - y
+x = x - y
+print(f"x : {x} and y : {y}")
+
+# Swapping values using bitwise XOR operator.
+x = int(input("Enter x : "))
+y = int(input("Enter y : "))
+x = x^y   
+y = x^y
+x = x^y
+print(f"x : {x} and y: {y}")
+```
+<br />
+
+---
+
