@@ -951,6 +951,45 @@ print(n_list)
 
 ---
 
+
+**`40`**. برنامه ای بنویسید که دو عدد x و y را از رودی دریافت کرده و مقادیر آنها را با هم جابجا کنید. 
+<br />
+
+```python
+# جابجایی متغیر ها
+x = int(input("Enter x : "))
+y = int(input("Enter y : "))
+x, y = y, x  
+print(f"x : {x} and y : {y}")
+
+# جابجایی مقدار با متغیر کمکی
+x = int(input("Enter x : "))
+y = int(input("Enter y : "))
+temp = x 
+x = y
+y = temp
+print(f"x : {x} and y : {y}")
+
+# جابجایی مقدار با عملیات جمع و تفریق
+x = int(input("x : "))
+y = int(input("y : "))
+x = x + y   
+y = x - y
+x = x - y
+print(f"x : {x} and y : {y}")
+
+# جابجایی مقادیر با عملگر بیتی
+x = int(input("Enter x : "))
+y = int(input("Enter y : "))
+x = x^y   
+y = x^y
+x = x^y
+print(f"x : {x} and y: {y}")
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />
