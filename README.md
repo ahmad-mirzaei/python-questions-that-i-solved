@@ -911,3 +911,19 @@ print(Trapezoid(a, b, h))
 <br />
 
 ---
+
+**`38`**. Write a program that takes a number as input, calculates the sum of its tens and hundreds digits, and displays the result.
+<br />
+
+```python
+sum = 0
+n = [int(i) for i in input("Enter Yor Number : ")]
+n.pop()
+sum += n.pop()
+sum += n.pop()
+print(sum)
+```
+<br />
+
+---
+
