@@ -984,3 +984,15 @@ print(f"x : {x} and y: {y}")
 
 ---
 
+**`41`**. Write a program that displays the numbers between two given numbers.
+<br />
+
+```python
+x = int(input("Enter First Number : "))
+y = int(input("Enter Second Number : "))
+
+print([i for i in range(x+1, y)])
+```
+<br />
+
+---
