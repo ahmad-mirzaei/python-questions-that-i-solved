@@ -1124,7 +1124,17 @@ print(max(number_1, number_2))
 
 ---
 
+**`50`**. برنامه ای بنویسید که تعداد قوطی های کنسرو را بگیرد و بگوید چند کارتن ۶ تایی درست می شود و چند قوطی بی کارتن می ماند.
+<br />
 
+```python
+numberOfCans = int(input("Enter The Number Of Cans : "))
+print("cartons : ", numberOfCans // 6,"\n\
+Remnants : ", numberOfCans%6)
+```
+<br />
+
+---
 
 <!-- 
 **``**. 

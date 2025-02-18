@@ -1121,3 +1121,15 @@ print(max(number_1, number_2))
 <br />
 
 ---
+
+**`50`**. Write a program that takes the number of canned goods and determines how many full cartons of 6 can be made and how many cans will be left without a carton.
+<br />
+
+```python
+numberOfCans = int(input("Enter The Number Of Cans : "))
+print("cartons : ", numberOfCans // 6,"\n\
+Remnants : ", numberOfCans%6)
+```
+<br />
+
+---
