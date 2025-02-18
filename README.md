@@ -1151,3 +1151,17 @@ print("Avg is :", sumVar//countVar)
 <br />
 
 --- 
+
+**`52`**. Write a program that takes two numbers and determines how many multiples of 7 exist between them.
+<br />
+
+```python
+number_1 = int(input("Enter Number : "))
+number_2 = int(input("Enter Number : "))
+for i in range(number_1, number_2+1):
+    if i % 7 == 0:
+        print(i, end= ' ')
+```
+<br />
+
+--- 

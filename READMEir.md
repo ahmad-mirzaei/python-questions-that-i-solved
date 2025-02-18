@@ -1154,6 +1154,20 @@ print("Avg is :", sumVar//countVar)
 
 --- 
 
+**`52`**. برنامه ای بنویسید که دو عدد بگیرد و بگوید بین آن دو عدد، چند مضرب ۷ وجود دارد.
+<br />
+
+```python
+number_1 = int(input("Enter Number : "))
+number_2 = int(input("Enter Number : "))
+for i in range(number_1, number_2+1):
+    if i % 7 == 0:
+        print(i, end= ' ')
+```
+<br />
+
+--- 
+
 <!-- 
 **``**. 
 <br />
