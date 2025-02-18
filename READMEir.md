@@ -1167,6 +1167,38 @@ for i in range(number_1, number_2+1):
 <br />
 
 --- 
+ 
+**`53`**. برنامه ای بنویسید که چهار عدد بگیرد، اگر تعداد زوجی از آنها مضرب ۳ بودند پیغام “Yes” دهد.
+<br />
+
+```python
+##step -> 1
+count = 0
+for i in range(1, 5):
+    numbers = int(input("Enter Numbers : "))
+    if numbers % 3 == 0:
+        count+=1
+print("YES") if count % 2 ==0 else print("NO")
+ 
+##step -> 2
+numbersList = []
+appendList = []
+for i in range(1, 5):
+    numbers = int(input("Enter Numbers : "))
+    numbersList.append(numbers)
+for i in numbersList:
+        if i % 3 == 0:
+            appendList.append(i)
+            numbersList.remove(i)
+for i in appendList:
+        for j in numbersList:
+            if i and j %3 == 0:
+                print(i,"and",j, "-> YES")
+                break
+```
+<br />
+
+--- 
 
 <!-- 
 **``**. 
