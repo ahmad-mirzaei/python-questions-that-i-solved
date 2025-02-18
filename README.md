@@ -1045,3 +1045,17 @@ for i in positive_numbers:
 <br />
 
 ---
+
+**`45`**. Write a program that receives the length and width of a rectangle from the input and calculates and prints its area and perimeter.
+<br />
+
+```python
+length = int(input("Enter The Length Of The Rectangle : "))
+width = int(input("Enter The Widthh Of The Rectangle : "))
+area = length*width
+perimeter = ((length+width)*2)
+print(f"area is : {area}\nperimeter is : {perimeter}")
+```
+<br />
+
+---
