@@ -1096,3 +1096,16 @@ else: print("NO")
 <br />
 
 ---
+
+**`48`**. Write a program that takes two numbers. If both are greater than 20, print "Yes".
+<br />
+
+```python
+number_1 = int(input("Enter number : "))
+number_2 = int(input("Enter number : "))
+if number_1 and number_2 > 20: print("YES")
+else: print("NO")
+```
+<br />
+
+---

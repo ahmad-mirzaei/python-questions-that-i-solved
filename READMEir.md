@@ -1077,7 +1077,6 @@ else: print("NO")
 
 ---
 
-
 **`47`**. برنامه ای بنویسید که عددی بگیرد، اگر یکان و دهگانش زوج بود پیغام Yes دهد و در غیر این صورت
 پیغام No دهد.
 <br />
@@ -1101,6 +1100,19 @@ else: print("NO")
 <br />
 
 ---
+
+**`48`**. برنامه ای بنویسید دو عدد بگیرد و اگر هر دو بیشتر از ۲۰ بودند پیغام “Yes” دهد.
+<br />
+
+```python
+number_1 = int(input("Enter number : "))
+number_2 = int(input("Enter number : "))
+if number_1 and number_2 > 20: print("YES")
+else: print("NO")
+```
+<br />
+
+--- 
 
 <!-- 
 **``**. 
