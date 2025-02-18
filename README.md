@@ -1029,3 +1029,19 @@ print("min is : ", min(num_list))
 <br />
 
 ---
+
+**`44`**. Write a program that takes 4 numbers and displays the first even number among them.
+<br />
+
+```python
+positive_numbers = [int(input("enter number : ")) for i in range(4)]
+for i in positive_numbers:
+    if i % 2 == 0:
+        print(i)
+        break
+    else:
+        continue
+```
+<br />
+
+---

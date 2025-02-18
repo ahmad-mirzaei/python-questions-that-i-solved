@@ -1031,6 +1031,22 @@ print("min is : ", min(num_list))
 
 ---
 
+**`44`**. برنامه ای بنویسید که ۴ عدد بگیرد و اولین عدد زوج در میان آن ها را نمایش دهد.
+<br />
+
+```python
+positive_numbers = [int(input("enter number : ")) for i in range(4)]
+for i in positive_numbers:
+    if i % 2 == 0:
+        print(i)
+        break
+    else:
+        continue
+```
+<br />
+
+---
+
 
 <!-- 
 **``**. 
