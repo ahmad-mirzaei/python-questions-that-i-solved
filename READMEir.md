@@ -1078,6 +1078,30 @@ else: print("NO")
 ---
 
 
+**`47`**. برنامه ای بنویسید که عددی بگیرد، اگر یکان و دهگانش زوج بود پیغام Yes دهد و در غیر این صورت
+پیغام No دهد.
+<br />
+
+```python
+# step 1
+pop1 = []
+pop2 = []
+userNumber = [int(i) for i in input("Enter Number : ")]
+for i in userNumber:
+    pop1 = userNumber.pop()
+    pop2 = userNumber.pop()
+    if pop1 %2 == 0 and pop2 %2 == 0: print(pop1,",", pop2, "-> YES")
+    else: print(pop1,",", pop2, "-> NO")
+ 
+# step 2
+userNumber = int(input("Enter Number : "))
+if (userNumber %2 == (userNumber//10)%2): print("YES")
+else: print("NO")
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />

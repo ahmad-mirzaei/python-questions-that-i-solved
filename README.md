@@ -1073,3 +1073,26 @@ else: print("NO")
 <br />
 
 ---
+
+**`47`**. Write a program that takes a number. If both its units and tens digits are even, print "Yes"; otherwise, print "No".
+<br />
+
+```python
+# step 1
+pop1 = []
+pop2 = []
+userNumber = [int(i) for i in input("Enter Number : ")]
+for i in userNumber:
+    pop1 = userNumber.pop()
+    pop2 = userNumber.pop()
+    if pop1 %2 == 0 and pop2 %2 == 0: print(pop1,",", pop2, "-> YES")
+    else: print(pop1,",", pop2, "-> NO")
+ 
+# step 2
+userNumber = int(input("Enter Number : "))
+if (userNumber %2 == (userNumber//10)%2): print("YES")
+else: print("NO")
+```
+<br />
+
+---
