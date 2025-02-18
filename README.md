@@ -1109,3 +1109,15 @@ else: print("NO")
 <br />
 
 ---
+
+**`49`**. Write a program that takes two numbers and displays the larger one.
+<br />
+
+```python
+number_1 = int(input("Enter Number :"))
+number_2 = int(input("Enter Number :"))
+print(max(number_1, number_2))
+```
+<br />
+
+---
