@@ -1059,3 +1059,17 @@ print(f"area is : {area}\nperimeter is : {perimeter}")
 <br />
 
 ---
+
+**`46`**. Write a program that takes two numbers. If both of them are divisible by 3 or both are divisible by 7, print "Yes"; otherwise, print "No".
+<br />
+
+```python
+number_1 = int(input("Enter number : "))
+number_2 = int(input("Enter number : "))
+if number_1 %3 ==0 and number_2 %3 == 0 or\
+number_1 %7 ==0 and number_2 %7 == 0: print("YES")
+else: print("NO")
+```
+<br />
+
+---

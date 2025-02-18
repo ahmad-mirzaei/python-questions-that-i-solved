@@ -1063,6 +1063,21 @@ print(f"area is : {area}\nperimeter is : {perimeter}")
 ---
 
 
+**`46`**. برنامه ای بنویسید که دو عدد بگیرد، اگر هر دو آنها بر ۳ و یا هر دو آنها بر ۷ بخش پذیر بودند پیغام “Yes” وگرنه پیغام “No” دهد.
+<br />
+
+```python
+number_1 = int(input("Enter number : "))
+number_2 = int(input("Enter number : "))
+if number_1 %3 ==0 and number_2 %3 == 0 or\
+number_1 %7 ==0 and number_2 %7 == 0: print("YES")
+else: print("NO")
+```
+<br />
+
+---
+
+
 <!-- 
 **``**. 
 <br />
