@@ -1133,3 +1133,21 @@ Remnants : ", numberOfCans%6)
 <br />
 
 ---
+
+**`51`**. Write a program that keeps taking numbers from the user until zero is entered. Then, it calculates and prints the average of the entered numbers (excluding zero from the calculation).
+<br />
+
+```python
+sumVar = 0
+countVar = 0
+while True:
+    userNumbers = int(input("Enter Numbers : "))
+    if userNumbers == 0: break
+    else:
+        countVar+=1
+        sumVar+=userNumbers
+print("Avg is :", sumVar//countVar)
+```
+<br />
+
+--- 

@@ -1136,6 +1136,24 @@ Remnants : ", numberOfCans%6)
 
 ---
 
+**`51`**. برنامه ای بنویسید که تا وقتی عدد صفر وارد نشده، از کاربر عدد بگیرد و سپس معدل اعداد گرفته شده را چاپ کند. (برنامه صفر را نباید جزء معدل حساب کند، صفر صرفا نشان دهنده پایان اعداد است).
+<br />
+
+```python
+sumVar = 0
+countVar = 0
+while True:
+    userNumbers = int(input("Enter Numbers : "))
+    if userNumbers == 0: break
+    else:
+        countVar+=1
+        sumVar+=userNumbers
+print("Avg is :", sumVar//countVar)
+```
+<br />
+
+--- 
+
 <!-- 
 **``**. 
 <br />
