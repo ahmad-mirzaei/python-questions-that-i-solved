@@ -1213,3 +1213,15 @@ print(reverse_number(n))
 <br />
 
 ---
+
+**`55`**. Write a program that takes a number as input and determines whether it is even or odd.
+<br />
+
+```python
+n = int(input("Enter Your Number : "))
+print("number is Even!!") if n %2 == 0 else print("number is Odd!!")
+```
+<br />
+
+---
+
