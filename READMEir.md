@@ -1200,6 +1200,22 @@ for i in appendList:
 
 --- 
 
+**`54`**. تابعی بنویسید که عددی را به عنوان پارامتر ورودی دریافت کند و مقلوب آن در خروجی چاپ شود.
+<br />
+
+```python
+def reverse_number(n):
+    if len(n) == 1:
+        return int(n)
+    return int(n[::-1])
+    
+n = input("Enter number : ")
+print(reverse_number(n))
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />
