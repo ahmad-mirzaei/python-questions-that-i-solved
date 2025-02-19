@@ -1276,3 +1276,18 @@ print(lst)
 <br />
 
 ---
+
+**`59`**. Write a program that keeps taking numbers as input until the user enters -1 and then displays the sum of the entered numbers.
+<br />
+
+```python
+sum = 0
+while True:
+    n = int(input("Enter Number : "))
+    if n < 0: break
+    else: sum += n
+print(f"sum is : {sum}")
+```
+<br />
+
+---
