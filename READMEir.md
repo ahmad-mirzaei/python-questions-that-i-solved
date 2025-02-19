@@ -1311,6 +1311,24 @@ print("you have lived","[",yourYears+yourMounths+yourDays,"]","minutes so far!!!
 
 ---
 
+**`61`**. برنامه ای بنویسید که اندازه سه ضلع مثلث را بپرسد و بگوید این مثلث متساوی الساقین، متساویالاضلاع و یا معمولی است.
+<br />
+
+```python
+sideSet = set()
+for i in range(1, 4):
+    Side = int(input("Enter The Side 1 : "))
+    sideSet.add(Side)
+if len(sideSet) == 1:
+    print("Mosalase MotaVazi Al'azla")
+elif len(sideSet) == 2:
+    print("Mosalase MtaSavi Al'saghein")
+else:
+    print("Mosalase Skalen")
+```
+<br />
+
+---
 
 <!-- 
 **``**. 
