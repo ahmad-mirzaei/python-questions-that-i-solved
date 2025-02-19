@@ -1225,3 +1225,16 @@ print("number is Even!!") if n %2 == 0 else print("number is Odd!!")
 
 ---
 
+**`56`**. Write a program that takes the radius of a circle as input, calculates its area and circumference, and prints the results.
+<br />
+
+```python
+radius = eval(input("Enter The Radius of The Circle : "))  ## شعاع
+area = ((radius**2)*3.14) ## مساحت
+circumference = ((3.14*2)*radius)  ## محیط
+print(f"area is : {area}\ncircumference is : {circumference}")
+```
+<br />
+
+---
+
