@@ -1295,6 +1295,21 @@ print(f"sum is : {sum}")
 
 ---
 
+**`60`**. برنامه ای بنویسید که سن تان را به سال، ماه و روز گرفته و به دقیقه تبدیل نماید.
+<br />
+
+```python
+year = int(input("Enter years : "))
+mounths = int(input("Enter mounths : "))
+day = int(input("Enter days : "))
+yourYears = ((((year*12)*30)*1440))
+yourMounths = ((mounths*30)*1440)
+yourDays = (day*1440)
+print("you have lived","[",yourYears+yourMounths+yourDays,"]","minutes so far!!!")
+```
+<br />
+
+---
 
 
 <!-- 
