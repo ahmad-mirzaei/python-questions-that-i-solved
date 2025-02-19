@@ -1308,3 +1308,21 @@ print("you have lived","[",yourYears+yourMounths+yourDays,"]","minutes so far!!!
 
 ---
 
+**`61`**. Write a program that asks for the lengths of the three sides of a triangle and determines whether it is an isosceles, equilateral, or scalene triangle.
+<br />
+
+```python
+sideSet = set()
+for i in range(1, 4):
+    Side = int(input("Enter The Side 1 : "))
+    sideSet.add(Side)
+if len(sideSet) == 1:
+    print("equilateral triangle")
+elif len(sideSet) == 2:
+    print("isosceles triangle")
+else:
+    print("scalene triangle")
+```
+<br />
+
+---
