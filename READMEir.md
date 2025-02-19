@@ -1216,6 +1216,18 @@ print(reverse_number(n))
 
 ---
 
+**`55`**. برنامه ای بنویسید که عددی بگیرد و بگوید زوج است یا فرد.
+<br />
+
+```python
+n = int(input("Enter Your Number : "))
+print("number is Even!!") if n %2 == 0 else print("number is Odd!!")
+```
+<br />
+
+---
+
+
 <!-- 
 **``**. 
 <br />
