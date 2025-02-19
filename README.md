@@ -1238,3 +1238,24 @@ print(f"area is : {area}\ncircumference is : {circumference}")
 
 ---
 
+**`57`**. Write a program that takes a number as input and displays a message if it is not a three-digit number.
+<br />
+
+```python
+##step -> 1
+userNumber = [int(i) for i in input("Enter Number : ")]
+print("Yes") if len(userNumber) == 3 else print("NO")
+
+##step -> 2
+i = 1
+userNumber = int(input("Enter Number : "))
+while userNumber >= 10**i:
+    i+=1
+if i == 3:
+    print("YES")
+else:
+    print("NO")
+```
+<br />
+
+---
