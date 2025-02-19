@@ -1227,6 +1227,19 @@ print("number is Even!!") if n %2 == 0 else print("number is Odd!!")
 
 ---
 
+**`56`**. برنامه ای بنویسید که شعاع یک دایره را از ورودی دریافت کرده و مساحت و محیط آن دایره را
+محاسبه و چاپ نماید.
+<br />
+
+```python
+radius = eval(input("Enter The Radius of The Circle : "))  ## شعاع
+area = ((radius**2)*3.14) ## مساحت
+circumference = ((3.14*2)*radius)  ## محیط
+print(f"area is : {area}\ncircumference is : {circumference}")
+```
+<br />
+
+---
 
 <!-- 
 **``**. 
