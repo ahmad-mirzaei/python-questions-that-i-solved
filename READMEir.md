@@ -1263,6 +1263,22 @@ else:
 
 ---
 
+**`58`**. برنامه ای بنویسید که لیستی از اعداد را از بزرگ به کوچک نمایش دهد.
+<br />
+
+```python
+lst = []
+user_input = int(input("Specify The Number Of Numbers : "))
+for i in range(1, user_input+1):
+    n = int(input("Enter Numbers : "))
+    lst.append(n)
+lst.sort()
+lst.reverse()
+print(lst)
+```
+<br />
+
+---
 
 <!-- 
 **``**. 
