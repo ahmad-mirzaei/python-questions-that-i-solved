@@ -1350,6 +1350,24 @@ print(num(num1, num2))
 
 ---
 
+**`63`**. برنامه ای بنویسید که پس از دریافت عددی در برنامه اصلی، بزرگترین رقم عدد را در تابع فرعی
+محاسبه و سپس در برنامه اصلی نمایش دهد.
+<br />
+
+```python
+# step -> 1
+def max_number(a): return max(a)
+n = [int(i) for i in input("Enter Number : ")]
+print(max_number(n))
+
+# step -> 2
+max_number = lambda a : max(a)
+n = [int(i) for i in input("Enter Number : ")]
+print(max_number(n))
+```
+<br />
+
+---
 
 
 
