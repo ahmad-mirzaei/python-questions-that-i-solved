@@ -1280,6 +1280,23 @@ print(lst)
 
 ---
 
+**`59`**.  برنامه ای بنویسید که تا زمانی که کاربر ۱- وارد نکرده عدد بگیرد و جمع اعداد را نمایش دهد.
+<br />
+
+```python
+sum = 0
+while True:
+    n = int(input("Enter Number : "))
+    if n < 0: break
+    else: sum += n
+print(f"sum is : {sum}")
+```
+<br />
+
+---
+
+
+
 <!-- 
 **``**. 
 <br />
