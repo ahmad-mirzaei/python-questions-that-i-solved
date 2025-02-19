@@ -1346,3 +1346,21 @@ print(num(num1, num2))
 <br />
 
 ---
+
+**`63`**. Write a program that takes a number as input in the main function, calculates the largest digit of the number in a separate function, and then displays the result in the main function.
+<br />
+
+```python
+# step -> 1
+def max_number(a): return max(a)
+n = [int(i) for i in input("Enter Number : ")]
+print(max_number(n))
+
+# step -> 2
+max_number = lambda a : max(a)
+n = [int(i) for i in input("Enter Number : ")]
+print(max_number(n))
+```
+<br />
+
+---
