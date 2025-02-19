@@ -1197,3 +1197,19 @@ for i in appendList:
 <br />
 
 ---
+
+**`54`**. Write a function that takes a number as an input parameter and prints its reverse as output.
+<br />
+
+```python
+def reverse_number(n):
+    if len(n) == 1:
+        return int(n)
+    return int(n[::-1])
+    
+n = input("Enter number : ")
+print(reverse_number(n))
+```
+<br />
+
+---
