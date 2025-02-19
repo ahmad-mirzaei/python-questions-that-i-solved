@@ -1291,3 +1291,20 @@ print(f"sum is : {sum}")
 <br />
 
 ---
+
+**`60`**. Write a program that takes your age in years, months, and days as input and converts it into minutes.
+<br />
+
+```python
+year = int(input("Enter years : "))
+mounths = int(input("Enter mounths : "))
+day = int(input("Enter days : "))
+yourYears = ((((year*12)*30)*1440))
+yourMounths = ((mounths*30)*1440)
+yourDays = (day*1440)
+print("you have lived","[",yourYears+yourMounths+yourDays,"]","minutes so far!!!")
+```
+<br />
+
+---
+
