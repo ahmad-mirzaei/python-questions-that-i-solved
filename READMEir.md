@@ -1330,6 +1330,29 @@ else:
 
 ---
 
+**`62`**. تابعی بنویسید که دو عدد بگیرد و مجموع آنها را به عنوان خروجی باز گرداند.
+<br />
+
+```python
+def Num(a, b):
+    return a + b
+num1 = int(input("Enter Number : "))
+num2 = int(input("Enter Number : "))
+print(Num(num1, num2))
+
+##step -> 2
+num = lambda a, b: a + b
+num1 = int(input("Enter Number : "))
+num2 = int(input("Enter Number : "))
+print(num(num1, num2))
+```
+<br />
+
+---
+
+
+
+
 <!-- 
 **``**. 
 <br />
