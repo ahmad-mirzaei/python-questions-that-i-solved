@@ -1408,3 +1408,25 @@ print(f"packs : {books//4} and left over : {books % 4}")
 <br />
 
 ---
+
+**`66`**. برنامه ای بنویسید که یک عدد از ورودی بگیرد و فاکتوریل آن را به محاسبه و به خروجی ببرد.
+<br />
+
+```python
+##step -> 1 with while loop
+n = eval(input("Enter yor number : "))
+i = 1
+factorial = 1
+while i <= n:
+    factorial*=i
+    i+=1
+    print(factorial)
+
+##step -> 2 with math library
+from math import factorial
+n = eval(input("Enter yor number : "))
+print(factorial(n))
+```
+<br />
+
+---
