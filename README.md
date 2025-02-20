@@ -1365,3 +1365,33 @@ print(max_number(n))
 
 ---
 
+**`64`**. Write a function that:
+
+1. Takes the grades of five courses for a student.  
+2. If the score is between 17 and 20 → "A"  
+3. If the score is between 15 and 17 → "B"  
+4. If the score is between 12 and 15 → "C"  
+5. If the score is 12 or below → "D"  
+6. Displays the grade along with the corresponding score in order.
+<br />
+
+```python
+def get_number():
+    for i in range(5):
+        n = eval(input("Enter score : "))
+        if n in range(17, 21): 
+            print(f"{n} ---> (A)")
+        elif n in range(15, 18): 
+            print(f"{n} ---> (B)")
+        elif n in range(12, 16): 
+            print(f"{n} ---> (C)")
+        elif n in range(0, 12): 
+            print(f"{n} ---> (D)")
+        else:
+            print("Error!!! Enter Number Between 0 - 20")
+
+get_number()
+```
+<br />
+
+---

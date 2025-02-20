@@ -1369,6 +1369,41 @@ print(max_number(n))
 
 ---
 
+**`64`**. تابعی بنویسید که:
+
+1- نمره های ۵ درس یک دانشجو را دریافت کند.
+
+2- اگر نمره ی وارد شده بین ۱۷ تا ۲۰ بود — A ،
+
+3- اگر از ۱۵ تا ۱۷ بود — B ،
+
+4- اگر از ۱۲ تا ۱۵ بود — C ،
+
+5- و اگر از ۱۲ به پایین بود حرف D چاپ شود.
+
+6- نکته: کیفیت نمرات به همراه نمره ی مورد نظر، به ترتیب در خروجی نمایش داده شود.
+<br />
+
+```python
+def get_number():
+    for i in range(5):
+        n = eval(input("Enter score : "))
+        if n in range(17, 21): 
+            print(f"{n} ---> (A)")
+        elif n in range(15, 18): 
+            print(f"{n} ---> (B)")
+        elif n in range(12, 16): 
+            print(f"{n} ---> (C)")
+        elif n in range(0, 12): 
+            print(f"{n} ---> (D)")
+        else:
+            print("Error!!! Enter Number Between 0 - 20")
+
+get_number()
+```
+<br />
+
+---
 
 
 <!-- 
