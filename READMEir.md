@@ -1560,6 +1560,26 @@ print(join_string)
 
 ---
 
+**`73`**. برنامه ای بنویسید که یک رشته از کاربر بگیرد و اگر دارای حروف صدادار بود، به خروجی ببرد ( حروف صدا دار: `a`, `e`, `i`, `o`, `u`).
+همچنین، تعداد تکرار آن حروف را نمایش دهد.
+<br />
+
+```python
+counter = dict()
+letters = ['A', 'a', 'I', 'i', 'U', 'u', 'E', 'e', 'O', 'o ']
+user_input = [i for i in input("Enter Your Strings : ")]
+for i in letters:
+    for j in user_input:
+        if i == j:
+            if i in counter:
+                counter[i]+=1
+            else:
+                counter[i]=1
+print(counter)
+```
+<br />
+
+---
 
 
 <!-- 

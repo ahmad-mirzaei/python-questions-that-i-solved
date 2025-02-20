@@ -1550,3 +1550,23 @@ print(join_string)
 <br />
 
 ---
+
+**`73`**. Write a program that takes a string as input, checks for vowels (`a, e, i, o, u`), prints them if found, and also displays their frequency.
+<br />
+
+```python
+counter = dict()
+letters = ['A', 'a', 'I', 'i', 'U', 'u', 'E', 'e', 'O', 'o ']
+user_input = [i for i in input("Enter Your Strings : ")]
+for i in letters:
+    for j in user_input:
+        if i == j:
+            if i in counter:
+                counter[i]+=1
+            else:
+                counter[i]=1
+print(counter)
+```
+<br />
+
+---
