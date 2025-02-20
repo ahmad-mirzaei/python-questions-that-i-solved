@@ -1539,3 +1539,14 @@ for k in range(1, 7):
 <br />
 
 ---
+
+**`72`**. Write a program that takes a string as input and removes all spaces from it.
+<br />
+
+```python
+join_string = ''.join(input("Enter Your String : ").split())
+print(join_string)
+```
+<br />
+
+---

@@ -1549,6 +1549,16 @@ for k in range(1, 7):
 
 ---
 
+**`72`**. برنامه ای بنویسید که یک رشته را به عنوان ورودی گرفته و تمامی فاصله های موجود در آن را حذف کند.
+<br />
+
+```python
+join_string = ''.join(input("Enter Your String : ").split())
+print(join_string)
+```
+<br />
+
+---
 
 
 
