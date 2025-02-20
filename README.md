@@ -1467,3 +1467,15 @@ for i in range(1, row + 1):
 <br />
 
 ---
+
+**`69`**. Write a program that takes a 5-digit number as input and prints its reverse without using functions like reverse().
+<br />
+
+```python
+n = input("Enter 5-digit number : ")
+print(int(n[::-1]))
+```
+<br />
+
+---
+
