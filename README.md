@@ -1442,3 +1442,28 @@ for i in range(100):
 <br />
 
 ---
+
+**`68`**. Write a program that generates the following output.
+```bash
+1 2 3 4 5 6 7  
+1 2 3 4 5 6  
+1 2 3 4 5  
+1 2 3 4  
+1 2 3  
+1 2  
+1  
+```
+<br />
+
+```python
+row = 7
+
+for i in range(1, row + 1):
+    for j in range(1, row + 1):
+        print(j, end = " ")
+    print()
+    row -= 1
+```
+<br />
+
+---
