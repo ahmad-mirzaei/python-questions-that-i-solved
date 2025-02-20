@@ -1430,3 +1430,15 @@ print(factorial(n))
 <br />
 
 ---
+
+**`67`**. Write a program that prints the two-digit multiples of 5.
+<br />
+
+```python
+for i in range(100):
+    if i % 5 == 0:
+        print(i, end='  ')
+```
+<br />
+
+---
