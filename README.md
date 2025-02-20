@@ -1409,7 +1409,7 @@ print(f"packs : {books//4} and left over : {books % 4}")
 
 ---
 
-**`66`**. برنامه ای بنویسید که یک عدد از ورودی بگیرد و فاکتوریل آن را به محاسبه و به خروجی ببرد.
+**`66`**. Write a program that takes a number as input, calculates its factorial, and prints the result.
 <br />
 
 ```python
