@@ -1395,3 +1395,16 @@ get_number()
 <br />
 
 ---
+
+**`65`**. Ali has a large number of books and wants to pack them in sets of 4.
+
+Write a program that: Takes the number of books as input from the user. Determines how many full packs of 4 books can be made. Calculates how many books will remain unpacked.
+<br />
+
+```python
+books = int(input("Enter The Number Of Your Books : "))
+print(f"packs : {books//4} and left over : {books % 4}")
+```
+<br />
+
+---
