@@ -1479,3 +1479,30 @@ print(int(n[::-1]))
 
 ---
 
+**`70`**. Write a simple calculator that takes two numbers as input and then allows the user to choose one of the operators (`+`, `-`, `//`, `*`) to get the desired result.
+<br />
+
+```python
+try:
+    while True:
+        x = eval(input("Enter Number 1 : "))
+        choice = input("addition\t [ + ]\nminus\t\t [ - ]\nmultiple\t [ * ]\ndivision\t [ // ]\n")
+        y = eval(input("Enter Number 2 : "))
+        
+        if choice == "+":
+            print(x + y)
+        elif choice == "-":
+            print(x - y)
+        elif choice == "*":
+            print(x * y)
+        elif choice == "//":
+            print(x // y)
+        to_continue = input("Do you want to continue ? (y/n) : ")
+        if to_continue == "n":
+            break
+except ZeroDivisionError as error:
+    print(error)
+```
+<br />
+
+---

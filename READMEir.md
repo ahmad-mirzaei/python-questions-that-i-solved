@@ -1486,16 +1486,35 @@ print(int(n[::-1]))
 <br />
 
 ---
-<!-- 
-**``**. 
+
+**`70`**. یک ماشین حساب ساده بنویسید که :
+دو عدد بگیرد و سپس کاربر با انتخاب یکی از عملگر های (`+` ، `–` ، `//` ،` *`) با نتیجه ی دلخواه، روبرو شود.
 <br />
 
 ```python
-
+try:
+    while True:
+        x = eval(input("Enter Number 1 : "))
+        choice = input("addition\t [ + ]\nminus\t\t [ - ]\nmultiple\t [ * ]\ndivision\t [ // ]\n")
+        y = eval(input("Enter Number 2 : "))
+        
+        if choice == "+":
+            print(x + y)
+        elif choice == "-":
+            print(x - y)
+        elif choice == "*":
+            print(x * y)
+        elif choice == "//":
+            print(x // y)
+        to_continue = input("Do you want to continue ? (y/n) : ")
+        if to_continue == "n":
+            break
+except ZeroDivisionError as error:
+    print(error)
 ```
 <br />
 
---- -->
+---
 
 
 
