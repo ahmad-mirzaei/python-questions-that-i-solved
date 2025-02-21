@@ -1667,3 +1667,21 @@ else:
 <br />
 
 ---
+
+**`79`**. Write a program that takes a temperature in Fahrenheit or Celsius and converts it accordingly.  
+First, the program should ask the user whether they want to convert Fahrenheit to Celsius or Celsius to Fahrenheit. After the user makes a selection, the conversion should be performed.
+<br />
+
+```python
+print("fahrenheit or centigrade --> f/c")
+userInput = input()
+if userInput == "f":
+    f = int(input("Please Enter fahrenheit weather :"))
+    print((f-32)/1.8)
+elif userInput == "c":
+    c = int(input("Please Enter centigrade weather :"))
+    print(c*1.8+32)
+```
+<br />
+
+---

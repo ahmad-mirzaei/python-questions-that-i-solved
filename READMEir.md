@@ -1679,6 +1679,25 @@ else:
 
 ---
 
+**`79`**. برنامه ای بنویسید که درجه فارنهایت یا سانتی گراد را گرفته، و تبدیل کند.
+ابتدا باید از کاربر سوال شود که میخواهد فارنهایت را به سانتی گراد یا سانتی گراد را به فارنهایت تبدیل کند و بعد از انتخاب کاربر، عملیات تبدیل را انجام دهد.
+<br />
+
+```python
+print("fahrenheit or centigrade --> f/c")
+userInput = input()
+if userInput == "f":
+    f = int(input("Please Enter fahrenheit weather :"))
+    print((f-32)/1.8)
+elif userInput == "c":
+    c = int(input("Please Enter centigrade weather :"))
+    print(c*1.8+32)
+```
+<br />
+
+---
+
+
 
 <!-- 
 **``**. 
