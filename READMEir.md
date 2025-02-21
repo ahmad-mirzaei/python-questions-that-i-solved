@@ -1615,6 +1615,28 @@ print(f"odd numbers : {odd_list}")
 
 ---
 
+**`76`**. برنامه ای بنویسید که 2 عدد از ورودی بگیرد و عدد اول را به توان عدد دوم کند.
+<br />
+
+```python
+# step 1
+x = int(input("Enter first number : "))
+y = int(input("Enter second number : "))
+
+z = x ** y
+print(z)
+
+# step 2
+x = int(input("Enter first number : "))
+y = int(input("Enter second number : "))
+
+z = pow(x, y)
+print(z)
+
+```
+<br />
+
+---
 
 
 

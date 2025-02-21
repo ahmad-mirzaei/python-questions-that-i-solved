@@ -1603,3 +1603,26 @@ print(f"odd numbers : {odd_list}")
 <br />
 
 ---
+
+**`76`**. Write a program that takes two numbers as input and raises the first number to the power of the second number.
+<br />
+
+```python
+# step 1
+x = int(input("Enter first number : "))
+y = int(input("Enter second number : "))
+
+z = x ** y
+print(z)
+
+# step 2
+x = int(input("Enter first number : "))
+y = int(input("Enter second number : "))
+
+z = pow(x, y)
+print(z)
+
+```
+<br />
+
+---
