@@ -1664,6 +1664,20 @@ get_number(int(input("Enter 2-digit nymber : ")))
 
 ---
 
+**`78`**. برنامه ای بنویسید که یک رشته بگیرد و پالیندرم بودن آن بررسی کند.
+(پالیندرم عبارتی است که برعکس آن برابر با خودش باشد مثل: level)
+<br />
+
+```python
+st = input("please enter a string : ")
+if st == st[::-1]:
+    print("palindrome")
+else:
+    print("not palindrome")
+```
+<br />
+
+---
 
 
 <!-- 

@@ -1652,3 +1652,18 @@ get_number(int(input("Enter 2-digit nymber : ")))
 <br />
 
 ---
+
+**`78`**. Write a program that takes a string as input and checks if it is a palindrome.  
+(A palindrome is a word or phrase that reads the same backward as forward, such as "level.")
+<br />
+
+```python
+st = input("please enter a string : ")
+if st == st[::-1]:
+    print("palindrome")
+else:
+    print("not palindrome")
+```
+<br />
+
+---
