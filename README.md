@@ -1626,3 +1626,29 @@ print(z)
 <br />
 
 ---
+
+**`77`**. Write a program that takes a two-digit number as input and:  
+1. First, outputs all numbers before that number.  
+2. Then, outputs all two-digit odd numbers before that number and all two-digit even numbers before that number separately.
+<br />
+
+```python
+def get_number(n):
+    for i in range(1, n):
+        print(i, end = " ")
+    print()
+    
+    for i in range(11, n):
+        if i % 2 != 0:
+            print(i, end = " ")
+    print()
+    
+    for i in range(10, n):
+        if i % 2 == 0:
+            print(i, end = " ")
+
+get_number(int(input("Enter 2-digit nymber : ")))
+```
+<br />
+
+---

@@ -1638,6 +1638,31 @@ print(z)
 
 ---
 
+**`77`**. برنامه ای بنویسید که یک عدد دو رقمی بگیرد و:
+۱- ابتدا اعداد ماقبل از آن عدد را به خروجی ببرد
+۲- سپس اعداد فرد دو رقمی ماقبل از آن عدد و اعداد زوج دو رقمی ماقبل از آن عدد را به خروجی ببرد.
+<br />
+
+```python
+def get_number(n):
+    for i in range(1, n):
+        print(i, end = " ")
+    print()
+    
+    for i in range(11, n):
+        if i % 2 != 0:
+            print(i, end = " ")
+    print()
+    
+    for i in range(10, n):
+        if i % 2 == 0:
+            print(i, end = " ")
+
+get_number(int(input("Enter 2-digit nymber : ")))
+```
+<br />
+
+---
 
 
 
