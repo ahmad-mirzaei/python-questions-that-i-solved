@@ -1595,6 +1595,25 @@ print(f"even {len(even)} : {even}\nodd {len(odd)} : {odd}\nzero {len(zero)} : {z
 
 ---
 
+**`75`**. با یک for برنامه ای بنویسید که : اعداد زوج از ۳۰ تا ۱ را به صورت نزولی، و اعداد فرد از ۱ تا ۳۰ را به صورت صعودی به خروجی ببرد..
+نکته: برنامه، فقط با یک حلقه نوشته شود.
+<br />
+
+```python
+even_list = []
+odd_list = []
+
+for i in range(1, 30 + 1):
+    even_list.append(i) if i % 2 == 0 else odd_list.append(i)
+
+odd_list.reverse()
+
+print(f"even numbers : {even_list}")
+print(f"odd numbers : {odd_list}")
+```
+<br />
+
+---
 
 
 

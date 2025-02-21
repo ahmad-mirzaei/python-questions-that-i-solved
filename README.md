@@ -1584,3 +1584,22 @@ print(f"even {len(even)} : {even}\nodd {len(odd)} : {odd}\nzero {len(zero)} : {z
 <br />
 
 ---
+
+**`75`**. Write a program using a single for loop that outputs even numbers from 30 to 1 in descending order and odd numbers from 1 to 30 in ascending order.
+<br />
+
+```python
+even_list = []
+odd_list = []
+
+for i in range(1, 30 + 1):
+    even_list.append(i) if i % 2 == 0 else odd_list.append(i)
+
+odd_list.reverse()
+
+print(f"even numbers : {even_list}")
+print(f"odd numbers : {odd_list}")
+```
+<br />
+
+---
