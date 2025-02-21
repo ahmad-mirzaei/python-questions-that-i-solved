@@ -1685,3 +1685,21 @@ elif userInput == "c":
 <br />
 
 ---
+
+**`80`**. Ali wants to write a program for a university that sorts students' names alphabetically.  
+The program will be used for attendance lists in classes with ten students.  
+How would you write the program if you were in his place?
+<br />
+
+```python
+name_list = []
+for i in range(1, 11):
+    names = input("Enter names : ")
+    name_list.append(names)
+sortList = name_list.sort()
+for i in name_list:
+    print(i, end='  --  ')
+```
+<br />
+
+---
