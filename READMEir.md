@@ -1581,6 +1581,24 @@ print(counter)
 
 ---
 
+**`74`**. الگوریتمی بنویسید که عدد طبیعی N را دریافت کند و معین کند چند رقم ان زوج است و چند رقم ان فرد و چند رقم ان صفر می باشد
+<br />
+
+```python
+user_number = [int(i) for i in input("Enter Number : ")]
+even = [even for even in user_number if even % 2 == 0]
+odd = [odd for odd in user_number if odd % 2 != 0]
+zero = [zero for zero in user_number if zero == 0]
+print(f"even {len(even)} : {even}\nodd {len(odd)} : {odd}\nzero {len(zero)} : {zero}")
+```
+<br />
+
+---
+
+
+
+
+
 
 <!-- 
 **``**. 

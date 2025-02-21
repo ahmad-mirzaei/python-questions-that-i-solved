@@ -1570,3 +1570,17 @@ print(counter)
 <br />
 
 ---
+
+**`74`**. Write a program that receives a natural number NN and determines how many of its digits are even, how many are odd, and how many are zero.
+<br />
+
+```python
+user_number = [int(i) for i in input("Enter Number : ")]
+even = [even for even in user_number if even % 2 == 0]
+odd = [odd for odd in user_number if odd % 2 != 0]
+zero = [zero for zero in user_number if zero == 0]
+print(f"even {len(even)} : {even}\nodd {len(odd)} : {odd}\nzero {len(zero)} : {zero}")
+```
+<br />
+
+---
