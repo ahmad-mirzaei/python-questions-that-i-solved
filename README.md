@@ -1817,3 +1817,20 @@ for i in range(99, 10, -2):
 <br />
 
 ---
+
+**`87`**. Write a program that prints all two-digit odd numbers in descending order. If both digits of a number are the same and odd, store them in a list instead of printing, and display the list at the end.
+<br />
+
+```python
+lst = []
+for i in range(99, 10, -2):
+    if str(i)[0] == str(i)[1]:
+        lst.append(i)
+        continue
+    print(i, end = " ")
+print()
+print(lst)
+```
+<br />
+
+---
