@@ -1858,6 +1858,37 @@ print(star_number * "* ")
 
 ---
 
+**`89`**.  برنامه ای بنویسید که مجموع، ماکسیمم، مینیمم، میانگین تعدادی عدد را محاسبه و چاپ کند.
+ورودی ها:
+ورودی ها شامل تعداد نامشخصی عدد صحیح یا اعشاری است که در سطر های جداگانه داده میشوند.
+ورودی گرفتن تا زمانی که کلمه `Done` وارد نشده باشد، ادامه خواهد داشت.
+<br />
+
+خروجی:
+خروجی برنامه دارای چهار سطر بوده که هر سطر به ترتیب مجموع، ماکسیمم، مینیمم و میانگین اعداد ورودی را نشان میدهد.
+<br />
+
+```python
+userInput = []
+numbers = []
+while True:
+    # Take input and append it to userInput variable
+    userInput.append(input(("Enter Your Number : ")))
+    if "Done" in userInput:
+        # Pop() the last input from the variable before breaking
+        userInput.pop()
+        break
+# Convert strings to numbers with the eval() function
+for i in userInput:
+    numbers.append(eval(i))
+print(f"sum is : {sum(numbers)}")
+print(f"max is : {max(numbers)}")
+print(f"min is : {min(numbers)}")
+print(f"avrage is : {sum(numbers)/len(numbers)}")
+```
+<br />
+
+---
 
 
 <!-- 

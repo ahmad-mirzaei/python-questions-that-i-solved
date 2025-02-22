@@ -1845,3 +1845,36 @@ print(star_number * "* ")
 <br />
 
 ---
+
+**`89`**. Write a program that:  
+
+- Takes an unspecified number of integer or floating-point inputs, each on a separate line.  
+- Continues taking inputs until the word `"Done"` is entered.  
+- Outputs four lines displaying, in order:  
+  1. The sum of the entered numbers.  
+  2. The maximum number.  
+  3. The minimum number.  
+  4. The average of the numbers.
+<br />
+
+```python
+userInput = []
+numbers = []
+while True:
+    # Take input and append it to userInput variable
+    userInput.append(input(("Enter Your Number : ")))
+    if "Done" in userInput:
+        # Pop() the last input from the variable before breaking
+        userInput.pop()
+        break
+# Convert strings to numbers with the eval() function
+for i in userInput:
+    numbers.append(eval(i))
+print(f"sum is : {sum(numbers)}")
+print(f"max is : {max(numbers)}")
+print(f"min is : {min(numbers)}")
+print(f"avrage is : {sum(numbers)/len(numbers)}")
+```
+<br />
+
+---
