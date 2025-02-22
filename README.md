@@ -31,6 +31,8 @@ __If you have more questions or would like to suggest better solutions, I’d be
 
 ---
 
+<a id="go-to-the-question-list"></a>
+
 ## ✍️ I have categorized the questions so that you have better access to both the questions and the index.
 | 1-50 | 55-100|  |  |  |  |  |  |  |  |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
@@ -82,6 +84,8 @@ for student in nested_dictionaries:
     print()
 ```
 <br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
 
@@ -224,6 +228,8 @@ get_number(list_of_numbers)
 min_and_max()
 ```
 <br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
 
@@ -420,8 +426,9 @@ while (i <= user_number):
 ```
 <br />
 
----
+[list of questions](#go-to-the-question-list)👆
 
+---
 
 **`11`**. Write a program that takes two positive integers, a and b, as input, then raises a to the power of b and prints the result.
 <br />
@@ -578,6 +585,8 @@ print(mySet)
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`16`**. Write a `for` loop that takes numbers as input and stores them in a list. The loop should stop (using `break`) when the sum of the numbers exceeds 50.
@@ -673,6 +682,8 @@ print("YES") if number[0] * number[3] == number[1] + number[2] else print("NO")
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`21`**. Write a program that reads a three-digit number. If the sum of the first and third digits equals the second digit, print `Yes`; otherwise, print `No`.
@@ -746,6 +757,8 @@ print("Finish")
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`26`**. Write a program that takes two two-digit numbers and determines whether they share any common digits.
@@ -818,6 +831,8 @@ print(f"min is : {min(lst)}")
 print(f"sum is : {sum(lst)}")
 ```
 <br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
 
@@ -905,6 +920,8 @@ except ValueError as error:
     print(error)
 ```
 <br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
 
@@ -1008,6 +1025,8 @@ print(f"x : {x} and y: {y}")
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`41`**. Write a program that displays the numbers between two given numbers.
@@ -1085,6 +1104,8 @@ print(f"area is : {area}\nperimeter is : {perimeter}")
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`46`**. Write a program that takes two numbers. If both of them are divisible by 3 or both are divisible by 7, print "Yes"; otherwise, print "No".
@@ -1159,6 +1180,8 @@ print("cartons : ", numberOfCans // 6,"\n\
 Remnants : ", numberOfCans%6)
 ```
 <br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
 
@@ -1252,6 +1275,8 @@ print("number is Even!!") if n %2 == 0 else print("number is Odd!!")
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`56`**. Write a program that takes the radius of a circle as input, calculates its area and circumference, and prints the results.
@@ -1335,6 +1360,8 @@ yourDays = (day*1440)
 print("you have lived","[",yourYears+yourMounths+yourDays,"]","minutes so far!!!")
 ```
 <br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
 
@@ -1437,6 +1464,8 @@ print(f"packs : {books//4} and left over : {books % 4}")
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`66`**. Write a program that takes a number as input, calculates its factorial, and prints the result.
@@ -1536,6 +1565,8 @@ except ZeroDivisionError as error:
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`71`**. Write a program that prints the following pattern:
@@ -1633,6 +1664,8 @@ print(f"even numbers : {even_list}")
 print(f"odd numbers : {odd_list}")
 ```
 <br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
 
@@ -1735,6 +1768,8 @@ for i in name_list:
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`81`**. Write a program that defines a function accepting a variable number of inputs; the inputs must be tuples and contain strings. The function should then check for palindromic strings and print those that are palindromes.
@@ -1832,6 +1867,8 @@ for i in l2:
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`86`**. Write a program that prints all two-digit odd numbers in descending order.
@@ -1924,5 +1961,7 @@ print(f"For Three : {three}")
 print(f"For Five : {five}")
 ```
 <br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
