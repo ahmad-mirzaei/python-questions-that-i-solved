@@ -1773,6 +1773,27 @@ print(l2)
 
 ---
 
+**`84`**. برنامه ای بنویسید که تعداد اضلاع را دریافت کند و در نتیجه مجموع زوایای داخلی آن را چاپ کند.  
+**Input:**  
+`12`  
+**Output:**  
+`1800`  
+
+**Input:**  
+`4`  
+**Output:**  
+`360`
+<br />
+
+```python
+number_of_sides = int(input("Enter the number of sides : "))
+internal_sides = 180 * (number_of_sides - 2)
+print(internal_sides)
+```
+<br />
+
+---
+
 
 
 

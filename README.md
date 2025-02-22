@@ -1760,3 +1760,24 @@ print(l2)
 <br />
 
 ---
+
+**`84`**.  Write a program that takes the number of sides as input and prints the sum of its interior angles.
+**Input:**  
+`12`  
+**Output:**  
+`1800`  
+
+**Input:**  
+`4`  
+**Output:**  
+`360`
+<br />
+
+```python
+number_of_sides = int(input("Enter the number of sides : "))
+internal_sides = 180 * (number_of_sides - 2)
+print(internal_sides)
+```
+<br />
+
+---
