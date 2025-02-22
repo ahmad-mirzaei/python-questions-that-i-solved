@@ -31,7 +31,8 @@ __If you have more questions or would like to suggest better solutions, I’d be
 
 ---
 
-|  Easier access to the questions.  |
+## Easier access to the questions.
+|||||||||||
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | [1](#1) |  |  |  |  |  |  |  |  |  |
 | [5](#5) |  |  |  |  |  |  |  |  |  |
