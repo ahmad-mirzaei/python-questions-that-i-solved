@@ -1758,6 +1758,20 @@ print(sorted([eval(input(f"{x}. Enter number : ")) for x in range(1, 5+1)]))
 
 ---
 
+**`83`**. برنامه ای بنویسید که یک آرایه ی دو بعدی را به یک آرایه ی یک بعدی تبدیل کند.
+<br />
+
+```python
+l1 = [[1, 2, 3], [5, 6, 7]]
+l2 = []
+for i in l1:
+    for j in i:
+        l2.append(j)
+print(l2)
+```
+<br />
+
+---
 
 
 
