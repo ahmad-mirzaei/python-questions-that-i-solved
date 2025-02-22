@@ -32,6 +32,8 @@ __اگر سوالات بیشتری دارید یا می‌خواهید راه‌
 
 ---
 
+<a id="go-to-the-question-list"></a>
+
 ## ✍️ سوالات را تقسیم بندی کرده ام که هم به سوالات و هم به فهرست دسترسی بهتری داشته باشید.
 | 1-50 | 55-100|  |  |  |  |  |  |  |  |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
@@ -83,6 +85,8 @@ for student in nested_dictionaries:
     print()
 ```
 <br />
+
+👆[برو به فهرست](#go-to-the-question-list)
 
 ---
 
@@ -225,6 +229,8 @@ get_number(list_of_numbers)
 min_and_max()
 ```
 <br />
+
+👆[برو به فهرست](#go-to-the-question-list)
 
 ---
 
@@ -421,6 +427,8 @@ while (i <= user_number):
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`11`**. برنامه ای بنویسید که دو عدد صحیح و مثبت a و b را از ورودی گرفته و سپس عدد a را به توان عدد b رسانده و نتیجه را چاپ کند.
@@ -573,6 +581,8 @@ print(mySet)
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`16`**. یک حلقه ی for بنویسید که در آن از ورودی اعدادی دریافت کند و درون یک لیست قرار دهد و هر زمان مجموع آن اعداد بیشتر از 50 شد، break کرده و برنامه را متوقف کند.
@@ -670,6 +680,8 @@ print("YES") if number[0] * number[3] == number[1] + number[2] else print("NO")
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`21`**.  برنامه ای‌ که‌ یک‌ عدد‌ ‌سه‌ رقمی‌ را‌ خوانده،‌ اگر‌ مجموع‌ رقم های‌ اول‌ و‌ سوم‌ برابر‌ رقم‌
@@ -746,6 +758,8 @@ print("Finish")
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`26`**. برنامه ای بنویسید که دو عدد دو رقمی بگیرد و بگوید آیا هیچ رقم مشابهی بین دو عدد وجود دارد یا خیر؟
@@ -819,6 +833,8 @@ print(f"min is : {min(lst)}")
 print(f"sum is : {sum(lst)}")
 ```
 <br />
+
+👆[برو به فهرست](#go-to-the-question-list)
 
 ---
 
@@ -906,6 +922,8 @@ except ValueError as error:
     print(error)
 ```
 <br />
+
+👆[برو به فهرست](#go-to-the-question-list)
 
 ---
 
@@ -1009,6 +1027,8 @@ print(f"x : {x} and y: {y}")
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`41`**. برنامه ای بنویسید که اعداد بین دو عدد را نمایش دهد.
@@ -1086,6 +1106,8 @@ print(f"area is : {area}\nperimeter is : {perimeter}")
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`46`**. برنامه ای بنویسید که دو عدد بگیرد، اگر هر دو آنها بر ۳ و یا هر دو آنها بر ۷ بخش پذیر بودند پیغام “Yes” وگرنه پیغام “No” دهد.
@@ -1161,6 +1183,8 @@ print("cartons : ", numberOfCans // 6,"\n\
 Remnants : ", numberOfCans%6)
 ```
 <br />
+
+👆[برو به فهرست](#go-to-the-question-list)
 
 ---
 
@@ -1254,6 +1278,8 @@ print("number is Even!!") if n %2 == 0 else print("number is Odd!!")
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`56`**. برنامه ای بنویسید که شعاع یک دایره را از ورودی دریافت کرده و مساحت و محیط آن دایره را
@@ -1338,6 +1364,8 @@ yourDays = (day*1440)
 print("you have lived","[",yourYears+yourMounths+yourDays,"]","minutes so far!!!")
 ```
 <br />
+
+👆[برو به فهرست](#go-to-the-question-list)
 
 ---
 
@@ -1446,6 +1474,8 @@ print(f"packs : {books//4} and left over : {books % 4}")
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`66`**. برنامه ای بنویسید که یک عدد از ورودی بگیرد و فاکتوریل آن را به محاسبه و به خروجی ببرد.
@@ -1546,6 +1576,8 @@ except ZeroDivisionError as error:
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`71`**. برنامه ای که شکل زیر را درخروجی نمایش دهد:
@@ -1645,6 +1677,8 @@ print(f"even numbers : {even_list}")
 print(f"odd numbers : {odd_list}")
 ```
 <br />
+
+👆[برو به فهرست](#go-to-the-question-list)
 
 ---
 
@@ -1748,6 +1782,8 @@ for i in name_list:
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`81`**. برنامه ای بنویسید که در یک تابع به تعداد دلخواه ورودی بگیرد؛ ورودی باید از نوع داده ای  تاپل و به صورت رشته باشند و سپس ورودی هایی که پالیندرم هستند را به خروجی ببرد.
@@ -1845,6 +1881,8 @@ for i in l2:
 ```
 <br />
 
+👆[برو به فهرست](#go-to-the-question-list)
+
 ---
 
 **`86`**. برنامه ای بنویسید که اعداد فرد دو رقمی را به صورت نزولی به خروجی ببرد.
@@ -1936,6 +1974,8 @@ print(f"For Three : {three}")
 print(f"For Five : {five}")
 ```
 <br />
+
+👆[برو به فهرست](#go-to-the-question-list)
 
 ---
 
