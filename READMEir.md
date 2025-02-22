@@ -1731,6 +1731,32 @@ palindrome("level", "darsman", "madam", "python", "kayak")
 
 ---
 
+**`82`**. برنامه ای بنویسید که به تعداد دلخواه ورودی عددی بگیرد و سپس آنها را مرتب شده به خروجی ببرد.
+<br />
+
+```python
+# # step 1
+def sort_numbers():
+    numbers = []
+    for num in range(5):
+        numbers.append(int((input("Enter Your Number : "))))
+    return sorted(numbers)
+print(sort_numbers())
+
+# # step 2
+def sort_numbers(*n):
+    n = list(n)
+    n = sorted(n)
+    n = tuple(n)
+    return n
+print(sort_numbers(2, 5, 7, 9, 10, 44, 3, 22))
+
+# # step 3
+print(sorted([eval(input(f"{x}. Enter number : ")) for x in range(1, 5+1)]))
+```
+<br />
+
+---
 
 
 
