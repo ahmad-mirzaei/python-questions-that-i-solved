@@ -1794,6 +1794,23 @@ print(internal_sides)
 
 ---
 
+**`85`**. برنامه ای بنویسید که یک لیست از اعداد را بگیرد و سپس سه تا سه تا بررسی کند که مجموع کدام سه عدد برابر با عدد 30 می شود و سپس آنها را به خروجی ببرد.
+<br />
+
+```python
+import itertools
+l1 = []
+user_input = int(input("How many numbers does your list have? "))
+for i in range(user_input):
+    l1.append(int(input("Enter Your Numbers : ")))
+l2 = list(itertools.combinations(l1, 3))
+for i in l2:
+        if sum(i) == 30:
+            print(f"{i} : sum : {sum(i)}")
+```
+<br />
+
+---
 
 
 

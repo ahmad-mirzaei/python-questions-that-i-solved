@@ -1781,3 +1781,21 @@ print(internal_sides)
 <br />
 
 ---
+
+**`85`**. Write a program that takes a list of numbers, checks all possible triplets, and prints the ones whose sum equals 30.
+<br />
+
+```python
+import itertools
+l1 = []
+user_input = int(input("How many numbers does your list have? "))
+for i in range(user_input):
+    l1.append(int(input("Enter Your Numbers : ")))
+l2 = list(itertools.combinations(l1, 3))
+for i in l2:
+        if sum(i) == 30:
+            print(f"{i} : sum : {sum(i)}")
+```
+<br />
+
+---
