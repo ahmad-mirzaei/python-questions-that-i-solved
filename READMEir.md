@@ -1890,6 +1890,18 @@ print(f"avrage is : {sum(numbers)/len(numbers)}")
 
 ---
 
+**`90`**. برنامه ای بنویسید که مضارب سه رقمی عدد ۳ و ۵ را چاپ کند
+<br />
+
+```python
+three = [i for i in range(1000) if i % 3 == 0]
+five = [i for i in range(1000) if i % 5 == 0]
+print(f"For Three : {three}")
+print(f"For Five : {five}")
+```
+<br />
+
+---
 
 <!-- 
 **``**. 

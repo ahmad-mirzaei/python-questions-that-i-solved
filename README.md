@@ -1878,3 +1878,16 @@ print(f"avrage is : {sum(numbers)/len(numbers)}")
 <br />
 
 ---
+
+**`90`**. Write a program that prints the three-digit multiples of both 3 and 5.
+<br />
+
+```python
+three = [i for i in range(1000) if i % 3 == 0]
+five = [i for i in range(1000) if i % 5 == 0]
+print(f"For Three : {three}")
+print(f"For Five : {five}")
+```
+<br />
+
+---
