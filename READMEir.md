@@ -1716,6 +1716,29 @@ for i in name_list:
 
 ---
 
+**`81`**. برنامه ای بنویسید که در یک تابع به تعداد دلخواه ورودی بگیرد؛ ورودی باید از نوع داده ای  تاپل و به صورت رشته باشند و سپس ورودی هایی که پالیندرم هستند را به خروجی ببرد.
+<br />
+
+```python
+def palindrome(*tu):
+    for i in tu:
+        if i == i[::-1]:
+            print(f"palindrome worlds : {i}")
+            print(type(tu))
+palindrome("level", "darsman", "madam", "python", "kayak")
+```
+<br />
+
+---
+
+
+
+
+
+
+
+
+
 
 <!-- 
 **``**. 

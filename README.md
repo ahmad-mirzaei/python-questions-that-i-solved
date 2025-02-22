@@ -1703,3 +1703,18 @@ for i in name_list:
 <br />
 
 ---
+
+**`81`**. Write a program that defines a function accepting a variable number of inputs; the inputs must be tuples and contain strings. The function should then check for palindromic strings and print those that are palindromes.
+<br />
+
+```python
+def palindrome(*tu):
+    for i in tu:
+        if i == i[::-1]:
+            print(f"palindrome worlds : {i}")
+            print(type(tu))
+palindrome("level", "darsman", "madam", "python", "kayak")
+```
+<br />
+
+---
