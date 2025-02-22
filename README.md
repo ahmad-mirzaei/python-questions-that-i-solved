@@ -1799,3 +1799,21 @@ for i in l2:
 <br />
 
 ---
+
+**`86`**. Write a program that prints all two-digit odd numbers in descending order.
+<br />
+
+```python
+# step 1
+i = 101
+while i >= 2:
+    i-=2
+    print(i, end=' ')
+
+# step 2
+for i in range(99, 10, -2):
+    print(i, end = " ")
+```
+<br />
+
+---
