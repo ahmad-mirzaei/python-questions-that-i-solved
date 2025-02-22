@@ -1847,6 +1847,16 @@ print(lst)
 
 ---
 
+**`88`**. برنامه ای بنویسید که از ورودی یک عدد بگیرد و به تعداد آن عدد ستاره چاپ.
+<br />
+
+```python
+star_number = int(input("Please Enter Yur Number : "))
+print(star_number * "* ")
+```
+<br />
+
+---
 
 
 

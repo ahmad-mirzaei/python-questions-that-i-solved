@@ -1834,3 +1834,14 @@ print(lst)
 <br />
 
 ---
+
+**`88`**. Write a program that takes a number as input and prints that many stars (`*`).
+<br />
+
+```python
+star_number = int(input("Please Enter Yur Number : "))
+print(star_number * "* ")
+```
+<br />
+
+---
