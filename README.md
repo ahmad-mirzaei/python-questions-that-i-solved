@@ -31,14 +31,13 @@ __If you have more questions or would like to suggest better solutions, I’d be
 
 ---
 
-## Easier access to the questions.
-|||||||||||
+## ✍️ I have categorized the questions so that you have better access to both the questions and the index.
+| 1-50 | 55-100|||||||||
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | [1](#1) |  |  |  |  |  |  |  |  |  |
 | [5](#5) |  |  |  |  |  |  |  |  |  |
 | [10](#10) |  |  |  |  |  |  |  |  |  |
 | [15](#15) |  |  |  |  |  |  |  |  |  |
-| [20](#20) |  |  |  |  |  |  |  |  |  |
 | [20](#20) |  |  |  |  |  |  |  |  |  |
 | [25](#25) |  |  |  |  |  |  |  |  |  |
 | [30](#30) |  |  |  |  |  |  |  |  |  |
@@ -47,6 +46,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [45](#45) |  |  |  |  |  |  |  |  |  |
 | [50](#50) |  |  |  |  |  |  |  |  |  |
 
+---
 
 ## ❓ Questions
 
