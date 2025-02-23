@@ -44,7 +44,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [25](#25) | [80](#80) |  |  |  |  |  |  |  |  |
 | [30](#30) | [85](#85) |  |  |  |  |  |  |  |  |
 | [35](#35) | [90](#90) |  |  |  |  |  |  |  |  |
-| [40](#40) |  |  |  |  |  |  |  |  |  |
+| [40](#40) | [95](#95) |  |  |  |  |  |  |  |  |
 | [45](#45) |  |  |  |  |  |  |  |  |  |
 | [50](#50) |  |  |  |  |  |  |  |  |  |
 
@@ -2031,6 +2031,33 @@ for i in range(numberOfLessons):
     totalScores += (score * unit)
     theUnit += unit
 print("Your Average Is : ",totalScores / theUnit)
+```
+<br />
+
+---
+
+## <a id="95"></a>
+**`95`**. Write a program that takes the user's birth year and the current year as input and calculates how many years, months, days, hours, minutes, and seconds they have lived.
+<br />
+
+```python
+from datetime import date
+yearOfBirth = int(input("In What Year Were You Born? "))
+toDay = date.today()
+yourAgeInYears = toDay.year - yearOfBirth
+yourAgeInMonths = yourAgeInYears * 12
+yourAgeInWeeks = ((yourAgeInMonths * 30) // 7)
+yourAgeInDay = yourAgeInMonths * 30
+yourAgeInHours = yourAgeInDay * 24
+yourAgeInMinutes = yourAgeInHours * 60
+yourAgeInSeconds = yourAgeInMinutes * 60
+print(f"your Age In Years {yourAgeInYears}")
+print(f"your Age In Months {yourAgeInMonths}")
+print(f"your Age In Weeks {yourAgeInWeeks}")
+print(f"your Age In Day {yourAgeInDay}")
+print(f"your Age In Hours {yourAgeInHours}")
+print(f"your age in minutes {yourAgeInMinutes}")
+print(f"your Age In Seconds {yourAgeInSeconds}")
 ```
 <br />
 

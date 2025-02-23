@@ -45,7 +45,7 @@ __اگر سوالات بیشتری دارید یا می‌خواهید راه‌
 | [25](#25) | [80](#80) |  |  |  |  |  |  |  |  |
 | [30](#30) | [85](#85) |  |  |  |  |  |  |  |  |
 | [35](#35) | [90](#90) |  |  |  |  |  |  |  |  |
-| [40](#40) |  |  |  |  |  |  |  |  |  |
+| [40](#40) | [95](#95) |  |  |  |  |  |  |  |  |
 | [45](#45) |  |  |  |  |  |  |  |  |  |
 | [50](#50) |  |  |  |  |  |  |  |  |  |
 
@@ -2049,6 +2049,34 @@ print("Your Average Is : ",totalScores / theUnit)
 
 ---
 
+## <a id="95"></a>
+**`95`**.  برنامه ای که سال تولد کاربر و سال فعلی را از ورودی خوانده و مشخص
+می کند چند سال، چند ماه، چند روز، چند ساعت، چند دقیقه و چند
+ثانیه عمر کرده است.
+<br />
+
+```python
+from datetime import date
+yearOfBirth = int(input("In What Year Were You Born? "))
+toDay = date.today()
+yourAgeInYears = toDay.year - yearOfBirth
+yourAgeInMonths = yourAgeInYears * 12
+yourAgeInWeeks = ((yourAgeInMonths * 30) // 7)
+yourAgeInDay = yourAgeInMonths * 30
+yourAgeInHours = yourAgeInDay * 24
+yourAgeInMinutes = yourAgeInHours * 60
+yourAgeInSeconds = yourAgeInMinutes * 60
+print(f"your Age In Years {yourAgeInYears}")
+print(f"your Age In Months {yourAgeInMonths}")
+print(f"your Age In Weeks {yourAgeInWeeks}")
+print(f"your Age In Day {yourAgeInDay}")
+print(f"your Age In Hours {yourAgeInHours}")
+print(f"your age in minutes {yourAgeInMinutes}")
+print(f"your Age In Seconds {yourAgeInSeconds}")
+```
+<br />
+
+---
 
 
 
