@@ -2029,6 +2029,25 @@ for num in range(x, y - 1):
 
 ---
 
+**`94`**. برنامه ای بنویسید که در ابتدا تعداد درس های یک دانشجو و تعداد واحد هر درس و نمره هر درس را دریافت نماید و معدل دانشجو را محاسبه کند.
+<br />
+
+```python
+numberOfLessons = int(input("Enter the number of lessons : "))
+nameOfCourse = []
+totalScores = 0
+theUnit = 0
+for i in range(numberOfLessons):
+    nameOfCourse.append(input("Enter Name Of Course : "))
+    score = float(input("Enter The Score : "))
+    unit = int(input("Enter The Unit : "))
+    totalScores += (score * unit)
+    theUnit += unit
+print("Your Average Is : ",totalScores / theUnit)
+```
+<br />
+
+---
 
 
 

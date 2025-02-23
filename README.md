@@ -2015,3 +2015,23 @@ for num in range(x, y - 1):
 <br />
 
 ---
+
+**`94`**. Write a program that first takes the number of courses a student has, then receives the credit hours and grade for each course, and finally calculates the student's GPA.
+<br />
+
+```python
+numberOfLessons = int(input("Enter the number of lessons : "))
+nameOfCourse = []
+totalScores = 0
+theUnit = 0
+for i in range(numberOfLessons):
+    nameOfCourse.append(input("Enter Name Of Course : "))
+    score = float(input("Enter The Score : "))
+    unit = int(input("Enter The Unit : "))
+    totalScores += (score * unit)
+    theUnit += unit
+print("Your Average Is : ",totalScores / theUnit)
+```
+<br />
+
+---
