@@ -2007,6 +2007,27 @@ print(num)
 
 ---
 
+**`93`**. برنامه ای بنویسید که  دو عدد از ورودی بگیرد و دنباله ی فیبوناچی را از عدد اول تا عدد دوم به خروجی ببرد.
+<br />
+
+```python
+count = 2
+x = int(input("from the number : "))
+y = int(input("up to the number : "))
+i = 0
+j = 1
+print(i)
+print(j)
+for num in range(x, y - 1):
+    fibo = i + j
+    print(fibo)
+    i = j
+    j = fibo
+    count += 1
+```
+<br />
+
+---
 
 
 

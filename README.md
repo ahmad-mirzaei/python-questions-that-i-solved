@@ -1993,3 +1993,25 @@ print(num)
 <br />
 
 ---
+
+**`93`**. Write a program that takes two numbers as input and prints the Fibonacci sequence from the first number to the second number.
+<br />
+
+```python
+count = 2
+x = int(input("from the number : "))
+y = int(input("up to the number : "))
+i = 0
+j = 1
+print(i)
+print(j)
+for num in range(x, y - 1):
+    fibo = i + j
+    print(fibo)
+    i = j
+    j = fibo
+    count += 1
+```
+<br />
+
+---
