@@ -2078,6 +2078,44 @@ print(f"your Age In Seconds {yourAgeInSeconds}")
 
 ---
 
+**`96`**. مریم دختر اقتصادی هست او میخواد هزینه پیامک های خود راحساب کند
+
+طبف تعرفه اپراتوری که مریم از ان استفاده میکند هزینه اولبه هر پیامک ۱۰۰ ریال میباشد و به ازای هر ۲۴ کاراکتر انگلیسی ورودی ۲۷۴ ریال هم به هزینه اش اضافه میشود (محاسبه هزینه ۲۴ کاراکتر به این صورت است که هزینه روبه پایین گرد میشود  یعنی اگر ۲۳ کاراکتر باشد هزینه ان بخشوده میشود
+
+ورودی این برنامه  متنی است که مریم میخواهد پیامک کند
+
+و خروجی این برامه هرینه نهایی این پیامک هست که برحسب تومان و به اعشاری میباشد
+
+مثال
+
+ورودی
+
+slm bbkhshid shoma?
+
+خروجی
+
+۱۰٫۰
+<br />
+
+```python
+from math import floor
+initialCost = 100
+costPerSubsequentCharacters = 274
+sms = input('Enter Your Massage : ')
+smsList = list(sms)
+chrList = []
+
+for chr in smsList:
+    if chr.isalpha():
+        chrList.append(chr)
+
+smsCost = (100 + floor(len(chrList) // 24) * 274) // 10
+print(f"The Characters Of This Message : {len(chrList)}")
+print(f"The Final Cost Is : {smsCost} Tooman")
+```
+<br />
+
+---
 
 
 

@@ -2062,3 +2062,48 @@ print(f"your Age In Seconds {yourAgeInSeconds}")
 <br />
 
 ---
+
+**`96`**. Maryam is an economical girl who wants to calculate the cost of her SMS messages.
+
+According to the tariff of the operator she uses:
+
+    The base cost of each SMS is 100 Rials.
+    For every 24 English characters, an additional 274 Rials is added.
+    If the character count for an additional charge is less than 24, the cost is waived (rounded down).
+
+Input:
+A text message that Maryam wants to send.
+
+Output:
+The final cost of the SMS in Tomans, displayed as a decimal number.
+
+Example:
+
+Input:
+
+slm bbkhshid shoma?
+
+Output:
+
+10.0
+<br />
+
+```python
+from math import floor
+initialCost = 100
+costPerSubsequentCharacters = 274
+sms = input('Enter Your Massage : ')
+smsList = list(sms)
+chrList = []
+
+for chr in smsList:
+    if chr.isalpha():
+        chrList.append(chr)
+
+smsCost = (100 + floor(len(chrList) // 24) * 274) // 10
+print(f"The Characters Of This Message : {len(chrList)}")
+print(f"The Final Cost Is : {smsCost} Tooman")
+```
+<br />
+
+---
