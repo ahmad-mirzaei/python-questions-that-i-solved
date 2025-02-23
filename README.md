@@ -1965,3 +1965,20 @@ print(f"For Five : {five}")
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`91`**. Write a program that takes two numbers from the user and performs addition, subtraction, multiplication, and division on them.
+<br />
+
+```python
+def calculator(x, y):
+	print(f"Total is : {x + y}")
+	print(f"Subtraction is : {x - y}")
+	print(f"Multiplication is : {x * y}")
+	print(f"Division is : {x / y}")
+x = eval(input("Enter x : "))
+y = eval(input("Enter y : "))
+calculator(x, y)
+```
+<br />
+
+---

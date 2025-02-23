@@ -1979,6 +1979,32 @@ print(f"For Five : {five}")
 
 ---
 
+**`91`**. برنامه ای بنویسید که ۲ عدد از کاربر بگیرد و ۲ عدد را : جمع، تفریق، ضرب و تقسیم کند.
+<br />
+
+```python
+def calculator(x, y):
+	print(f"Total is : {x + y}")
+	print(f"Subtraction is : {x - y}")
+	print(f"Multiplication is : {x * y}")
+	print(f"Division is : {x / y}")
+x = eval(input("Enter x : "))
+y = eval(input("Enter y : "))
+calculator(x, y)
+```
+<br />
+
+---
+
+
+
+
+
+
+
+
+
+
 <!-- 
 **``**. 
 <br />
