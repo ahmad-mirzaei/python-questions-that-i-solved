@@ -1982,3 +1982,14 @@ calculator(x, y)
 <br />
 
 ---
+
+**`92`**. Write a program that takes a string expression like `45+23` as input and performs the calculation based on the operator in the expression (operators include `+`, `-`, `*`, `/`).
+<br />
+
+```python
+num = eval(input("Enter Number --> for example --> 23 + 45 : "))
+print(num)
+```
+<br />
+
+---
