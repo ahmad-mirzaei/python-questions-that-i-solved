@@ -2109,3 +2109,30 @@ print(f"The Final Cost Is : {smsCost} Tooman")
 <br />
 
 ---
+
+**`97`**. Define a class for the geometric shape of a rectangle, with two methods to calculate its perimeter and area.
+<br />
+
+```python
+class Rectangle:
+    def __init__(self, length, width):
+        self.lemgth = length
+        self.width = width
+    
+    def parimeter(self):
+        return 2 * (self.lemgth + self.width)
+    
+    def area(self):
+        return self.lemgth * self.width
+
+length = int(input("enter length : "))
+width = int(input("enter width : "))
+
+rect = Rectangle(length, width)
+
+print(f"parimeter : {rect.parimeter()}")
+print(f"area : {rect.area()}")
+```
+<br />
+
+---
