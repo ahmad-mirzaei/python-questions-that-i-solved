@@ -2147,7 +2147,7 @@ avg = sum(num_list) / len(num_list)
 
 print(f"avg is : {avg}")
 
-if 17<avg<=20:   
+if 17 < avg <= 20:   
     print('Ecellent')
 elif 15 < avg <= 17:
     print('Medium')
@@ -2165,6 +2165,7 @@ elif avg <= 10:
 
 ```python
 def func_name(x = 0, y = 0, z = 0):
+    # if statements
         return x + y + z
 
 print(func_name(2, 4, 6))
