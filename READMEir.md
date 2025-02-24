@@ -2170,6 +2170,21 @@ elif avg <= 10:
 
 ---
 
+**`99`**. یک تابع بنویسید که چند ریختی باشد و نهایتا 3 آرگومات بتوان در آن وارد کرد.
+<br />
+
+```python
+def func_name(x = 0, y = 0, z = 0):
+        return x + y + z
+
+print(func_name(2, 4, 6))
+print(func_name(2, 4))
+print(func_name(2))
+print(func_name())
+```
+<br />
+
+---
 
 
 <!-- 
