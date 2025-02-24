@@ -2061,6 +2061,8 @@ print(f"your Age In Seconds {yourAgeInSeconds}")
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
 ---
 
 **`96`**. Maryam is an economical girl who wants to calculate the cost of her SMS messages.
