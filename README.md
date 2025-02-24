@@ -2194,3 +2194,21 @@ student_avg(score)
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`101`**. Write a program that takes the grades of ten students and indicates which ones passed and which ones failed. The passing grade is above 10.
+<br />
+
+```python
+studentInfo = {}
+for i in range(10):
+	name =  input("Enter the student's name : ")
+	score = int(input("Enter the student's Score : "))
+	studentInfo[name] = score
+acceptedStudents = [x for x in studentInfo if studentInfo[x] >= 10]
+rejectedStudents = [x for x in studentInfo if studentInfo[x] < 10]
+print(f"Accepted students : {acceptedStudents}")
+print(f"Rejected Students : {rejectedStudents}")
+```
+<br />
+
+---
