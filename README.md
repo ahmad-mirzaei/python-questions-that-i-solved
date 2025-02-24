@@ -2212,3 +2212,20 @@ print(f"Rejected Students : {rejectedStudents}")
 <br />
 
 ---
+
+**`102`**. Write a program that reads a three-digit number from the input and prints twice its reverse in the output. Ensure that the input is definitely a three-digit number, and the output should be the number multiplied by 2.
+<br />
+
+```python
+number = input("Enter a three-digit number : ")
+if int(number) >= 100:
+    reverseNumber = int(number[::-1])
+    print(f"Reverse Number is : {reverseNumber}")
+    print(f"Reverse Number * 2 = {reverseNumber * 2}")
+else:
+	print(f"Your Number is : {number}")
+	print("Please Enter Three-Digit Number And Try Again!")
+```
+<br />
+
+---

@@ -2223,6 +2223,22 @@ print(f"Rejected Students : {rejectedStudents}")
 
 ---
 
+**`102`**. برنامه بنوسید که یک عدد سه رقمی از ورودی بخواند و دو برابر عکس آن را درخروجی چاب کند اطمینان کنید که ورودی حتما عدد سه رقمی است در خروجی عدد ضرب ۲ شود.
+<br />
+
+```python
+number = input("Enter a three-digit number : ")
+if int(number) >= 100:
+    reverseNumber = int(number[::-1])
+    print(f"Reverse Number is : {reverseNumber}")
+    print(f"Reverse Number * 2 = {reverseNumber * 2}")
+else:
+	print(f"Your Number is : {number}")
+	print("Please Enter Three-Digit Number And Try Again!")
+```
+<br />
+
+---
 
 
 
