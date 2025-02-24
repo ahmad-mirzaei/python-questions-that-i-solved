@@ -45,7 +45,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [30](#30) | [85](#85) |  |  |  |  |  |  |  |  |
 | [35](#35) | [90](#90) |  |  |  |  |  |  |  |  |
 | [40](#40) | [95](#95) |  |  |  |  |  |  |  |  |
-| [45](#45) |  |  |  |  |  |  |  |  |  |
+| [45](#45) | [100](#100) |  |  |  |  |  |  |  |  |
 | [50](#50) |  |  |  |  |  |  |  |  |  |
 
 ---
@@ -2173,5 +2173,24 @@ print(func_name(2))
 print(func_name())
 ```
 <br />
+
+---
+
+## <a id="100"></a>
+**`100`**. تابعی که نمرات ده دانش آموز را بگیرد و میانگین را محاسبه کند و کوچکترین و بزرگترین را چاپ کند.
+<br />
+
+```python
+def student_avg(n):
+    print(sum(n) / len(n))
+    print(f"Max is : {max(n)} & Min is : {min(n)}")
+score = []
+for num in range(10):
+    score.append(int(input("Enter Score : ")))
+student_avg(score)
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
