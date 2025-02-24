@@ -2146,6 +2146,29 @@ print(f"area : {rect.area()}")
 
 ---
 
+**`98`**. برنامه ای بنویسید که ۵ نمره ی یک دانشجو را از ورودی دریافت کند، معدل آن را محاسبه و چاپ کند؛
+همچنین اگر معدل آن بیشتر از ۱۷ بود پیغام `خیلی خوب`، بین ۱۵ و ۱۷ پیغام `متوسط`، بین ۱۰ و ۱۵ پیغام `بد` و کمتر از ۱۰ پیغام `خیلی بد` چاپ شود. 
+<br />
+
+```python
+num_list = [int(input(f"Enter grade {x} : ")) for x in range(1, 6)]
+
+avg = sum(num_list) / len(num_list)
+
+print(f"avg is : {avg}")
+
+if 17<avg<=20:   
+    print('Ecellent')
+elif 15 < avg <= 17:
+    print('Medium')
+elif 10 < avg <= 15:
+    print('Bad')    
+elif avg <= 10:
+    print('Very bad') 
+```
+<br />
+
+---
 
 
 

@@ -2136,3 +2136,26 @@ print(f"area : {rect.area()}")
 <br />
 
 ---
+
+**`98`**. Write a program that takes 5 grades of a student as input, calculates their average, and prints it. Additionally, if the average is greater than 17, print `Excellent`; if it is between 15 and 17, print `Good`; if it is between 10 and 15, print `Poor`; and if it is less than 10, print `Very Poor`.
+<br />
+
+```python
+num_list = [int(input(f"Enter grade {x} : ")) for x in range(1, 6)]
+
+avg = sum(num_list) / len(num_list)
+
+print(f"avg is : {avg}")
+
+if 17<avg<=20:   
+    print('Ecellent')
+elif 15 < avg <= 17:
+    print('Medium')
+elif 10 < avg <= 15:
+    print('Bad')    
+elif avg <= 10:
+    print('Very bad') 
+```
+<br />
+
+---
