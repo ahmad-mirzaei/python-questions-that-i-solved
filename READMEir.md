@@ -2241,6 +2241,21 @@ else:
 
 ---
 
+**`103`**. برنامه ای بنویسید که عددی را از کاربر بگیرد تعداد ارقام و سپس جمع ارقام را محاسبه کند.
+<br />
+
+```python
+n = input("Enter number : ")
+list_number = list(n)
+print(f"number of digits : {len(list_number)}")
+sum_num = 0
+for i in list_number:
+	sum_num += int(i)
+print(f"Sum is : {sum_num}")
+```
+<br />
+
+---
 
 
 

@@ -2230,3 +2230,20 @@ else:
 <br />
 
 ---
+
+**`103`**. Write a program that takes a number from the user, calculates the count of its digits, and then calculates the sum of its digits.
+<br />
+
+```python
+n = input("Enter number : ")
+list_number = list(n)
+print(f"number of digits : {len(list_number)}")
+sum_num = 0
+for i in list_number:
+	sum_num += int(i)
+print(f"Sum is : {sum_num}")
+```
+<br />
+
+---
+
