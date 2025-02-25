@@ -2353,6 +2353,24 @@ for i in range(input_year):
 
 ---
 
+**`108`**. برنامه ای بنویسید که تعداد روزهای بین دو تاریخ را به خروجی ببرد.
+مثال:
+روزهای بین تاریخ `2025-06-01` و `2025-06-09` برابر است با ۷ روز.
+<br />
+
+```python
+from datetime import datetime
+
+# example --> 2025-06-01 - 2025-06-09
+
+date_format = '%Y-%m-%d'
+first_day = datetime.strptime("2025-06-09", date_format)
+second_day = datetime.strptime("2025-06-01", date_format)
+print (f"days : {(first_day - second_day).days}")
+```
+<br />
+
+---
 
 
 
