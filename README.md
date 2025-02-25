@@ -46,7 +46,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [35](#35) | [90](#90) |  |  |  |  |  |  |  |  |
 | [40](#40) | [95](#95) |  |  |  |  |  |  |  |  |
 | [45](#45) | [100](#100) |  |  |  |  |  |  |  |  |
-| [50](#50) |  |  |  |  |  |  |  |  |  |
+| [50](#50) | [105](#105) |  |  |  |  |  |  |  |  |
 
 ---
 
@@ -2286,5 +2286,26 @@ for i in range(1, n + 1):
     print("\n")
 ```
 <br />
+
+---
+
+## <a id="105"></a>
+**`105`**. Write a program that takes the birth date in the Gregorian (Western) calendar as input and displays the user's age in the output.
+<br />
+
+```python
+from datetime import date
+
+your_birth = int(input("Enter the year of birth : For example : 1999 --->   "))
+date_time_now = date.today()
+i = 0
+while your_birth < date_time_now.year:
+    your_birth += 1
+    i += 1
+print(f"your age : {i}")
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
