@@ -2247,3 +2247,44 @@ print(f"Sum is : {sum_num}")
 
 ---
 
+**`104`**. Write a program that produces the following output.
+```bash
+A
+
+AB
+
+ABC
+
+ABCD
+
+ABCDE
+
+ABCDEF
+```
+<br />
+
+```python
+# step 1
+n = int(input("How many times should i move? "))
+i = 1
+temp = ""
+ch = chr(65)
+while i <= n:
+	temp += ch
+	print(temp, "\n")
+	ch = chr(65 + i)
+	i += 1
+
+# step 2
+from string import ascii_uppercase
+
+n = int(input("How many times should i move? "))
+
+for i in range(1, n + 1):
+    for j in range(i):
+        print(ascii_uppercase[j], end="")
+    print("\n")
+```
+<br />
+
+---
