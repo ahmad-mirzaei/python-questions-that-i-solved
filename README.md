@@ -2309,3 +2309,20 @@ print(f"your age : {i}")
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`106`**. Write a program that, upon receiving a positive odd number, prints the corresponding alphabet triangle.
+<br />
+
+```python
+input_number = int(input('Enter Num : '))
+if input_number % 2 == 1 and input_number > 0:
+    for i in range(input_number):
+        for j in range(i + 1):
+            print(chr(j + 97), end = " ")
+        print()
+else:
+	print(f"Enter an odd number or a number greater than zero!!! And Try Again...")
+```
+<br />
+
+---

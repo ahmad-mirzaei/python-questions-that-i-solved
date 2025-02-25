@@ -2320,6 +2320,27 @@ print(f"your age : {i}")
 
 ---
 
+**`106`**. برنامه‌ای بنویسید که با دریافت یک عدد فرد مثبت، مثلث الفبایی متناظر آن را چاپ کند.
+<br />
+
+```python
+input_number = int(input('Enter Num : '))
+if input_number % 2 == 1 and input_number > 0:
+    for i in range(input_number):
+        for j in range(i + 1):
+            print(chr(j + 97), end = " ")
+        print()
+else:
+	print(f"Enter an odd number or a number greater than zero!!! And Try Again...")
+```
+<br />
+
+---
+
+
+
+
+
 
 
 
