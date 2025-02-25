@@ -2337,6 +2337,21 @@ else:
 
 ---
 
+**`107`**. در سال ۲۰۱۳ اولین سال بعد از سال ۱۹۸۷ می باشد که رقم تکراری ندارد . از شما خواسته شده است برنامه‌ای بنویسید تا یک سال را در ورودی از کاربر بگیرد و در خروجی اولین سال بدون رقم تکراری بعد از آن را چاپ کند .
+<br />
+
+```python
+input_year = int(input(" Enter Year : "))
+listOfInputYear = list(str(input_year))
+for i in range(input_year):
+    input_year += 1
+    if len(set(str(input_year))) == 4:
+        print(input_year)
+        break
+```
+<br />
+
+---
 
 
 

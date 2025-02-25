@@ -2326,3 +2326,19 @@ else:
 <br />
 
 ---
+
+**`107`**. In 2013, the first year after 1987 that does not have repeating digits. You are asked to write a program that takes a year as input from the user and prints the first year without repeating digits after that year.
+<br />
+
+```python
+input_year = int(input(" Enter Year : "))
+listOfInputYear = list(str(input_year))
+for i in range(input_year):
+    input_year += 1
+    if len(set(str(input_year))) == 4:
+        print(input_year)
+        break
+```
+<br />
+
+---
