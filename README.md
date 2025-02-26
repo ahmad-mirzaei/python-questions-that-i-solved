@@ -2421,3 +2421,23 @@ for i in range(200, 300):
 <br />
 
 ---
+
+**`112`**. Write a program that takes an integer n as input and prints a right-angled triangle of stars in the output, where n is the number of rows in the triangle. The direction of the triangle should be like this: 📐.
+<br />
+
+```python
+# step 1
+n = int(input("Entr row : "))
+for row in range(n + 1):
+    for col in range(row):
+        print("*", end = " ")
+    print()
+
+# step 2
+n = int(input("Entr row : "))
+for row in range(n + 1):
+        print(row * "* ")
+```
+<br />
+
+---
