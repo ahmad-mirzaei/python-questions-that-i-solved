@@ -2345,7 +2345,7 @@ for i in range(input_year):
 
 **`108`**. Write a program that outputs the number of days between two dates.
 Example:
-The days between the dates `2025-06-01` and `2025-06-09` are equal to 7 days.
+The days between the dates `2025-06-01` and `2025-06-09` are equal to 8 days.
 <br />
 
 ```python
@@ -2357,6 +2357,22 @@ date_format = '%Y-%m-%d'
 first_day = datetime.strptime("2025-06-09", date_format)
 second_day = datetime.strptime("2025-06-01", date_format)
 print (f"days : {(first_day - second_day).days}")
+```
+<br />
+
+---
+
+**`109`**. Write a program that combines the elements of the two lists below into separate tuples, and the condition for output is that only values greater than 0.9 are printed.
+<br />
+
+```python
+actions = ["write", "read", "walk", "sing", "laugh", "talk", "dance", "eat", "Whistling", "clap"]
+values = [1.65227288, 1.33215619, -0.52259578, -0.67266119, 1.42021427, -0.4017421, 0.9653853, 1.09278474, 1.11503941, -0.44975633]
+
+zip_list = zip(actions, values)
+for i in zip_list:
+    if i[1] > 0.9:
+        print(i, end = " ")
 ```
 <br />
 
