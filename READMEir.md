@@ -2497,7 +2497,28 @@ print(f"Your list : {lst}")
 
 ---
 
+## <a id="115"></a>
+**`115`**. برنامه ای بنویسید که تعدادی عدد مثبت از کاربر دریافت کند و میانگین این اعداد را محاسبه کند (با کمک for و break)یعنی وقتی عدد منفی بود از حلقه خارج شود.
+<br />
 
+```python
+counter = 0
+numbers = 0
+sumNum = 0
+for i in range(1000):
+	numbers = int(input("Enter number : "))
+	if numbers < 0:
+		break
+	sumNum += numbers
+	counter += 1
+	
+print(f"avrage : {sumNum / counter}")
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
+
+---
 
 <!-- 
 **``**. 

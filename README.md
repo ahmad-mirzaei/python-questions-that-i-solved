@@ -2486,3 +2486,26 @@ print(f"Your list : {lst}")
 <br />
 
 ---
+
+## <a id="115"></a>
+**`115`**. Write a program that takes several positive numbers from the user and calculates their average (using for and break). That is, when a negative number is entered, the loop should exit.
+<br />
+
+```python
+counter = 0
+numbers = 0
+sumNum = 0
+for i in range(1000):
+	numbers = int(input("Enter number : "))
+	if numbers < 0:
+		break
+	sumNum += numbers
+	counter += 1
+	
+print(f"avrage : {sumNum / counter}")
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
+
+---
