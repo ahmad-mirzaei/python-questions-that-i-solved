@@ -2480,6 +2480,22 @@ print(numList)
 
 ---
 
+**`114`**. برنامه ای بنویسید که از ورودی انواع نوع داده ای را بگیرد و در یک لیست ذخیره کند و سپس تمامی انواع داده ای رشته ای را به خروجی ببرد.
+<br />
+
+```python
+lst = []
+for st in range(10):
+    n = input("Enter input : ")
+    if n.isalpha(): 
+        lst.append(n)
+    else:
+        continue
+print(f"Your list : {lst}")
+```
+<br />
+
+---
 
 
 
