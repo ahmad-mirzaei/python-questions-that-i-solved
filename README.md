@@ -2394,3 +2394,30 @@ print(f"Max is : {max(num_list)}\nMin is : {min(num_list)}")
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`111`**. Write a program that prints the first 10 multiples of 7 that are greater than 200.
+<br />
+
+```python
+# step 1
+i = 200
+counter = 1
+while counter <= 10:
+    i += 1
+    if i % 7 == 0:
+        print(i, end = " ")
+        counter += 1
+
+# step 2
+counter = 0
+for i in range(200, 300):
+    if counter == 10:
+        break
+    else:
+        if i % 7 == 0:
+            print(i, end = " ")
+            counter += 1
+```
+<br />
+
+---

@@ -2405,6 +2405,32 @@ print(f"Max is : {max(num_list)}\nMin is : {min(num_list)}")
 
 ---
 
+**`111`**.  برنامه ای بنویسید که 10 مضرب 7 بزرگتر از 200 را چاپ نماید.
+<br />
+
+```python
+# step 1
+i = 200
+counter = 1
+while counter <= 10:
+    i += 1
+    if i % 7 == 0:
+        print(i, end = " ")
+        counter += 1
+
+# step 2
+counter = 0
+for i in range(200, 300):
+    if counter == 10:
+        break
+    else:
+        if i % 7 == 0:
+            print(i, end = " ")
+            counter += 1
+```
+<br />
+
+---
 
 
 
