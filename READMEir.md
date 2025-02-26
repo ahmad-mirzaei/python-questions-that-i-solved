@@ -2452,6 +2452,36 @@ for row in range(n + 1):
 
 ---
 
+**`113`**. برنامه ای بنویسید که 10 عدد را بگیرد در لیست قرار دهد و از انتها به ابتدا چاپ کند.
+<br />
+
+```python
+# step 1
+def reverse_list():
+    lst = []
+    for num in range(1, 11):
+        lst.append(int(input(f"Enter numbers {num} : ")))
+    return str(lst[::-1])
+
+print(reverse_list())
+
+# step 2
+numList = []
+i = 0
+while i < 10:
+	n = int(input("Enter number : "))
+	numList.append(n)
+	i += 1
+
+numList.reverse()
+print(numList)
+```
+<br />
+
+---
+
+
+
 
 <!-- 
 **``**. 

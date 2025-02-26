@@ -2441,3 +2441,31 @@ for row in range(n + 1):
 <br />
 
 ---
+
+**`113`**. Write a program that takes 10 numbers, stores them in a list, and prints them from end to beginning.
+<br />
+
+```python
+# step 1
+def reverse_list():
+    lst = []
+    for num in range(1, 11):
+        lst.append(int(input(f"Enter numbers {num} : ")))
+    return str(lst[::-1])
+
+print(reverse_list())
+
+# step 2
+numList = []
+i = 0
+while i < 10:
+	n = int(input("Enter number : "))
+	numList.append(n)
+	i += 1
+
+numList.reverse()
+print(numList)
+```
+<br />
+
+---
