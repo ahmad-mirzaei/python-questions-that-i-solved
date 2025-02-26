@@ -2377,3 +2377,20 @@ for i in zip_list:
 <br />
 
 ---
+
+## <a id="110"></a>
+**`110`**. Write a program that takes 10 numbers from the user and finds the smallest and largest among them.
+<br />
+
+```python
+num_list = []
+n = int(input("How many numbers should I get? "))
+for num in range(1, n + 1):
+    num_list.append(int(input(f"{num}. Enter numbers : ")))
+print(f"Max is : {max(num_list)}\nMin is : {min(num_list)}")
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
+
+---

@@ -2388,6 +2388,22 @@ for i in zip_list:
 
 ---
 
+## <a id="110"></a>
+**`110`**. برنامه ای که از کاربر 10 عدد بگیرد و کمترین و بیشترین آنهارا پیدا کند.
+<br />
+
+```python
+num_list = []
+n = int(input("How many numbers should I get? "))
+for num in range(1, n + 1):
+    num_list.append(int(input(f"{num}. Enter numbers : ")))
+print(f"Max is : {max(num_list)}\nMin is : {min(num_list)}")
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
+
+---
 
 
 
