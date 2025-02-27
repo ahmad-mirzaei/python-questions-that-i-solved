@@ -2531,3 +2531,25 @@ print(sorted(set(temp_2)))
 <br />
 
 ---
+
+**`117`**. Write a program that takes a list of any size from the user, finds the largest and smallest elements, removes them from the list, and calculates the average of the remaining numbers (using a function).
+<br />
+
+```python
+def del_min_max(n):
+    numList = []
+    for num in range(1, n + 1):
+        numList.append(int(input(f"{num}. Enter numbers : ")))
+    print(f"list before del min & max --> {numList}")
+    print(f"Max is : {max(numList)}\tMin is : {min(numList)}")
+    numList.remove(max(numList))
+    numList.remove(min(numList))
+    print(f"list after del min & max --> {numList}")
+    print(f"List Avg is : {sum(numList) / len(numList)}")
+
+n = int(input("How many? "))
+del_min_max(n)
+```
+<br />
+
+---

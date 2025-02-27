@@ -2542,6 +2542,27 @@ print(sorted(set(temp_2)))
 
 ---
 
+**`117`**. برنامه ای بنویسید که یک لیست از کاربر به تعداد دلخواه گرفته بزرگترین و کوچکترین عنصر ان را پیدا کرده و ان هارا از لیست حذف کند و میانگین بقیه اعداد را به دست اورد(با استفاده از تابع).
+<br />
+
+```python
+def del_min_max(n):
+    numList = []
+    for num in range(1, n + 1):
+        numList.append(int(input(f"{num}. Enter numbers : ")))
+    print(f"list before del min & max --> {numList}")
+    print(f"Max is : {max(numList)}\tMin is : {min(numList)}")
+    numList.remove(max(numList))
+    numList.remove(min(numList))
+    print(f"list after del min & max --> {numList}")
+    print(f"List Avg is : {sum(numList) / len(numList)}")
+
+n = int(input("How many? "))
+del_min_max(n)
+```
+<br />
+
+---
 
 
 
