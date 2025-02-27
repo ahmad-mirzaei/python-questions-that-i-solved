@@ -2575,6 +2575,23 @@ print(f"mul : {number} * 2 = {number * 2}\nReverse number : {str(number * 2)[::-
 
 ---
 
+**`119`**. برنامه ای بنویسید که یک عدد سه رقمی از ورودی گرفته در صورتی که رقم پر ارزش و کم ارزش برابر باشد خود عدد در غیر این صورت معکوس عدد چاپ شود.
+<br />
+
+```python
+try:
+    number = int(input("Enter a three-digit number : "))
+except ValueError as error:
+    print(f"ValueError : {error}")
+else:
+    if str(number)[0] == str(number)[2]:
+        print(f"number : {number}")
+    else:
+        print(f"{number} ---> {str(number)[::-1]}")
+```
+<br />
+
+---
 
 
 

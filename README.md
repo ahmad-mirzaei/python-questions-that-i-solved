@@ -2554,12 +2554,30 @@ del_min_max(n)
 
 ---
 
-**`118`**. 
+**`118`**. Write a program that takes a two-digit number as input, doubles it, and then displays its reverse in the output.
 <br />
 
 ```python
 number = int(input("Entr number : "))
 print(f"mul : {number} * 2 = {number * 2}\nReverse number : {str(number * 2)[::-1]}")
+```
+<br />
+
+---
+
+**`119`**. Write a program that takes a three-digit number as input. If the most significant digit and the least significant digit are equal, print the number itself; otherwise, print the reverse of the number.
+<br />
+
+```python
+try:
+    number = int(input("Enter a three-digit number : "))
+except ValueError as error:
+    print(f"ValueError : {error}")
+else:
+    if str(number)[0] == str(number)[2]:
+        print(f"number : {number}")
+    else:
+        print(f"{number} ---> {str(number)[::-1]}")
 ```
 <br />
 
