@@ -2616,3 +2616,22 @@ print(index_list())
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`121`**. Write a function that takes a list and a number as input, adds the number to each item in the list that is a number, and then displays the list.
+<br />
+
+```python
+def sum_list(n):
+    numList = []
+    number = int(input("How many do you want? "))
+    for i in range(1, number + 1):
+        numList.append(input(f"{i}. Enter number : "))
+    for j in numList:
+        if j.isdigit():
+            print(int(j) + n, end = " ")
+
+sum_list(20)
+```
+<br />
+
+---
