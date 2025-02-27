@@ -2564,6 +2564,16 @@ del_min_max(n)
 
 ---
 
+**`118`**. برنامه ای بنویسید که یک عدد دو رقمی از ورودی بگیرد و آن را دو برابر کند و سپس معکوس آن را در خروجی نمایش بدهد.
+<br />
+
+```python
+number = int(input("Entr number : "))
+print(f"mul : {number} * 2 = {number * 2}\nReverse number : {str(number * 2)[::-1]}")
+```
+<br />
+
+---
 
 
 

@@ -2553,3 +2553,14 @@ del_min_max(n)
 <br />
 
 ---
+
+**`118`**. 
+<br />
+
+```python
+number = int(input("Entr number : "))
+print(f"mul : {number} * 2 = {number * 2}\nReverse number : {str(number * 2)[::-1]}")
+```
+<br />
+
+---
