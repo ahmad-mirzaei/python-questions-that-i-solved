@@ -38,8 +38,8 @@ __If you have more questions or would like to suggest better solutions, I’d be
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | [1](#1) | [55](#55) | [110](#110) |  |  |  |  |  |  |  |
 | [5](#5) | [60](#60) | [115](#115) |  |  |  |  |  |  |  |
-| [10](#10) | [65](#65) |  |  |  |  |  |  |  |  |
-| [15](#15) | [70](#70) |  |  |  |  |  |  |  |  |
+| [10](#10) | [65](#65) | [120](#120) |  |  |  |  |  |  |  |
+| [15](#15) | [70](#70) | [125](#125) |  |  |  |  |  |  |  |
 | [20](#20) | [75](#75) |  |  |  |  |  |  |  |  |
 | [25](#25) | [80](#80) |  |  |  |  |  |  |  |  |
 | [30](#30) | [85](#85) |  |  |  |  |  |  |  |  |
@@ -2507,5 +2507,27 @@ print(f"avrage : {sumNum / counter}")
 <br />
 
 [list of questions](#go-to-the-question-list)👆
+
+---
+
+**`116`**. Panjali is one of the best programmers in a company in Miami, USA, and is about to write the following program for her friend Alex, who has recently started programming classes. The program is as follows:
+There are two lists of integers, each with 10 elements, where each list contains both duplicate and non-duplicate numbers:
+Now, imagine you are Panjali and want to use a loop or loops to output the duplicate elements of both lists into the first list and the non-duplicate elements into the second list, sorted in order.
+<br />
+
+```python
+list_1 = [1,2,3,4,4,5,6,1,12,34]
+list_2 = [3,5,4,7,7,9,12,9,6,10]
+
+temp_1 = list_1 + list_2
+print(sorted(set(temp_1)))
+
+temp_2 = []
+for i in list_1:
+    if i in list_2:
+        temp_2.append(i) 
+print(sorted(set(temp_2)))
+```
+<br />
 
 ---
