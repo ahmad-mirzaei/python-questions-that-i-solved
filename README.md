@@ -2582,3 +2582,37 @@ else:
 <br />
 
 ---
+
+## <a id="120"></a>
+**`120`**. Write a program that outputs the second list based on the index numbers provided in the first list.
+```bash
+list_1 = [3, 5, 6, 8, 9, 12]
+list_2 = ["a", "b", "c", "p", "e", "y", "t", "", "h", "o", "w", "i", "n", "l"]
+```
+<br />
+
+```python
+# # step 1
+list_1 = [3 ,5 , 6, 8, 9, 12]
+list_2 = ["a", "b", "c", "p", "e", "y", "t", "", "h", "o", "w", "i", "n", "l"]
+indexList = []
+for i in list_1:
+    indexList.append(list_2[i])
+print("".join(indexList))
+
+# # step 2
+def index_list():
+    list_1 = [3 ,5 , 6, 8, 9, 12]
+    list_2 = ["a", "b", "c", "p", "e", "y", "t", "", "h", "o", "w", "i", "n", "l"]
+    indexList = []
+    for i in list_1:
+        indexList.append(list_2[i])
+    return "".join(indexList)
+
+print(index_list())
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
+
+---
