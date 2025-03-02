@@ -2669,3 +2669,29 @@ print(f"Avg : {sum(numList) / len(numList)}")
 <br />
 
 ---
+
+**`124`**. Write the following algorithm in Python:
+
+1. Take the username from the user.
+2. Take the password from the user.
+3. If the username is equal to 'teacher' and the password is equal to '12345', print 'welcome to teacher panel'.
+4. Otherwise, if the username is equal to 'students' and the password is equal to '12345', print 'welcome to students panel'.
+5. Otherwise, print 'username or password is incorrect'.
+<br />
+
+```python
+userName = input("Enter user name : ")
+try: 
+    password = int(input("Enter password : "))
+    if userName == "teacher" and password == 12345:
+        print("welcome to teacher panel...")
+    elif userName == "student" and password == 12345:
+        print("welcome to students panel...")
+    else:
+        print("Username or password is wrong...")
+except ValueError as error:
+    print(error)
+```
+<br />
+
+---

@@ -2680,6 +2680,40 @@ print(f"Avg : {sum(numList) / len(numList)}")
 
 ---
 
+**`124`**. الگوریتم زیر را به زبان پایتون بنویسید:
+
+۱ نام کاربری را از کاربر دریافت کن
+
+۲ پسورد را از کاربر دریافت کن
+
+۳ اگر نام کاربری برابر با “teacher” و پسورد برابر با “۱۲۳۴۵” بود
+
+چاپ کن welcome to teacher panel
+
+۴ در غیر اینصورت اگر نام کاربری برابر بود با “students” و پسورد برابر بود با “۱۲۳۴۵”
+
+چاپ کن welcome to students panel
+
+۵ در غیر اینصورت چاپ کن
+نام کاربری یا پسورد اشتباه است
+<br />
+
+```python
+userName = input("Enter user name : ")
+try: 
+    password = int(input("Enter password : "))
+    if userName == "teacher" and password == 12345:
+        print("welcome to teacher panel...")
+    elif userName == "student" and password == 12345:
+        print("welcome to students panel...")
+    else:
+        print("Username or password is wrong...")
+except ValueError as error:
+    print(error)
+```
+<br />
+
+---
 
 
 
