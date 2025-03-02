@@ -2646,6 +2646,26 @@ sum_list(20)
 
 ---
 
+**`122`**. برنامه ای بنویسید که عددی را از کاربر بگیرد و نشان دهد که این عدد توانی از ۳ هست یا خیر؟.
+<br />
+
+```python
+n = int(input("Enter number : "))
+for i in range(1, n + 1):
+    if (i**3) == n:
+        print("Yes, This number is a power of 3")
+        print(f"{n} is : {i} ** 3 ")
+        break
+else:
+    print("This number is (NOT) a power of 3")
+```
+<br />
+
+---
+
+
+
+
 
 <!-- 
 **``**. 

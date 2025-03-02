@@ -2635,3 +2635,20 @@ sum_list(20)
 <br />
 
 ---
+
+**`122`**. Write a program that takes a number from the user and determines whether the number is a power of 3 or not.
+<br />
+
+```python
+n = int(input("Enter number : "))
+for i in range(1, n + 1):
+    if (i**3) == n:
+        print("Yes, This number is a power of 3")
+        print(f"{n} is : {i} ** 3 ")
+        break
+else:
+    print("This number is (NOT) a power of 3")
+```
+<br />
+
+---
