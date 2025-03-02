@@ -2663,6 +2663,22 @@ else:
 
 ---
 
+**`123`**. برنامه ای بنویسید که تعدادی عدد را از کاربر بگیرد و جمع و میانگین آنها را تا زمانیکه کاربر مقدار no را وارد کند محاسبه کند.
+<br />
+
+```python
+numList = []
+while True:
+    num = input("Enter number : ")
+    if num == "no":
+        break
+    numList.append(int(num))
+print(f"Sum : {sum(numList)}")
+print(f"Avg : {sum(numList) / len(numList)}")
+```
+<br />
+
+---
 
 
 

@@ -2652,3 +2652,20 @@ else:
 <br />
 
 ---
+
+**`123`**. Write a program that takes several numbers from the user and calculates their sum and average until the user enters 'no'.
+<br />
+
+```python
+numList = []
+while True:
+    num = input("Enter number : ")
+    if num == "no":
+        break
+    numList.append(int(num))
+print(f"Sum : {sum(numList)}")
+print(f"Avg : {sum(numList) / len(numList)}")
+```
+<br />
+
+---
