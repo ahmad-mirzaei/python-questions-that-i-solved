@@ -2715,6 +2715,32 @@ except ValueError as error:
 
 ---
 
+## <a id="125"></a>
+**`125`**.  دو برنامه بنویسید که در یک برنامه سال تولد کاربر را گرفته و سن او را به خروجی میبرد و در برنامه ی دوم سال تولد را به جلالی گرفته و سن را در خروجی نمایش دهد.
+<br />
+
+```python
+# Age calculation based on Gregorian calendar
+import datetime
+ 
+birthDay = int(input("Enter your year of birth : "))
+today = datetime.datetime.now()
+age = today.year - birthDay
+print(f"today is : {today.year} and your {age} years old")
+ 
+# Age Calculation based on Jalali calendar
+import jdatetime
+ 
+birthDay = int(input("Enter your year of birth : "))
+today = jdatetime.datetime.now()
+age = today.year - birthDay
+print(f"today is : {today.year} and your {age} years old")
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
+
+---
 
 
 <!-- 

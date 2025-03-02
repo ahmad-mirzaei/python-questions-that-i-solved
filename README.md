@@ -2695,3 +2695,30 @@ except ValueError as error:
 <br />
 
 ---
+
+## <a id="125"></a>
+**`125`**. Write two programs: in the first program, take the user's birth year and output their age, and in the second program, take the birth year in the Jalali calendar and display the age in the output.
+<br />
+
+```python
+# Age calculation based on Gregorian calendar
+import datetime
+ 
+birthDay = int(input("Enter your year of birth : "))
+today = datetime.datetime.now()
+age = today.year - birthDay
+print(f"today is : {today.year} and your {age} years old")
+ 
+# Age Calculation based on Jalali calendar
+import jdatetime
+ 
+birthDay = int(input("Enter your year of birth : "))
+today = jdatetime.datetime.now()
+age = today.year - birthDay
+print(f"today is : {today.year} and your {age} years old")
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
+
+---
