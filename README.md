@@ -2782,12 +2782,16 @@ The range of numbers should be between 100 and 200.
 <br />
 
 ```python
+# step 1
 lst = []
 for i in range(100, 201):
     if (i%7==0) and (i%5!=0):
         lst.append(str(i))
  
 print(",".join(lst))
+
+# step 2
+print([x for x in range(100,200) if x%7==0 and x%5!=0])
 ```
 <br />
 
