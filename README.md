@@ -2759,3 +2759,19 @@ print(mul)
 <br />
 
 ---
+
+**`128`**. Write a program that outputs the two smallest elements of a list.
+<br />
+
+```python
+lst = [1, 8, 12, 5, 4, 76, 28, 5, 6, 1, 7,  9, 8]
+minLst = []
+setLst = set(lst)
+for i in range(2):
+    minLst.append(min(setLst))
+    setLst.remove(min(setLst))
+print(f"Two small list elements : {minLst}")
+```
+<br />
+
+---

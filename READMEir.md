@@ -2779,6 +2779,21 @@ print(mul)
 
 ---
 
+**`128`**. برنامه ای بنویسید که دو عنصر کوچک یک لیست را به خروجی ببرد.
+<br />
+
+```python
+lst = [1, 8, 12, 5, 4, 76, 28, 5, 6, 1, 7,  9, 8]
+minLst = []
+setLst = set(lst)
+for i in range(2):
+    minLst.append(min(setLst))
+    setLst.remove(min(setLst))
+print(f"Two small list elements : {minLst}")
+```
+<br />
+
+---
 
 
 
