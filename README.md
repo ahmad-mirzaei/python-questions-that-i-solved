@@ -2775,3 +2775,20 @@ print(f"Two small list elements : {minLst}")
 <br />
 
 ---
+
+**`129`**. Write a program that finds all numbers divisible by 7 but not multiples of 5. The resulting numbers should be printed in a single line, separated by commas.
+Additional details:
+The range of numbers should be between 100 and 200.
+<br />
+
+```python
+lst = []
+for i in range(100, 201):
+    if (i%7==0) and (i%5!=0):
+        lst.append(str(i))
+ 
+print(",".join(lst))
+```
+<br />
+
+---
