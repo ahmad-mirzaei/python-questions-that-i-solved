@@ -2722,3 +2722,22 @@ print(f"today is : {today.year} and your {age} years old")
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`126`**. Write a program that reads a number from the input and prints the largest digit in it.
+<br />
+
+```python
+# step 1
+n = input("Enter number : ")
+if n.isdigit():
+    print(max(list(n)))
+else:
+    print("enter a number and try again...")
+
+# step 2
+n = input('Enter Number : ')
+print(max(list(n)))
+```
+<br />
+
+---

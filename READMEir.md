@@ -2722,15 +2722,15 @@ except ValueError as error:
 ```python
 # Age calculation based on Gregorian calendar
 import datetime
- 
+
 birthDay = int(input("Enter your year of birth : "))
 today = datetime.datetime.now()
 age = today.year - birthDay
 print(f"today is : {today.year} and your {age} years old")
- 
+
 # Age Calculation based on Jalali calendar
 import jdatetime
- 
+
 birthDay = int(input("Enter your year of birth : "))
 today = jdatetime.datetime.now()
 age = today.year - birthDay
@@ -2741,6 +2741,31 @@ print(f"today is : {today.year} and your {age} years old")
 👆[برو به فهرست](#go-to-the-question-list)
 
 ---
+
+**`126`**. برنامه ای بنویسید که عددی از ورودی خوانده و بزرگترین رقم آن را چاپ کند.
+<br />
+
+```python
+# step 1
+n = input("Enter number : ")
+if n.isdigit():
+    print(max(list(n)))
+else:
+    print("enter a number and try again...")
+
+# step 2
+n = input('Enter Number : ')
+print(max(list(n)))
+```
+<br />
+
+---
+
+
+
+
+
+
 
 
 <!-- 
