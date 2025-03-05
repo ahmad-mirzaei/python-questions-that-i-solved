@@ -2817,6 +2817,36 @@ print([x for x in range(100,200) if x%7==0 and x%5!=0])
 
 ---
 
+## <a id="130"></a>
+**`130`**. شرکت X با ۷۳ کارمند، قرار است که حقوق کارمندان متاهل خود که همگی حقوق یکسانی دریافت میکنند را به مقدار ۵ درصد افزایش دهد؛
+۱. تعداد کارمندان متاهل را حساب کرده، و به خروجی ببرید؛
+۲. حساب کنید که برای اضافه حقوق کارمندان متاهل، چه مقدار سرمایه باید به خزانه ی شرکت تزریق شود؛
+نکات تکمیلی:
+ا _ کارمندان مجرد و متاهل در این سوال، به ترتیب اعداد فرد و زوج می باشند؛
+ب _ حقوق پایه برای کارمندان متاهل، ۱۰ میلیون تومان می باشد.
+<br />
+
+```python
+def numbers_of_married(company):
+    married = 0
+    for person in range(1, company+1):
+        if (person%2==0):
+            married += 1
+    return married
+
+def salary_calculation(married):
+    companyTreasury = ((married*10000000) * 0.05)
+    return companyTreasury
+
+company = 73
+print(f"The number of married people working in this company : {numbers_of_married(company)}")
+print(f"The amount that should be considered for the treasury of the company : {salary_calculation(numbers_of_married(company))}")
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
+
+---
 
 
 

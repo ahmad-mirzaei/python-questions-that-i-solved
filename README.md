@@ -2796,3 +2796,34 @@ print([x for x in range(100,200) if x%7==0 and x%5!=0])
 <br />
 
 ---
+
+## <a id="130"></a>
+**`130`**. Company X, with 73 employees, plans to increase the salary of its married employees, who all receive the same salary, by 5%.
+Calculate the number of married employees and output it.
+Calculate how much capital needs to be injected into the company's treasury for the salary increase of married employees.
+Additional notes:
+a. Single and married employees in this question are represented by odd and even numbers, respectively.
+b. The base salary for married employees is 10 million Tomans
+<br />
+
+```python
+def numbers_of_married(company):
+    married = 0
+    for person in range(1, company+1):
+        if (person%2==0):
+            married += 1
+    return married
+
+def salary_calculation(married):
+    companyTreasury = ((married*10000000) * 0.05)
+    return companyTreasury
+
+company = 73
+print(f"The number of married people working in this company : {numbers_of_married(company)}")
+print(f"The amount that should be considered for the treasury of the company : {salary_calculation(numbers_of_married(company))}")
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
+
+---
