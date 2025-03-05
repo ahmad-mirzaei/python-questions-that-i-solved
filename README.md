@@ -2741,3 +2741,21 @@ print(max(list(n)))
 <br />
 
 ---
+
+**`127`**. Write a program that performs the multiplication of two numbers without using the multiplication operator.
+<br />
+
+```python
+first_number = eval(input("Enter number : "))
+secend_number = eval(input("Enter number : "))
+
+i = 0
+mul = 0
+while i < secend_number:
+    mul += first_number
+    i += 1
+print(mul)
+```
+<br />
+
+---

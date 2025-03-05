@@ -2761,6 +2761,23 @@ print(max(list(n)))
 
 ---
 
+**`127`**. برنامه ای بنویسید که عمل ضرب دو عدد را بدون استفاده از عملگرد ضرب انجام دهید.
+<br />
+
+```python
+first_number = eval(input("Enter number : "))
+secend_number = eval(input("Enter number : "))
+
+i = 0
+mul = 0
+while i < secend_number:
+    mul += first_number
+    i += 1
+print(mul)
+```
+<br />
+
+---
 
 
 
