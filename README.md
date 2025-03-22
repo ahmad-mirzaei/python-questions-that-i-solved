@@ -2827,6 +2827,7 @@ print(f"The amount that should be considered for the treasury of the company : {
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
 **`131`**. Write a program that accepts a sequence of comma-separated numbers from the console and creates a list and a tuple containing each number.
 Assume the following input is provided to the program:
 34,67,55,33,12,98
@@ -2890,5 +2891,25 @@ for i in range(len(lst)+1):
         print(f"There are two of this item --> {i}")
 ```
 <br />
+
+---
+<a id="135"></a>
+**`135`**. برنامه‌ای بنویسید که یک عدد صحیح را که تعداد ارقامش مشخص نیست از کاربر گرفته و هر رقم را به تعداد آن رقم چاپ کند.
+<br />
+
+```python
+def print_numbers():
+    n = list(input("Enter number : "))
+    for i in n:
+        print(f"({i}). ", end = "")
+        for j in range(1, int(i)+1):
+            print(j, end = " ")
+        print()
+
+print_numbers()
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
