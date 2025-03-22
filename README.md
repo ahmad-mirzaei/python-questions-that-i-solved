@@ -2894,7 +2894,7 @@ for i in range(len(lst)+1):
 
 ---
 <a id="135"></a>
-**`135`**. برنامه‌ای بنویسید که یک عدد صحیح را که تعداد ارقامش مشخص نیست از کاربر گرفته و هر رقم را به تعداد آن رقم چاپ کند.
+**`135`**. Write a program that takes an integer with an unspecified number of digits from the user and prints each digit as many times as its value.
 <br />
 
 ```python
