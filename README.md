@@ -2851,3 +2851,20 @@ print(list(number))
 <br />
 
 ---
+**`132`**. Write a program that reads a string and, using a function, calculates and prints the sum of the digits present in the string.
+<br />
+
+```python
+def sum_num():
+    sum_of_numbers = 0
+    n = input("Enter : ")
+    for ch in n:
+        if ch.isdigit():
+            sum_of_numbers += int(ch)
+    print(sum_of_numbers)
+
+sum_num()
+```
+<br />
+
+---

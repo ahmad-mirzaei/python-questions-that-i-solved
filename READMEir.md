@@ -2873,6 +2873,23 @@ print(list(number))
 
 ---
 
+**`132`**. برنامه ای بنویسید که رشته ای را خوانده با استفاده از تابع، مجموع ارقام موجود در رشته را محاسبه و چاپ کند.
+<br />
+
+```python
+def sum_num():
+    sum_of_numbers = 0
+    n = input("Enter : ")
+    for ch in n:
+        if ch.isdigit():
+            sum_of_numbers += int(ch)
+    print(sum_of_numbers)
+
+sum_num()
+```
+<br />
+
+---
 
 
 <!-- 
