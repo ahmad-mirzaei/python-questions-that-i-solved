@@ -2827,3 +2827,27 @@ print(f"The amount that should be considered for the treasury of the company : {
 [list of questions](#go-to-the-question-list)👆
 
 ---
+**`131`**. Write a program that accepts a sequence of comma-separated numbers from the console and creates a list and a tuple containing each number.
+Assume the following input is provided to the program:
+34,67,55,33,12,98
+Then the output should be as follows:
+['34', '67', '55', '33', '12', '98']
+('34', '67', '55', '33', '12', '98')
+<br />
+
+```python
+# step 1
+tuple_numbers = tuple(eval(input("Enter numbers : ")))
+print(tuple_numbers)
+list_numbers = list(eval(input("Enter numbers : ")))
+print(list_numbers)
+
+# step 2
+number = input("Enter values seprate with , : ").split(',')
+
+print(tuple(number))
+print(list(number))
+```
+<br />
+
+---

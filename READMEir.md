@@ -2848,6 +2848,30 @@ print(f"The amount that should be considered for the treasury of the company : {
 
 ---
 
+**`131`**. برنامه ای بنویسید که دنباله ای از اعداد جدا شده با کاما را از ورودی بپذیرد و یک لیست و یک تاپلی ایجاد کند که شامل هر عدد باشد.
+فرض کنید ورودی زیر به برنامه ارائه شده است:
+34,67,55,33,12,98
+سپس خروجی باید به صورت زیر باشد:
+['34', '67', '55', '33', '12', '98']
+('34', '67', '55', '33', '12', '98')
+<br />
+
+```python
+# step 1
+tuple_numbers = tuple(eval(input("Enter numbers : ")))
+print(tuple_numbers)
+list_numbers = list(eval(input("Enter numbers : ")))
+print(list_numbers)
+
+# step 2
+number = input("Enter values seprate with , : ").split(',')
+
+print(tuple(number))
+print(list(number))
+```
+<br />
+
+---
 
 
 
