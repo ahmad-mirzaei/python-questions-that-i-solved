@@ -2879,3 +2879,16 @@ print(f"The number is {len(numbers)} digits")
 <br />
 
 ---
+
+**`134`**. If we have a list: [1, 1, 2, 5, 6, 6, 8, 8, 8, 7, 7], and we want to extract the numbers that are repeated exactly twice, what should we do?
+<br />
+
+```python
+lst = [1,2,3,4,5,6,5,3,1,8,9,9,9]
+for i in range(len(lst)+1):
+    if lst.count(i) == 2:
+        print(f"There are two of this item --> {i}")
+```
+<br />
+
+---
