@@ -2891,6 +2891,17 @@ sum_num()
 
 ---
 
+**`133`**. برنامه ای بنویسید که رشته را از ورودی خوانده و تعداد ارقام رشته را نمایش دهد.
+<br />
+
+```python
+n = input("Enter number : ")
+numbers = [int(x) for x in n if x.isdigit()]
+print(f"The number is {len(numbers)} digits")
+```
+<br />
+
+---
 
 <!-- 
 **``**. 

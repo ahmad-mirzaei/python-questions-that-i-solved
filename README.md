@@ -2868,3 +2868,14 @@ sum_num()
 <br />
 
 ---
+**`133`**. Write a program that reads a string from the input and displays the count of digits in the string.
+<br />
+
+```python
+n = input("Enter number : ")
+numbers = [int(x) for x in n if x.isdigit()]
+print(f"The number is {len(numbers)} digits")
+```
+<br />
+
+---
