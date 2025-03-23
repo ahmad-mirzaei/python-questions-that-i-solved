@@ -2893,7 +2893,7 @@ for i in range(len(lst)+1):
 <br />
 
 ---
-<a id="135"></a>
+## <a id="135"></a>
 **`135`**. Write a program that takes an integer with an unspecified number of digits from the user and prints each digit as many times as its value.
 <br />
 
@@ -2913,6 +2913,7 @@ print_numbers()
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
 **`136`**. Write a program that takes a number as input and generates a dictionary within the range of that number, where the dictionary contains {i: i*i}.
 Assume the input 8 is provided to the program; then the output should be as follows:
 
@@ -3007,5 +3008,40 @@ students_items = [[[k + 1 if k < 19 else k for k in j] for j in i.values()] for 
 print_items(students_items)
 ```
 <br />
+
+---
+
+## <a id="140"></a>
+**`140`**. اگر اطلاعات دانشجویان در قالب لیستی از دیکشنریها مانند زیر قرار داشته باشد، میانگین معدل و بزگترین سن را نمایش دهید.
+
+```python
+student = [
+    {"id":1,"name":"ali","avg":15.5,"age":23},
+    {"id":2 ,"name":"reza","avg":16,"age":19},
+    {"id":3 ,"name":"mehdi","avg":19.25,"age":42}
+]
+```
+
+<br />
+
+```python
+student=[
+        {"id":1,"name":"ali","avg":15.5,"age":23},
+        {"id":2 ,"name":"reza","avg":16,"age":19},
+        {"id":3 ,"name":"mehdi","avg":19.25,"age":42}
+]
+
+# age & avg
+print(f"(age & avg) - Average is : {max([((item['avg'] + item['age']) / 2) for item in student])}")
+
+# max age
+print(f"max age is : {max([(item['age']) for item in student])}")
+
+# avg
+print(f"avg is : {sum([((item['avg']) / 3) for item in student])}")
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
