@@ -3012,7 +3012,7 @@ print_items(students_items)
 ---
 
 ## <a id="140"></a>
-**`140`**. اگر اطلاعات دانشجویان در قالب لیستی از دیکشنریها مانند زیر قرار داشته باشد، میانگین معدل و بزگترین سن را نمایش دهید.
+**`140`**. If the students' information is stored in a list of dictionaries as shown below, display the average GPA and the oldest age.
 
 ```python
 student = [
