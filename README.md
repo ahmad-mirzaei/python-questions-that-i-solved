@@ -2915,8 +2915,10 @@ print_numbers()
 ---
 **`136`**. Write a program that takes a number as input and generates a dictionary within the range of that number, where the dictionary contains {i: i*i}.
 Assume the following input is provided to the program:
+
 8
 Then the output should be as follows:
+
 {1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
 In your program, include error handling for possible input errors.
 <br />
