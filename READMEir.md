@@ -3074,6 +3074,24 @@ print(f"avg is : {sum([((item['avg']) / 3) for item in student])}")
 
 ---
 
+**`141`**. برنامه ای بنویسید که در یک خط ورودی 5 عدد پیاپی دریافت کند و سپس آنها را در خروجی به صورت مرتب شده نمایش بدهد. 
+<br />
+
+```python
+# step 1 with function
+def sort_numbers():
+    numbers = []
+    for num in range(5):
+        numbers.append(int((input("Enter Your Number : "))))
+    return sorted(numbers)
+print(sort_numbers())
+
+# step 2 with list comprehension
+print(sorted([eval(input(f"{x}. Enter number : ")) for x in range(1, 5+1)]))
+```
+<br />
+
+---
 
 
 

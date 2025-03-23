@@ -3045,3 +3045,21 @@ print(f"avg is : {sum([((item['avg']) / 3) for item in student])}")
 [list of questions](#go-to-the-question-list)👆
 
 ---
+**`141`**. Write a program that takes 5 consecutive numbers as input in one line and then displays them in sorted order in the output.
+<br />
+
+```python
+# step 1 with function
+def sort_numbers():
+    numbers = []
+    for num in range(5):
+        numbers.append(int((input("Enter Your Number : "))))
+    return sorted(numbers)
+print(sort_numbers())
+
+# step 2 with list comprehension
+print(sorted([eval(input(f"{x}. Enter number : ")) for x in range(1, 5+1)]))
+```
+<br />
+
+---
