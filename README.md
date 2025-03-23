@@ -3063,3 +3063,29 @@ print(sorted([eval(input(f"{x}. Enter number : ")) for x in range(1, 5+1)]))
 <br />
 
 ---
+**`142`**. Write a program that takes the grades of several students from the user. If the entered grade is between 0 and 70, display 'fail'; if the entered grade is between 71 and 80, display 'good'; if the entered grade is between 81 and 90, display 'very good'; and if the entered grade is between 91 and 100, display 'excellent'.
+<br />
+
+```python
+try:
+    students = int(input("number of students : "))
+    for i in range(1, students + 1):
+        score = float(input(f"{i}. Enter Score : "))
+        if score < 0 or score > 100:
+            print("The entered number < 0 or number > 100")
+        elif score in range(0, 71):
+            print("Fail")
+        elif score in range(71, 81):
+            print("Good")
+        elif score in range(81, 91):
+            print("Very Good")
+        elif score in range(91, 101):
+            print("Excellent")
+except RuntimeError  as error:
+    print(error)
+except ValueError as error:
+    print(error)
+```
+<br />
+
+---

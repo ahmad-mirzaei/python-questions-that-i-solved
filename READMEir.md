@@ -3093,6 +3093,32 @@ print(sorted([eval(input(f"{x}. Enter number : ")) for x in range(1, 5+1)]))
 
 ---
 
+**`142`**. برنامه ای بنویسید که نمره تعدادی دانشجو را از کاربر بگیرد. چنانچه نمره وارد شده بین ۰ تا ۷۰ بود پیغام fail چنانچه نمره وارد شده بین ۷۱ تا ۸۰ بود پیغام good چنانچه نمره وارد شده بین ۸۱ تا ۹۰ بود very good چنانچه نمره وارد شده بین ۹۱ تا ۱۰۰ بود پیغام excellent را نشان دهد.
+<br />
+
+```python
+try:
+    students = int(input("number of students : "))
+    for i in range(1, students + 1):
+        score = float(input(f"{i}. Enter Score : "))
+        if score < 0 or score > 100:
+            print("The entered number < 0 or number > 100")
+        elif score in range(0, 71):
+            print("Fail")
+        elif score in range(71, 81):
+            print("Good")
+        elif score in range(81, 91):
+            print("Very Good")
+        elif score in range(91, 101):
+            print("Excellent")
+except RuntimeError  as error:
+    print(error)
+except ValueError as error:
+    print(error)
+```
+<br />
+
+---
 
 
 
