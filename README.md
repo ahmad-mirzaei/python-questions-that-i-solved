@@ -2932,3 +2932,16 @@ except ValueError as error:
 <br />
 
 ---
+**`137`**. Write a program that takes the number of students in a class as input, receives the GPA of each student as input, calculates the average GPA of the class, and prints it.
+<br />
+
+```python
+students = int(input("Number of students : "))
+avg = 0
+for i in range(1, students+1):
+    avg += eval(input(f"{i}. Enter Avg : "))
+print(f"Avg of the whole class : {avg / students}")
+```
+<br />
+
+---

@@ -2959,6 +2959,19 @@ except ValueError as error:
 
 ---
 
+**`137`**. برنامه ای بنویسید که تعداد دانشجویان یک کلاس را دریافت کند.معدل تک تک آنها را به عنوان ورودی دریافت کرده و میانگین معدل کلاس را محاسبه و چاپ نماید.
+<br />
+
+```python
+students = int(input("Number of students : "))
+avg = 0
+for i in range(1, students+1):
+    avg += eval(input(f"{i}. Enter Avg : "))
+print(f"Avg of the whole class : {avg / students}")
+```
+<br />
+
+---
 
 
 
