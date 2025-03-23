@@ -2977,3 +2977,35 @@ print(dic4)
 <br />
 
 ---
+**`139`**. If the students' grades are stored in a dictionary as shown below, write a program that adds one unit (one grade) to each student's grade and prints the resulting dictionary. (Do not add to grades above 19, and preferably use list comprehension).
+
+```python
+students = [
+    {"ali": [12.5, 16.75 ,19, 8.25, 13.75]},
+    {"mehdi": [18.75, 16.5, 19.25, 17.75, 18.25, 20]},
+    {"sahar":[17, 13.5, 16, 12.25, 14, 19.25]}
+        ]
+```
+<br />
+
+```python
+students = [
+    {"ali": [12.5, 16.75 ,19, 8.25, 13.75]},
+    {"mehdi": [18.75, 16.5, 19.25, 17.75, 18.25, 20]},
+    {"sahar":[17, 13.5, 16, 12.25, 14, 19.25]}
+        ]
+
+def print_items(lst):
+    for i in lst:
+        for j in i:
+            for k in j:
+                print(k, end = "\t")
+        print()
+
+students_items = [[[k + 1 if k < 19 else k for k in j] for j in i.values()] for i in students]
+
+print_items(students_items)
+```
+<br />
+
+---
