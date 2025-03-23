@@ -2945,3 +2945,35 @@ print(f"Avg of the whole class : {avg / students}")
 <br />
 
 ---
+**`138`**. Write a program that first creates three dictionaries with initial values as shown below, then combines these three dictionaries into a fourth dictionary, stores it, and prints it.
+
+```python
+dic1 = {"ali":34,"mehdi":42,"reza":27}
+dic2 = {3:3000,5:12000}
+dic3 = {100:True,200:False,500:False}
+```
+<br />
+
+```python
+# step 1
+dic1 = {"ali":34,"mehdi":42,"reza":27}
+dic2 = {3:3000,5:12000}
+dic3 = {100:True,200:False,500:False}
+
+dic4 = dic1 | dic2 | dic3
+print(dic4)
+
+# step 2
+dic1 = {"ali":34,"mehdi":42,"reza":27}
+dic2 = {3:3000,5:12000}
+dic3 = {100:True,200:False,500:False}
+
+dic4 = dict()
+for dic in (dic1, dic2, dic3):
+    dic4.update(dic)
+
+print(dic4)
+```
+<br />
+
+---

@@ -2973,6 +2973,38 @@ print(f"Avg of the whole class : {avg / students}")
 
 ---
 
+**`138`**. برنامه ای بنویسید که در آن ابتدا سه دیکشنری مانند شکل زیر با مقداری اولیه ایجاد کرده و سپس ترکیب این سه دیکشنری را درون دیکشنری چهارم ذخیره و چاپ کند.
+
+```python
+dic1 = {"ali":34,"mehdi":42,"reza":27}
+dic2 = {3:3000,5:12000}
+dic3 = {100:True,200:False,500:False}
+```
+<br />
+
+```python
+# step 1
+dic1 = {"ali":34,"mehdi":42,"reza":27}
+dic2 = {3:3000,5:12000}
+dic3 = {100:True,200:False,500:False}
+
+dic4 = dic1 | dic2 | dic3
+print(dic4)
+
+# step 2
+dic1 = {"ali":34,"mehdi":42,"reza":27}
+dic2 = {3:3000,5:12000}
+dic3 = {100:True,200:False,500:False}
+
+dic4 = dict()
+for dic in (dic1, dic2, dic3):
+    dic4.update(dic)
+
+print(dic4)
+```
+<br />
+
+---
 
 
 
