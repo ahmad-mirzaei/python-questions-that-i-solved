@@ -3120,6 +3120,40 @@ except ValueError as error:
 
 ---
 
+**`143`**. بدون استفاده از ماژولها:
+
+با تابع بازگشتی برنامه ای بنویسید که بتواند فاکتوریل یک عدد که توسط کاربر وارد میشود را محاسبه کند.
+
+همچنین همین برنامه را با Generator Function بنویسید.
+<br />
+
+```python
+# step 1
+# recursive function
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+ 
+print(factorial(4))
+ 
+# step 2
+# Generator fanction
+def factorial():
+    x = 1
+    y = 1
+    while True:
+        x *= y
+        yield x
+        y += 1
+ 
+fact = factorial()
+for i in range(10):
+    print(next(fact))
+```
+<br />
+
+---
 
 
 

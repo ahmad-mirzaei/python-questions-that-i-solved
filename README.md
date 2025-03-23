@@ -3089,3 +3089,37 @@ except ValueError as error:
 <br />
 
 ---
+**`143`**. Without using modules:
+
+Write a program using a recursive function that can calculate the factorial of a number entered by the user.
+
+Also, write the same program using a Generator Function.
+<br />
+
+```python
+# step 1
+# recursive function
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+ 
+print(factorial(4))
+ 
+# step 2
+# Generator fanction
+def factorial():
+    x = 1
+    y = 1
+    while True:
+        x *= y
+        yield x
+        y += 1
+ 
+fact = factorial()
+for i in range(10):
+    print(next(fact))
+```
+<br />
+
+---
