@@ -3333,6 +3333,25 @@ print(max([int(i) for i in input("Enter Number : ")]))
 
 ---
 
+**`152`**. برنامه ای بنویسید که یک عدد 4 رقمی از ورودی دریافت کند و مشخص کند با 4 رقم آن عدد چند عدد 4 رقمی میتوان تولید کرد و آن عدد ها را به خروجی ببرد.
+<br />
+
+```python
+import itertools
+
+numbers = [int(x) for x in input("Enter 4 digits : ")]
+
+num_list = list(itertools.permutations(numbers, 4))
+
+counter = 0
+for i in num_list:
+    print(i, end = "\t")
+    counter += 1
+print(f"counter : {counter}")
+```
+<br />
+
+---
 
 
 <!-- 

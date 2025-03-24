@@ -3303,3 +3303,23 @@ print(max([int(i) for i in input("Enter Number : ")]))
 <br />
 
 ---
+
+**`152`**. Write a program that takes a 4-digit number as input, determines how many unique 4-digit numbers can be formed using its digits, and outputs those numbers.
+<br />
+
+```python
+import itertools
+
+numbers = [int(x) for x in input("Enter 4 digits : ")]
+
+num_list = list(itertools.permutations(numbers, 4))
+
+counter = 0
+for i in num_list:
+    print(i, end = "\t")
+    counter += 1
+print(f"counter : {counter}")
+```
+<br />
+
+---
