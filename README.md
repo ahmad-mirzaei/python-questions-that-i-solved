@@ -3127,9 +3127,9 @@ for i in range(10):
 
 ---
 
-**`144`**. برنامه ای بنویسید که دنباله ای از کلمات جدا شده اسپیس را به عنوان ورودی بپذیرد و کلمات را پس از حذف همه ی کلمات تکراری و مرتب کردن آنها به صورت الفبایی چاپ کند.
+**`144`**. Write a program that accepts a sequence of space-separated words as input and prints the words after removing all duplicate words and sorting them alphabetically.
 
-فرض کنید ورودی زیر به برنامه ارائه شده است:
+Assume the following input is provided to the program:
 
 `python is the best programming language python is a simple language`
 <br />
