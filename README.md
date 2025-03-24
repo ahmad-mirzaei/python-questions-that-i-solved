@@ -3045,6 +3045,7 @@ print(f"avg is : {sum([((item['avg']) / 3) for item in student])}")
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
 **`141`**. Write a program that takes 5 consecutive numbers as input in one line and then displays them in sorted order in the output.
 <br />
 
@@ -3063,6 +3064,7 @@ print(sorted([eval(input(f"{x}. Enter number : ")) for x in range(1, 5+1)]))
 <br />
 
 ---
+
 **`142`**. Write a program that takes the grades of several students from the user. If the entered grade is between 0 and 70, display 'fail'; if the entered grade is between 71 and 80, display 'good'; if the entered grade is between 81 and 90, display 'very good'; and if the entered grade is between 91 and 100, display 'excellent'.
 <br />
 
@@ -3089,6 +3091,7 @@ except ValueError as error:
 <br />
 
 ---
+
 **`143`**. Without using modules:
 
 Write a program using a recursive function that can calculate the factorial of a number entered by the user.
@@ -3119,6 +3122,26 @@ def factorial():
 fact = factorial()
 for i in range(10):
     print(next(fact))
+```
+<br />
+
+---
+
+**`144`**. برنامه ای بنویسید که دنباله ای از کلمات جدا شده اسپیس را به عنوان ورودی بپذیرد و کلمات را پس از حذف همه ی کلمات تکراری و مرتب کردن آنها به صورت الفبایی چاپ کند.
+
+فرض کنید ورودی زیر به برنامه ارائه شده است:
+
+`python is the best programming language python is a simple language`
+<br />
+
+```python
+# step 1
+words = "python is the best programming language python is a simple language"
+set_words = set(words.split(" "))
+print(" ".join(sorted(set_words)))
+
+# step 2
+print(" ".join(sorted(set(input("Enter words seprate with , : ").split(' ')))))
 ```
 <br />
 
