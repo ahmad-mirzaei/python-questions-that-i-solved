@@ -3275,3 +3275,21 @@ print(f"number of digits : {number_of_digits(a)}")
 <br />
 
 ---
+
+## <a id="150"></a>
+**`150`**. Write a program that takes a password as input (containing both letters and numbers). If the input is correct, output it; if the input contains only numbers or only letters, the program should continue until a valid password is entered.
+<br />
+
+```python
+while True:
+    password = input("Enter your password : ")
+    if not password.isalpha() and not password.isdigit():
+        break
+    print("your password is not True. Please try again!")
+print(f"password is True : {password}")
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
+
+---

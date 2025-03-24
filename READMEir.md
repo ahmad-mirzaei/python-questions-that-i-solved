@@ -3305,6 +3305,26 @@ print(f"number of digits : {number_of_digits(a)}")
 
 ---
 
+## <a id="150"></a>
+**`150`**. برنامه ای بنویسید که یک پسوورد از ورودی بگیرد که شامل حروف و اعداد هستند؛ اگر ورودی درست بود به خروجی ببرد و اگر ورودی فقط از اعداد یا از حروف بودند برنامه ادامه پیدا کند تا زمانی که یگ پسوورد صحیح وارد شود.
+<br />
+
+```python
+while True:
+    password = input("Enter your password : ")
+    if not password.isalpha() and not password.isdigit():
+        break
+    print("your password is not True. Please try again!")
+print(f"password is True : {password}")
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
+
+---
+
+
+
 
 <!-- 
 **``**. 
