@@ -3323,6 +3323,15 @@ print(f"password is True : {password}")
 
 ---
 
+**`151`**. یک لیست کامپرینشن بنویسید که از ورودی یک عدد چند رقمی دریافت کند و بزرگترین رقم آن را به خروجی ببرد.
+<br />
+
+```python
+print(max([int(i) for i in input("Enter Number : ")]))
+```
+<br />
+
+---
 
 
 

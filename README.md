@@ -3293,3 +3293,13 @@ print(f"password is True : {password}")
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`151`**. Write a list comprehension that takes a multi-digit number as input and outputs its largest digit.
+<br />
+
+```python
+print(max([int(i) for i in input("Enter Number : ")]))
+```
+<br />
+
+---
