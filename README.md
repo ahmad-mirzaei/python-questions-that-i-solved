@@ -3196,3 +3196,35 @@ print(", ".join(sorted(split_comma)))
 <br />
 
 ---
+
+**`147`**. Write a program that outputs all numbers between 2000 and 4001 where `all digits` are even.
+
+The resulting numbers should be printed in a single line, separated by commas.
+
+Sample output:
+...2006, 2004, 2002
+
+<br />
+
+```python
+# step 1
+lst = []
+for item in range(2000, 4001):
+    if int(str(item)[0]) % 2 == 0 and int(str(item)[1]) % 2 == 0 and \
+        int(str(item)[2]) % 2 == 0 and int(str(item)[3]) % 2 == 0:
+            lst.append(item)
+print(lst)
+
+# step 2
+lst = [x for x in range(2000, 4000) if x % 2 == 0]
+print(list(
+    filter(
+        lambda x : str(x)[0] in ('0','2','4','6','8') and str(x)[1] in ('0','2','4','6','8') and 
+                    str(x)[2] in ('0','2','4','6','8') and str(x)[3] in ('0','2','4','6','8'), 
+                    lst
+                    )
+    ))
+```
+<br />
+
+---

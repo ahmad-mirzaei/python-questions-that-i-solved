@@ -3225,6 +3225,41 @@ print(", ".join(sorted(split_comma)))
 
 ---
 
+**`147`**. برنامه ای بنویسید که تمام این اعداد را بین ۲۰۰۰ تا ۴۰۰۱ به خرجی ببرد؛ به طوری که `تمام ارقام` زوج باشند.
+
+اعداد به دست آمده باید در یک توالی جدا شده با کاما در یک خط چاپ شوند.
+
+نمونه خروجی:
+
+… .۲۰۰۶, ۲۰۰۴, ۲۰۰۲
+
+<br />
+
+```python
+# step 1
+lst = []
+for item in range(2000, 4001):
+    if int(str(item)[0]) % 2 == 0 and int(str(item)[1]) % 2 == 0 and \
+        int(str(item)[2]) % 2 == 0 and int(str(item)[3]) % 2 == 0:
+            lst.append(item)
+print(lst)
+
+# step 2
+lst = [x for x in range(2000, 4000) if x % 2 == 0]
+print(list(
+    filter(
+        lambda x : str(x)[0] in ('0','2','4','6','8') and str(x)[1] in ('0','2','4','6','8') and 
+                    str(x)[2] in ('0','2','4','6','8') and str(x)[3] in ('0','2','4','6','8'), 
+                    lst
+                    )
+    ))
+```
+<br />
+
+---
+
+
+
 
 <!-- 
 **``**. 
