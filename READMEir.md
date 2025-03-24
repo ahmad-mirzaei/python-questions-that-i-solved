@@ -3155,6 +3155,28 @@ for i in range(10):
 
 ---
 
+**`144`**. برنامه ای بنویسید که دنباله ای از کلمات جدا شده اسپیس را به عنوان ورودی بپذیرد و کلمات را پس از حذف همه ی کلمات تکراری و مرتب کردن آنها به صورت الفبایی چاپ کند.
+
+فرض کنید ورودی زیر به برنامه ارائه شده است:
+
+`python is the best programming language python is a simple language`
+<br />
+
+```python
+# step 1
+words = "python is the best programming language python is a simple language"
+set_words = set(words.split(" "))
+print(" ".join(sorted(set_words)))
+
+# step 2
+print(" ".join(sorted(set(input("Enter words seprate with , : ").split(' ')))))
+```
+<br />
+
+---
+
+
+
 
 
 <!-- 
