@@ -3256,3 +3256,22 @@ print_array(comperhension_array)
 <br />
 
 ---
+
+**`149`**. Write a program that takes a set 'a' containing an n-digit number and determines the count of digits (n) using a while loop without any additional elements (we can also use 'function').
+<br />
+
+```python
+def number_of_digits(n):
+    i = 0
+    while n != 0:
+        n = n // 10
+        i += 1
+    return i
+    
+a = 97867564534231
+
+print(f"number of digits : {number_of_digits(a)}")
+```
+<br />
+
+---

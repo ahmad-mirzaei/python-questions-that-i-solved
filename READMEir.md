@@ -3286,6 +3286,24 @@ print_array(comperhension_array)
 
 ---
 
+**`149`**. برنامه ای بنویسید که مجموعه a که شامل یک عدد n رقمی است را بگیرد و با چرخه while و بدون المان دیگری تعداد اعداد(n) را مشخص کند( میتوانیم از تابع هم استفاده کنیم )
+<br />
+
+```python
+def number_of_digits(n):
+    i = 0
+    while n != 0:
+        n = n // 10
+        i += 1
+    return i
+    
+a = 97867564534231
+
+print(f"number of digits : {number_of_digits(a)}")
+```
+<br />
+
+---
 
 
 <!-- 
