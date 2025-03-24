@@ -3175,7 +3175,31 @@ print(" ".join(sorted(set(input("Enter words seprate with , : ").split(' ')))))
 
 ---
 
+## <a id="145"></a>
+**`145`**. کلاسی را تعریف کنید که دو متد داشته باشد:
 
+`get_string` : برای دریافت یک رشته از ورودی
+
+`print_string` : برای چاپ رشته ی ورودی با حروف بزرگ
+
+<br />
+
+```python
+class UpperString:
+    def get_string(self):
+        return input("Enter a string : ")
+
+    def print_string(self):
+        return self.get_string().upper()
+
+string = UpperString()
+print(string.print_string())
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
+
+---
 
 
 

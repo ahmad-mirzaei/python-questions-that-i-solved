@@ -3146,3 +3146,29 @@ print(" ".join(sorted(set(input("Enter words seprate with , : ").split(' ')))))
 <br />
 
 ---
+
+## <a id="145"></a>
+**`145`**. Define a class that has two methods:
+
+`get_string` : to receive a string from input
+
+`print_string` : to print the input string in uppercase letters
+
+<br />
+
+```python
+class UpperString:
+    def get_string(self):
+        return input("Enter a string : ")
+
+    def print_string(self):
+        return self.get_string().upper()
+
+string = UpperString()
+print(string.print_string())
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
+
+---
