@@ -3201,6 +3201,29 @@ print(string.print_string())
 
 ---
 
+**`146`**. برنامه ای بنویسید که دنباله ای از کلمات جدا شده با کاما را به عنوان ورودی بپذیرد و کلمات را پس از مرتب سازی بر اساس حروف الفبا در یک دنباله جدا شده با کاما چاپ کند.
+
+فرض کنید ورودی زیر به برنامه ارائه شده است:
+
+`without`, `hello`, `bag`, `world`
+
+سپس خروجی باید به صورت زیر باشد:
+
+`bag`, `hello`, `without`, `world`
+
+<br />
+
+```python
+words = input("Enter words (for example : a, b, c, d) :  ")
+split_space = words.split(" ")
+join_split_space = "".join(split_space)
+split_comma = join_split_space.split(",")
+
+print(", ".join(sorted(split_comma)))
+```
+<br />
+
+---
 
 
 <!-- 

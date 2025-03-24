@@ -3172,3 +3172,27 @@ print(string.print_string())
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`146`**. Write a program that takes a sequence of comma-separated words as input and prints the words in alphabetical order in a comma-separated sequence.
+
+Assume the following input is provided to the program:
+
+`without`, `hello`, `bag`, `world`
+
+Then the output should be as follows:
+
+`bag`, `hello`, `without`, `world`
+
+<br />
+
+```python
+words = input("Enter words (for example : a, b, c, d) :  ")
+split_space = words.split(" ")
+join_split_space = "".join(split_space)
+split_comma = join_split_space.split(",")
+
+print(", ".join(sorted(split_comma)))
+```
+<br />
+
+---
