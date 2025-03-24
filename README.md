@@ -3228,3 +3228,31 @@ print(list(
 <br />
 
 ---
+
+**`148`**. Using list comprehension, write a program that takes two digits X and Y as input and generates a two-dimensional array.
+
+Assume the following inputs are given to the program:
+
+3,5
+
+Also, write a function that displays each element of the output array on a new line.
+<br />
+
+```python
+# for array print
+def print_array(array):
+    for row in range(1, x + 1):
+        print()
+        for coll in range(1, y + 1):
+            print(coll, end = "\t")
+            
+x = int(input("Enter x : ")) # 3
+y = int(input("Enter y : ")) # 5
+#comprehension list
+comperhension_array = [[j for j in range(1, y+1)]for i in range(1, x+1)]
+#calling function
+print_array(comperhension_array)
+```
+<br />
+
+---
