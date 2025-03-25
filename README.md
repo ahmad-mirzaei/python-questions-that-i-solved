@@ -3449,8 +3449,11 @@ for item in gen.div_to_seven():
 Assume the following input is provided to the program:
 
 deposit 300
+
 deposit 300
+
 withdraw 200
+
 deposit 100
 
 Then the output should be as follows:
