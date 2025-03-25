@@ -46,7 +46,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [35](#35) | [90](#90) | [145](#145) |  |  |  |  |  |  |  |
 | [40](#40) | [95](#95) | [150](#150) |  |  |  |  |  |  |  |
 | [45](#45) | [100](#100) | [155](#155) |  |  |  |  |  |  |  |
-| [50](#50) | [105](#105) |  |  |  |  |  |  |  |  |
+| [50](#50) | [105](#105) | [160](#160) |  |  |  |  |  |  |  |
 
 ---
 
@@ -3503,6 +3503,6 @@ print(pow_list)
 ```
 <br />
 
-👆[برو به فهرست](#go-to-the-question-list)
+[list of questions](#go-to-the-question-list)👆
 
 ---
