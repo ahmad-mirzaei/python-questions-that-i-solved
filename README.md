@@ -3341,3 +3341,16 @@ print(list(map(lambda x: x * x, filter(lambda y: y % 2 == 0, lst))))
 <br />
 
 ---
+
+**`154`**. Write a filter that performs the following operation in just one line:
+
+Output the odd numbers from the range 1 to 20.
+
+<br />
+
+```python
+print(list(filter(lambda x: x % 2 !=0, range(1, 21))))
+```
+<br />
+
+---
