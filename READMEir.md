@@ -3427,6 +3427,38 @@ print(tuple(filter(lambda x: (x%2==0), range(1, int(input("What is the range of 
 
 ---
 
+**`157`**. برنامه ای بنویسید که یک عدد تصادفی از ۱ تا ۲۰ تولید کند؛
+
+سپس در محدوده ی آن عدد تصادفی، یک تاپل ایجاد کند؛
+
+اگر طول تاپل ایجاد شده زوج باشد، نمیه ی اول و دوم تاپل به صورت جداگانه به خروجی برود؛
+
+و اگر طول تاپل ایجاد شده فرد باشد، نیمه ی اول و نیمه ی دوم و عدد وسط به صورت جداگانه به خروجی بروند.
+
+<br />
+
+```python
+import random
+randNum = random.randint(1, 20)
+
+tu = [tuple(x for x in range(1, randNum + 1))]
+if len(tu[0]) == 1:
+    print(f"number one : {tu[0]}")
+elif (len(tu[0])%2==0):
+    n = len(tu[0])//2
+    print("len is Even...")
+    print(f"first half : {tu[0][:n]}")
+    print(f"the second half : {tu[0][n:]}")
+else:
+    n = len(tu[0])//2
+    print("len is Odd...")
+    print(f"first half : {tu[0][:n]}")
+    print(f"middle number : {tu[0][n:n+1]}")
+    print(f"the second half : {tu[0][n+1:]}")
+```
+<br />
+
+---
 
 
 <!-- 
