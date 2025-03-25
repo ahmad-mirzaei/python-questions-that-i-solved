@@ -3323,3 +3323,23 @@ print(f"counter : {counter}")
 <br />
 
 ---
+
+**`153`**. Write a program that can use map() and filter() to create a list where each element is the square of an even number from the list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].
+
+Notes:
+
+    Use map() to create the list.
+
+    Use filter() to filter elements of a list.
+
+    You must use filter() inside map().
+
+<br />
+
+```python
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(list(map(lambda x: x * x, filter(lambda y: y % 2 == 0, lst))))
+```
+<br />
+
+---
