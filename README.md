@@ -3328,11 +3328,11 @@ print(f"counter : {counter}")
 
 Notes:
 
-    Use map() to create the list.
+Use map() to create the list.
 
-    Use filter() to filter elements of a list.
+Use filter() to filter elements of a list.
 
-    You must use filter() inside map().
+You must use filter() inside map().
 
 <br />
 
