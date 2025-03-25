@@ -3374,3 +3374,21 @@ print(list(filter(lambda x: (x%2==0), range(1, random.randint(1, 30) + 1))))
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`156`**. Write a program to generate and print another tuple containing only the even numbers from a given tuple.
+
+Sample Output:
+Given Tuple: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+Second Tuple: (2, 4, 6, 8, 10)
+
+Notes:
+The program must be written using the filter() function.
+
+<br />
+
+```python
+print(tuple(filter(lambda x: (x%2==0), range(1, int(input("What is the range of the tuple?  "))+ 1))))
+```
+<br />
+
+---
