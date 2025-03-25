@@ -3552,6 +3552,38 @@ print(pow_list)
 
 ---
 
+**`161`**. برنامه ای بنویسید که جمله را از ورودی بگیرد و تعداد حروف بزرگ و کوچک را محاسبه کنید.
+
+فرض کنید ورودی زیر به برنامه ارائه شده است:
+
+pYthOn ProGraMmiNg
+
+سپس خروجی باید به صورت زیر باشد:
+
+حروف بزرگ ۶
+
+حرف کوچک ۱۱
+
+<br />
+
+```python
+sentence = "pYthOn ProGraMmiNg".split(" ")
+join_sentence = "".join(sentence)
+upper_words = 0
+lower_words = 0
+
+for item in join_sentence:
+    if item == item.upper():
+        upper_words += 1
+    else:
+        lower_words += 1
+
+print(f"Upper Words : {upper_words}")
+print(f"Lower Words : {lower_words}")
+```
+<br />
+
+---
 
 
 <!-- 

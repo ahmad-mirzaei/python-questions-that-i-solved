@@ -3506,3 +3506,34 @@ print(pow_list)
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`161`**. Write a program that takes a sentence as input and counts the number of uppercase and lowercase letters.
+
+Assume the following input is provided to the program:
+
+'pYthOn ProGraMmiNg'
+
+Then the output should be as follows:
+
+Uppercase letters 6
+Lowercase letters 11
+<br />
+
+```python
+sentence = "pYthOn ProGraMmiNg".split(" ")
+join_sentence = "".join(sentence)
+upper_words = 0
+lower_words = 0
+
+for item in join_sentence:
+    if item == item.upper():
+        upper_words += 1
+    else:
+        lower_words += 1
+
+print(f"Upper Words : {upper_words}")
+print(f"Lower Words : {lower_words}")
+```
+<br />
+
+---
