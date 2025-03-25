@@ -3418,3 +3418,26 @@ else:
 <br />
 
 ---
+
+**`158`**. Define a class with a generator method that can iterate through numbers divisible by 7 within the range of 0 and n.
+<br />
+
+```python
+class Generator:
+    def __init__(self, n):
+        self.n = n
+    
+    def div_to_seven(self):
+        i = 1
+        while i <= self.n:
+            if (i%7==0):
+                yield i
+            i += 1
+
+gen = Generator(100)
+for item in gen.div_to_seven():
+    print(item, end = ", ")
+```
+<br />
+
+---

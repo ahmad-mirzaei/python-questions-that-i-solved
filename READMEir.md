@@ -3460,6 +3460,28 @@ else:
 
 ---
 
+**`158`**. کلاسی را با یک متد جنریتور تعریف کنید که می تواند اعدادی را که بر ۷ بخش پذیر هستند بین محدوده ۰ و n تکرار کند.
+<br />
+
+```python
+class Generator:
+    def __init__(self, n):
+        self.n = n
+    
+    def div_to_seven(self):
+        i = 1
+        while i <= self.n:
+            if (i%7==0):
+                yield i
+            i += 1
+
+gen = Generator(100)
+for item in gen.div_to_seven():
+    print(item, end = ", ")
+```
+<br />
+
+---
 
 <!-- 
 **``**. 
