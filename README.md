@@ -3441,3 +3441,42 @@ for item in gen.div_to_seven():
 <br />
 
 ---
+
+**`159`**. Write a program that calculates the net balance of a bank account based on transaction records input by the user. The transaction format is shown as follows:
+
+'deposit' means deposit and 'withdraw' means withdrawal.
+
+Assume the following input is provided to the program:
+
+deposit 300
+deposit 300
+withdraw 200
+deposit 100
+
+Then the output should be as follows:
+
+Balance 500
+
+<br />
+
+```python
+from Khayyam import  JalaliDate
+
+while True:
+    deposit = eval(input("deposit amount : "))
+    withdraw = eval(input("withraw amount  :"))
+    if withdraw > deposit:
+        print("The withdrawal amount is more than the balance...")
+        break
+    print(f"your account balance {deposit - withdraw}", JalaliDate.today())
+    userContinue = input("do you want to continue? (y/n) ")
+    if userContinue == "y":
+        continue
+    elif userContinue == "n":
+        break
+    else:
+        print("error")
+```
+<br />
+
+---

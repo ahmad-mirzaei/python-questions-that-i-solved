@@ -3483,6 +3483,53 @@ for item in gen.div_to_seven():
 
 ---
 
+**`159`**. برنامه ای بنویسید که مقدار خالص یک حساب بانکی را بر اساس گزارش تراکنش از ورودی کاربر محاسبه کند. فرمت گزارش تراکنش به صورت زیر نشان داده شده است:
+
+deposit به معنای سپرده و withdraw
+
+به معنای برداشت است.
+
+فرض کنید ورودی زیر به برنامه ارائه شده است:
+
+deposit 300
+
+deposit 300
+
+withdraw 200
+
+deposit 100
+
+سپس خروجی باید به صورت زیر باشد:
+
+Balance 500
+
+<br />
+
+```python
+from Khayyam import  JalaliDate
+
+while True:
+    deposit = eval(input("deposit amount : "))
+    withdraw = eval(input("withraw amount  :"))
+    if withdraw > deposit:
+        print("The withdrawal amount is more than the balance...")
+        break
+    print(f"your account balance {deposit - withdraw}", JalaliDate.today())
+    userContinue = input("do you want to continue? (y/n) ")
+    if userContinue == "y":
+        continue
+    elif userContinue == "n":
+        break
+    else:
+        print("error")
+```
+<br />
+
+---
+
+
+
+
 <!-- 
 **``**. 
 <br />
