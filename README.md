@@ -3483,3 +3483,26 @@ while True:
 <br />
 
 ---
+
+## <a id="160"></a>
+**`160`**. Use list comprehension to square each odd number in a list. The list is entered as a sequence of comma-separated numbers.
+
+Assume the following input is provided to the program:
+
+1,2,3,4,5,6,7,8,9
+
+Then the output should be as follows:
+
+81, 49, 25, 9, 1
+
+<br />
+
+```python
+pow_list = [int(i)**2 for i in input("Enter numbers : ").split(",") if int(i)%2!=0]
+print(pow_list)
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
+
+---
