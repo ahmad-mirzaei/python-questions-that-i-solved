@@ -3537,3 +3537,40 @@ print(f"Lower Words : {lower_words}")
 <br />
 
 ---
+
+**`162`**. Write a program that accepts a sentence and counts the number of letters, digits, and spaces.
+
+Assume the following input is provided to the program:
+
+'python programming 123'
+
+Then the output should be as follows:
+
+Letters 17
+
+Digits 3
+
+Spaces 2
+<br />
+
+```python
+sentence = "python programming 123"
+words = 0
+numbers = 0
+spaces = 0
+ 
+for i in sentence:
+    if i.isalpha():
+        words += 1
+    elif i.isdigit():
+        numbers += 1
+    else:
+        spaces += 1
+ 
+print(f"words : {words}")
+print(f"numbers : {numbers}")
+print(f"spaces : {spaces}")
+```
+<br />
+
+---

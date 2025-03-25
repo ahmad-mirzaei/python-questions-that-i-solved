@@ -3585,6 +3585,46 @@ print(f"Lower Words : {lower_words}")
 
 ---
 
+**`162`**. برنامه ای بنویسید که جمله را بپذیرد و تعداد حروف و ارقام و اسپیس را محاسبه کنید.
+
+فرض کنید ورودی زیر به برنامه ارائه شده است:
+
+python programming 123
+
+سپس خروجی باید به صورت زیر باشد:
+
+حروف ۱۷
+
+ارقام ۳
+
+اسپیس ۲
+
+<br />
+
+```python
+sentence = "python programming 123"
+words = 0
+numbers = 0
+spaces = 0
+ 
+for i in sentence:
+    if i.isalpha():
+        words += 1
+    elif i.isdigit():
+        numbers += 1
+    else:
+        spaces += 1
+ 
+print(f"words : {words}")
+print(f"numbers : {numbers}")
+print(f"spaces : {spaces}")
+```
+<br />
+
+---
+
+
+
 
 <!-- 
 **``**. 
