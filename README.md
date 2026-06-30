@@ -3661,3 +3661,31 @@ print(string.print_string())
 <br />
 
 ---
+
+**`167`**. Write a program using list comprehension that accepts two integers, X and Y, as input and generates a two-dimensional array.
+
+Assume the following input is provided to the program:
+
+3,5
+
+Then, write a function that displays the generated two-dimensional array, printing each row on a separate line.
+<br />
+
+```python
+# for array print
+def print_array(array):
+    for row in range(1, x+1):
+        print()
+        for coll in range(1, y+1):
+            print(coll, end = "\t")
+            
+x = 3
+y = 5
+#comprehension list
+comperhensionArray = [[j for j in range(1, y+1)]for i in range(1, x+1)]
+#calling function
+print_array(comperhensionArray)
+```
+<br />
+
+---

@@ -3711,6 +3711,34 @@ print(string.print_string())
 
 ---
 
+**`167`**. با comperhension list برنامه ای بنویسید که ۲ رقم X,Y را به عنوان ورودی دریافت کند و یک آرایه دو بعدی تولید کند.
+
+فرض کنید ورودی های زیر به برنامه داده شده است:
+
+۳،۵
+
+یک تابع بنویسید که خروجی کد بالا را زیر هم نمایش بدهد.
+<br />
+
+```python
+# for array print
+def print_array(array):
+    for row in range(1, x+1):
+        print()
+        for coll in range(1, y+1):
+            print(coll, end = "\t")
+            
+x = 3
+y = 5
+#comprehension list
+comperhensionArray = [[j for j in range(1, y+1)]for i in range(1, x+1)]
+#calling function
+print_array(comperhensionArray)
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />
