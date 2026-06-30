@@ -34,9 +34,9 @@ __If you have more questions or would like to suggest better solutions, I’d be
 <a id="go-to-the-question-list"></a>
 
 ## ✍️ I have categorized the questions so that you have better access to both the questions and the index.
-| `1 - 50` | `55 - 105` | `110 - 160` |  |  |  |  |  |  |  |
+| `1 - 50` | `55 - 105` | `110 - 160` | `165 - 215` |  |  |  |  |  |  |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| [1](#1) | [55](#55) | [110](#110) |  |  |  |  |  |  |  |
+| [1](#1) | [55](#55) | [110](#110) | [165](#165) |  |  |  |  |  |  |
 | [5](#5) | [60](#60) | [115](#115) |  |  |  |  |  |  |  |
 | [10](#10) | [65](#65) | [120](#120) |  |  |  |  |  |  |  |
 | [15](#15) | [70](#70) | [125](#125) |  |  |  |  |  |  |  |
@@ -3611,5 +3611,31 @@ setWords = set(words.split(" "))
 print(" ".join(sorted(setWords)))
 ```
 <br />
+
+---
+
+## <a id="165"></a>
+**`165`**. Write a program that accepts a sequence of comma-separated words as input and prints the words in a comma-separated sequence after sorting them in alphabetical order.
+
+Assume the following input is provided to the program:
+
+without, hello, bag, world
+
+Then, the output should be:
+
+bag, hello, without, world
+<br />
+
+```python
+words = input("Enter words (for example : a, b, c, d) :  ")
+splitSpace = words.split(" ")
+joinSplitSpace = "".join(splitSpace)
+splitComma = joinSplitSpace.split(",")
+ 
+print(", ".join(sorted(splitComma)))
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
