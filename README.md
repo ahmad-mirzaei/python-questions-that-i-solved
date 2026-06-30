@@ -3639,3 +3639,25 @@ print(", ".join(sorted(splitComma)))
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`166`**. Define a class that has the following two methods:
+
+get_string: Accepts a string as input from the user.
+print_string: Prints the input string in uppercase.
+<br />
+
+```python
+class UpperString:
+    def get_string(self):
+        return input("Enter a string : ")
+ 
+    def print_string(self):
+        return self.get_string().upper()
+ 
+string = UpperString()
+ 
+print(string.print_string())
+```
+<br />
+
+---
