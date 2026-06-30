@@ -3597,3 +3597,19 @@ print(numList)
 <br />
 
 ---
+
+**`164`**. Write a program that accepts a sequence of space-separated words as input, removes all duplicate words, sorts the remaining words in alphabetical order, and prints them.
+
+Assume the following input is provided to the program:
+
+python is the best programming language python is a simple language
+<br />
+
+```python
+words = "python is the best programming language python is a simple language"
+setWords = set(words.split(" "))
+print(" ".join(sorted(setWords)))
+```
+<br />
+
+---

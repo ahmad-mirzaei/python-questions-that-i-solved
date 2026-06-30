@@ -3646,6 +3646,23 @@ print(numList)
 
 ---
 
+**`164`**. برنامه ای بنویسید که دنباله ای از کلمات جدا شده اسپیس را به عنوان ورودی بپذیرد و کلمات را پس از حذف همه ی کلمات تکراری و مرتب کردن آنها به صورت الفبایی چاپ کند.
+
+فرض کنید ورودی زیر به برنامه ارائه شده است:
+
+python is the best programming language python is a simple language
+<br />
+
+```python
+words = "python is the best programming language python is a simple language"
+setWords = set(words.split(" "))
+print(" ".join(sorted(setWords)))
+```
+<br />
+
+---
+
+
 <!-- 
 **``**. 
 <br />
