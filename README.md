@@ -3574,3 +3574,26 @@ print(f"spaces : {spaces}")
 <br />
 
 ---
+
+**`163`**. Write a program that prints all the numbers between 2000 and 4001 such that all of their digits are even.
+
+The resulting numbers should be printed on a single line as a comma-separated sequence.
+
+Sample output:
+
+2002, 2004, 2006, ...
+<br />
+
+```python
+numList = []
+for item in range(2000, 4001):
+    if int(str(item)[0])%2==0 and \
+     int(str(item)[1])%2==0 and \
+      int(str(item)[2])%2==0 and \
+       int(str(item)[3])%2==0:
+        numList.append(item)
+print(numList)
+```
+<br />
+
+---
