@@ -3734,6 +3734,21 @@ print_array(comperhensionArray)
 
 ---
 
+**`168`**. برنامه ای بنویسید تا لیستی با ۵ عدد تصادفی بین ۱۰۰ تا ۲۰۰ ایجاد کند.
+
+نکات:
+
+از ()random.sample برای ایجاد لیستی از مقادیر تصادفی استفاده کنید
+<br />
+
+```python
+from random import sample
+print(sample([x for x in range(100, 201)], 5))
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />

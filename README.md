@@ -3689,3 +3689,17 @@ print_array(comperhensionArray)
 <br />
 
 ---
+**`168`**. Write a program that generates a list of 5 random numbers between 100 and 200.
+
+Note:
+
+Use random.sample() to generate the list of random values.
+<br />
+
+```python
+from random import sample
+print(sample([x for x in range(100, 201)], 5))
+```
+<br />
+
+---
