@@ -3703,3 +3703,22 @@ print(sample([x for x in range(100, 201)], 5))
 <br />
 
 ---
+**`169`**. Write a program that uses a generator to produce all numbers between 0 and n (inclusive) that are divisible by both 5 and 7, and print them.
+
+Example:
+
+If the following input is provided to the program:
+
+100
+
+Then the output should be exactly:
+
+0,35,70
+<br />
+
+```python
+print(list((x for x in range(int(input("Enter number : "))) if x%5==0 and x%7==0)))
+```
+<br />
+
+---
