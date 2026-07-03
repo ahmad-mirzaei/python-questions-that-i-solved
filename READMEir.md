@@ -3767,6 +3767,36 @@ print(list((x for x in range(int(input("Enter number : "))) if x%5==0 and x%7==0
 
 ---
 
+**`170`**. یک لیست کامپرینشن بنویسید که:
+
+یک عدد از ورودی میگیرد و در محدوده ی آن عدد، اولین عدد زوجی که به صورت تصادفی انتخاب میشود را به خروجی ببرد.
+
+نکات:
+
+پس از وارد کردن ماژول در برنامه، کامپرینشن را بااااید در یک خط بنویسید.
+
+مدیریت خطاهای احتمالی را اعمال کنید.
+
+راهنمایی:
+
+برای محاسبه ی اولین عدد زوج تصادفی، میتوانید از ()random.choice کمک بگیرید.
+<br />
+
+```python
+from random import choice
+try:
+    print(choice([x for x in range(1, int(input("Enter number : "))) if (x%2==0)]))
+# If the user enters a string or decimal number
+except ValueError as error:
+    print(error)
+# If the user enters numbers one and two
+except IndexError as error:
+    print(error)
+```
+<br />
+
+---
+
 <!-- 
 **``**. 
 <br />

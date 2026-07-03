@@ -3722,3 +3722,32 @@ print(list((x for x in range(int(input("Enter number : "))) if x%5==0 and x%7==0
 <br />
 
 ---
+**`170`**. Write a list comprehension that:
+
+Accepts an integer as input.
+Within the range from 0 to that number, randomly selects and prints the first even number chosen.
+
+Notes:
+
+After importing the required module, the list comprehension must be written on a single line.
+Implement appropriate error handling for possible exceptions.
+
+Hint:
+
+To randomly select the first even number, you may use random.choice().
+<br />
+
+```python
+from random import choice
+try:
+    print(choice([x for x in range(1, int(input("Enter number : "))) if (x%2==0)]))
+# If the user enters a string or decimal number
+except ValueError as error:
+    print(error)
+# If the user enters numbers one and two
+except IndexError as error:
+    print(error)
+```
+<br />
+
+---
