@@ -19,11 +19,6 @@ git clone https://github.com/ahmad-mirzaei/python-questions-that-i-solved.git
 
 ---
 
-- ## **نسخه های ترجمه شده**
-    - [Persian Version - فارسی](READMEir.md)
-
----
-
 ## 🤝 مشارکت
 
 __اگر سوالات بیشتری دارید یا می‌خواهید راه‌حل‌های بهتری پیشنهاد دهید، خوشحال می‌شوم که مشارکت کنید! لطفاً یک `Pull Request` ارسال کنید.__
