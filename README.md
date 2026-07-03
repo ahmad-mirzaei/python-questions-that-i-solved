@@ -3787,3 +3787,22 @@ print(",".join(str(num) for num in pow_random(n)))
 <br />
 
 ---
+
+**`172`**. Write a program that uses map() and filter() to create a list whose elements are the squares of the even numbers in the following list:
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+Notes:
+
+Use map() to create the new list.
+Use filter() to filter the elements of the list.
+You must use filter() inside map().
+<br />
+
+```python
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(list(map(lambda x: (x*x), filter(lambda y: (y%2==0), lst))))
+```
+<br />
+
+---
