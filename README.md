@@ -3807,13 +3807,32 @@ print(list(map(lambda x: (x*x), filter(lambda y: (y%2==0), lst))))
 
 ---
 
-**`173`**. فیلتری بنویسید که فقط در یک خط عملیات زیر را انجام بدهد:
+**`173`**. Write a filter expression that performs the following operation in a single line:
 
-اعداد فرد را از رنج ۱ تا ۲۰ به خروجی ببرد.
+Output the odd numbers in the range from 1 to 20.
 <br />
 
 ```python
 print(list(filter(lambda x: x%2!=0, range(1, 21))))
+```
+<br />
+
+---
+
+**`174`**. Write a program that:
+
+Generates a random integer between 1 and 30.
+Creates a list of numbers in the range from 0 to the generated number.
+Prints only the positive numbers from the list.
+
+Note:
+
+Use the filter() function to solve this problem.
+<br />
+
+```python
+import random
+print(list(filter(lambda x: (x%2==0), range(1, random.randint(1, 30) + 1))))
 ```
 <br />
 
