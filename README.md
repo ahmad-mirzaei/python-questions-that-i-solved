@@ -3890,3 +3890,36 @@ print(tuple(filter(lambda x: (x%2==0), range(1, int(input("What is the range of 
 <br />
 
 ---
+
+**`177`**. You must write a program that sorts several tuples in the format (name, age, score) in ascending order. You may use modules to solve this problem.
+
+Name is a string.
+Age and score are numbers.
+Tuples are entered by the user.
+Sorting criteria:
+Sort by name
+Then by age
+Then by score
+
+Priority order: name > age > score
+
+Example input:
+Tom,19,80  
+John,20,90  
+Jony,17,91  
+Jony,17,93  
+Json,21,85
+Expected output:
+[('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
+<br />
+
+```python
+from operator import itemgetter
+ 
+tuList = ("Tom", 19, 80), ("John", 20, 90), ("Jony", 17, 91), ("Jony", 17, 93), ("Json", 21, 85)
+ 
+print(sorted(tuList, key = itemgetter(0, 1, 2)))
+```
+<br />
+
+---
