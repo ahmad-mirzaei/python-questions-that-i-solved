@@ -3866,3 +3866,27 @@ else:
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`176`**. Write a program that produces and prints another tuple whose values are the even numbers from the given tuple.
+
+Sample output:
+
+Given tuple:
+
+(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+Second tuple:
+
+(10, 9, 8, 6, 4, 2)
+
+Notes:
+
+The program must be written using the filter() function.
+<br />
+
+```python
+print(tuple(filter(lambda x: (x%2==0), range(1, int(input("What is the range of the tuple?  "))+ 1))))
+```
+<br />
+
+---
