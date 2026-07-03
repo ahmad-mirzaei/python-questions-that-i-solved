@@ -3806,3 +3806,15 @@ print(list(map(lambda x: (x*x), filter(lambda y: (y%2==0), lst))))
 <br />
 
 ---
+
+**`173`**. فیلتری بنویسید که فقط در یک خط عملیات زیر را انجام بدهد:
+
+اعداد فرد را از رنج ۱ تا ۲۰ به خروجی ببرد.
+<br />
+
+```python
+print(list(filter(lambda x: x%2!=0, range(1, 21))))
+```
+<br />
+
+---
