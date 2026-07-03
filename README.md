@@ -38,7 +38,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | [1](#1) | [55](#55) | [110](#110) | [165](#165) |  |  |  |  |  |  |
 | [5](#5) | [60](#60) | [115](#115) | [170](#170) |  |  |  |  |  |  |
-| [10](#10) | [65](#65) | [120](#120) |  |  |  |  |  |  |  |
+| [10](#10) | [65](#65) | [120](#120) | [175](#175) |  |  |  |  |  |  |
 | [15](#15) | [70](#70) | [125](#125) |  |  |  |  |  |  |  |
 | [20](#20) | [75](#75) | [130](#130) |  |  |  |  |  |  |  |
 | [25](#25) | [80](#80) | [135](#135) |  |  |  |  |  |  |  |
@@ -3835,5 +3835,34 @@ import random
 print(list(filter(lambda x: (x%2==0), range(1, random.randint(1, 30) + 1))))
 ```
 <br />
+
+---
+
+## <a id="170"></a>
+**`175`**. Write a program that:
+
+Generates a random number between 1 and 20.
+Creates a tuple in the range of that random number.
+If the length of the tuple is even, print the first half and the second half separately.
+If the length of the tuple is odd, print the first half, the middle element, and the second half separately.
+<br />
+
+```python
+from random import randint
+
+n = randint(1, 20)
+
+t = tuple(range(1, n + 1))
+
+mid = len(t) // 2
+
+if len(t) % 2 == 0:
+    print(t[:mid], t[mid:])
+else:
+    print(t[:mid], t[mid], t[mid+1:])
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
