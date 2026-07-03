@@ -37,7 +37,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | `1 - 50` | `55 - 105` | `110 - 160` | `165 - 215` |  |  |  |  |  |  |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | [1](#1) | [55](#55) | [110](#110) | [165](#165) |  |  |  |  |  |  |
-| [5](#5) | [60](#60) | [115](#115) |  |  |  |  |  |  |  |
+| [5](#5) | [60](#60) | [115](#115) | [170](#170) |  |  |  |  |  |  |
 | [10](#10) | [65](#65) | [120](#120) |  |  |  |  |  |  |  |
 | [15](#15) | [70](#70) | [125](#125) |  |  |  |  |  |  |  |
 | [20](#20) | [75](#75) | [130](#130) |  |  |  |  |  |  |  |
@@ -3722,6 +3722,8 @@ print(list((x for x in range(int(input("Enter number : "))) if x%5==0 and x%7==0
 <br />
 
 ---
+
+## <a id="170"></a>
 **`170`**. Write a list comprehension that:
 
 Accepts an integer as input.
@@ -3747,6 +3749,40 @@ except ValueError as error:
 # If the user enters numbers one and two
 except IndexError as error:
     print(error)
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
+
+---
+
+**`171`**. Write a program that:
+
+Generates a random integer between 1 and 100.
+Defines a generator that iterates through the range from 0 to the generated number, computes the square of each odd number, and prints the results as a comma-separated sequence.
+
+Notes:
+
+a. The output format must match the example exactly.
+
+b. If the randomly generated number is 10, the output should be:
+
+1,9,25,49,81
+<br />
+
+```python
+from random import randint
+
+n = randint(1, 100)
+
+def pow_random(n):
+    i = 1
+    while i <= n:
+        if i % 2 != 0:
+            yield i ** 2
+        i += 1
+
+print(",".join(str(num) for num in pow_random(n)))
 ```
 <br />
 
