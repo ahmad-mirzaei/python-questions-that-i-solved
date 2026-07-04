@@ -4062,3 +4062,38 @@ for email in emails.splitlines():
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`181`**. Write a program that:
+
+Creates a list containing the numbers in the range specified by the user.
+Generates a randomized list from the created list.
+Then, using the reduce() function, outputs:
+the sum of the numbers,
+the smallest number,
+and the largest number.
+
+Notes:
+
+a. Use random.sample() to generate the randomized list.
+b. Handle possible exceptions appropriately.
+<br />
+
+```python
+from random import sample, randint
+from functools import reduce
+ 
+try:
+    userNumber = [x for x in range(1, int(input("Enter number : "))+1)]
+    listNumber = sample(userNumber, randint(1, len(userNumber)))
+    print(f"Sum Of Numbers : {reduce(lambda x, y: (x+y), listNumber)}")
+    if len(listNumber) >= 2:
+        print(f"Max : {reduce(lambda x, y: x if x > y else y, listNumber)}")
+        print(f"Min : {reduce(lambda x, y: y if y < x else x, listNumber)}")
+    else:
+        print("Entered does not have max and min...\nTest with a larger number...")
+except ValueError as error:
+    print(error)
+```
+<br />
+
+---

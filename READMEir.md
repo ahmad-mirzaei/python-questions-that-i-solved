@@ -4098,6 +4098,47 @@ for email in emails.splitlines():
 
 ---
 
+**`181`**. برنامه ای بنویسید که:
+
+۱. در محدوده ی عددی که در ورودی از کاربر گرفته میشود، یک لیست تولید کند؛
+
+۲. از لیست تولید شده، یک لیست تصادفی ایجاد کند
+
+۳. سپس با متد ()raduse:
+
+حاصل جمع اعداد،
+
+کوچکترین عدد
+
+و بزرگترین عدد را به خروجی ببرید.
+
+نکته:
+
+الف: برای ایجاد یک لیست تصادفی، از ()random.sample استفاده کنید
+
+ب: خطاهای احتمالی را مدیریت کنید.
+<br />
+
+```python
+from random import sample, randint
+from functools import reduce
+ 
+try:
+    userNumber = [x for x in range(1, int(input("Enter number : "))+1)]
+    listNumber = sample(userNumber, randint(1, len(userNumber)))
+    print(f"Sum Of Numbers : {reduce(lambda x, y: (x+y), listNumber)}")
+    if len(listNumber) >= 2:
+        print(f"Max : {reduce(lambda x, y: x if x > y else y, listNumber)}")
+        print(f"Min : {reduce(lambda x, y: y if y < x else x, listNumber)}")
+    else:
+        print("Entered does not have max and min...\nTest with a larger number...")
+except ValueError as error:
+    print(error)
+```
+<br />
+
+---
+
 <!--
 **``**. 
 <br />
