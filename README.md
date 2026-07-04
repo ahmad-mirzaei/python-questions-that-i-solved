@@ -4215,3 +4215,39 @@ print(bool(is_divisible))
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`186`**. Write a program that forms sentences using corresponding indexes of lists.
+
+subjects = ["I", "You"]
+verbs = ["Play", "Love"]
+objects = ["Hockey", "Football"]
+Requirements:
+
+Method 1:
+
+Use direct indexing like list[index] to construct sentences.
+
+Method 2:
+
+After solving Method 1, also construct sentences using map().
+
+<br />
+
+```python
+subjects = ["I", "You"]
+verbs = ["Play", "Love"]
+objects = ["Hockey","Football"]
+
+for i in subjects:
+    for j in verbs:
+        for k in objects:
+            print(i, j, k)
+
+sentense = [subjects[i]+" "+verbs[i]+" "+objects[i] for i in range(len(subjects))]
+print(sentense)
+
+print(list(map(lambda s, v, o: s+" "+v+" "+o, subjects, verbs, objects )))
+```
+<br />
+
+---

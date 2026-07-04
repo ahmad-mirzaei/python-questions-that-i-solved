@@ -4253,6 +4253,46 @@ print(bool(is_divisible))
 
 ---
 
+**`186`**. برنامه‌ای بنویسید تا با اندیس های نظیر به نظیر لیستها جمله تولید کند.
+<br />
+subjects = [“I”, “You”]
+verbs = [“Play”, “Love”]
+objects = [“Hockey”, ”Football”]
+<br />
+نکات:
+
+روش اول:
+
+برای نوشتن برنامه، ابتدا از list[index] برای دریافت یک عنصر از یک لیست استفاده کنید.
+
+روش دوم:
+
+سپس بعد از حل شدن به روش بالا، با ()map هم جمله ها را بسازید.
+
+<br />
+
+```python
+subjects = ["I", "You"]
+verbs = ["Play", "Love"]
+objects = ["Hockey","Football"]
+
+# تمام حالت های ممکن جمله سازی
+for i in subjects:
+    for j in verbs:
+        for k in objects:
+            print(i, j, k)
+
+# دو جمله ی نظیر به نظیر با روش comperhension list
+sentense = [subjects[i]+" "+verbs[i]+" "+objects[i] for i in range(len(subjects))]
+print(sentense)
+
+# دو جمله ی نظیر به نظیر با map
+print(list(map(lambda s, v, o: s+" "+v+" "+o, subjects, verbs, objects )))
+```
+<br />
+
+---
+
 
 <!--
 **``**. 
