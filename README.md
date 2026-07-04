@@ -4131,3 +4131,23 @@ print("Duplicate Numbers:", duplicateNumbers)
 <br />
 
 ---
+
+**`183`**. Write a program that:
+
+Generates three random single-digit numbers
+Prints all possible permutations of these three numbers
+
+Note:
+
+You can use the itertools module to solve this problem.
+<br />
+
+```python
+from random import sample
+from itertools import permutations
+
+print(list(permutations(sample(range(9), 3))))
+```
+<br />
+
+---

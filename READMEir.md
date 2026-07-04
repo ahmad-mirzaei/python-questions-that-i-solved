@@ -4173,6 +4173,27 @@ print("Duplicate Numbers:", duplicateNumbers)
 
 ---
 
+**`183`**. برنامه ای بنویسید که:
+
+سه عدد تک رقمی به صورت تصادفی ایجاد کند
+
+و تمامی جایگشتهای ممکن این سه عدد را به خروجی ببرد.
+
+نکته:
+
+برای این مسئله می‌توانید از ماژول itertools کمک بگیرید.
+<br />
+
+```python
+from random import sample
+from itertools import permutations
+
+print(list(permutations(sample(range(9), 3))))
+```
+<br />
+
+---
+
 
 <!--
 **``**. 
