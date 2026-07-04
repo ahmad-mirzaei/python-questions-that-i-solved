@@ -40,7 +40,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [5](#5) | [60](#60) | [115](#115) | [170](#170) |  |  |  |  |  |  |
 | [10](#10) | [65](#65) | [120](#120) | [175](#175) |  |  |  |  |  |  |
 | [15](#15) | [70](#70) | [125](#125) | [180](#180) |  |  |  |  |  |  |
-| [20](#20) | [75](#75) | [130](#130) |  |  |  |  |  |  |  |
+| [20](#20) | [75](#75) | [130](#130) | [185](#185) |  |  |  |  |  |  |
 | [25](#25) | [80](#80) | [135](#135) |  |  |  |  |  |  |  |
 | [30](#30) | [85](#85) | [140](#140) |  |  |  |  |  |  |  |
 | [35](#35) | [90](#90) | [145](#145) |  |  |  |  |  |  |  |
@@ -4189,5 +4189,29 @@ print(asciDict)
 
 ---
 
+## <a id="185"></a>
+**`185`**. Write a program that:
 
+Takes an integer n from the user
+Computes the expression:
+n + nn + nnn
+For example, if the user enters 2, the result is:
+222 + 22 + 2 = 246
+Then uses the filter() function to check whether the result is divisible by n or not
+<br />
 
+```python
+n = input("Enter number: ")
+
+result = int(n) + int(n*2) + int(n*3)
+
+is_divisible = list(filter(lambda x: x % int(n) == 0, [result]))
+
+print(result)
+print(bool(is_divisible))
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
+
+---
