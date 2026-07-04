@@ -4293,6 +4293,23 @@ print(list(map(lambda s, v, o: s+" "+v+" "+o, subjects, verbs, objects )))
 
 ---
 
+**`187`**. برنامه ای بنویسید تا به طور تصادفی لیستی با ۱۰ عدد زوج بین ۱۰۰ تا ۳۰۰ ایجاد کند.
+
+نکات:
+
+از ()random.sample برای ایجاد لیستی از مقادیر تصادفی استفاده کنید.
+
+<br />
+
+```python
+from random import sample
+
+print(sample(range(100, 301, 2), 10))
+```
+<br />
+
+---
+
 
 <!--
 **``**. 

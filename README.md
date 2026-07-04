@@ -4251,3 +4251,18 @@ print(list(map(lambda s, v, o: s+" "+v+" "+o, subjects, verbs, objects )))
 <br />
 
 ---
+
+**`187`**. Write a program that:
+
+Randomly generates a list of 10 even numbers between 100 and 300
+Use random.sample() to create the list of random values
+<br />
+
+```python
+from random import sample
+
+print(sample(range(100, 301, 2), 10))
+```
+<br />
+
+---
