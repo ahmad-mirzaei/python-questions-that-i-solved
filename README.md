@@ -39,7 +39,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [1](#1) | [55](#55) | [110](#110) | [165](#165) |  |  |  |  |  |  |
 | [5](#5) | [60](#60) | [115](#115) | [170](#170) |  |  |  |  |  |  |
 | [10](#10) | [65](#65) | [120](#120) | [175](#175) |  |  |  |  |  |  |
-| [15](#15) | [70](#70) | [125](#125) |  |  |  |  |  |  |  |
+| [15](#15) | [70](#70) | [125](#125) | [180](#180) |  |  |  |  |  |  |
 | [20](#20) | [75](#75) | [130](#130) |  |  |  |  |  |  |  |
 | [25](#25) | [80](#80) | [135](#135) |  |  |  |  |  |  |  |
 | [30](#30) | [85](#85) | [140](#140) |  |  |  |  |  |  |  |
@@ -4007,5 +4007,58 @@ with open("info.txt", "r") as source, \
             dest.write(line)
 ```
 <br />
+
+---
+
+## <a id="180"></a>
+**`180`**. Write a program that validates the following email addresses and prints the valid ones.
+
+john90@yahoo.com
+
+emily@gmail2.com
+
+123jimmy@yahoo.com
+
+kangarzehtab@gmail.com
+
+panjali@yahho.com
+
+maryam@gmail.c
+
+programmer@yahoo.com
+
+html@gahoo.com
+
+naghi.mamooli123@gmail.com
+
+Note:
+
+You may use the re module to validate the email addresses.
+<br />
+
+```python
+import re
+
+emails = """
+john90@yahoo.com
+emily@gmail2.com
+۱۲۳jimmy@yahoo.com
+kangarzehtab@gmail.com
+panjali@yahho.com
+maryam@gmail.c
+programmer@yahoo.com
+html@gahoo.com
+naghi.mamooli123@gmail.com
+"""
+
+pattern = r"[A-Za-z][A-Za-z0-9.]*@(gmail|yahoo)\.com"
+
+for email in emails.splitlines():
+    if re.fullmatch(pattern, email):
+        print(email)
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---

@@ -35,7 +35,7 @@ __اگر سوالات بیشتری دارید یا می‌خواهید راه‌
 | [1](#1) | [55](#55) | [110](#110) | [165](#165) |  |  |  |  |  |  |
 | [5](#5) | [60](#60) | [115](#115) | [170](#170) |  |  |  |  |  |  |
 | [10](#10) | [65](#65) | [120](#120) | [175](#175) |  |  |  |  |  |  |
-| [15](#15) | [70](#70) | [125](#125) |  |  |  |  |  |  |  |
+| [15](#15) | [70](#70) | [125](#125) | [180](#180) |  |  |  |  |  |  |
 | [20](#20) | [75](#75) | [130](#130) |  |  |  |  |  |  |  |
 | [25](#25) | [80](#80) | [135](#135) |  |  |  |  |  |  |  |
 | [30](#30) | [85](#85) | [140](#140) |  |  |  |  |  |  |  |
@@ -4044,8 +4044,61 @@ with open("info.txt", "r") as source, \
 
 ---
 
+## <a id="180"></a>
+**`180`**. برنامه ای بنویسید که ایمیل های زیر را اعتبار سنجی کند و به خروجی ببرد.
 
-<!-- 
+john90@yahoo.com
+
+emily@gmail2.com
+
+۱۲۳jimmy@yahoo.com
+
+kangarzehtab@gmail.com
+
+panjali@yahho.com
+
+maryam@gmail.c
+
+programmer@yahoo.com
+
+html@gahoo.com
+
+naghi.mamooli123@gmail.com
+
+
+نکته:
+
+میتوانید برای اعتبار سنجی ایمیل ها از ماژول re استفاده کنید.
+<br />
+
+```python
+import re
+
+emails = """
+john90@yahoo.com
+emily@gmail2.com
+۱۲۳jimmy@yahoo.com
+kangarzehtab@gmail.com
+panjali@yahho.com
+maryam@gmail.c
+programmer@yahoo.com
+html@gahoo.com
+naghi.mamooli123@gmail.com
+"""
+
+pattern = r"[A-Za-z][A-Za-z0-9.]*@(gmail|yahoo)\.com"
+
+for email in emails.splitlines():
+    if re.fullmatch(pattern, email):
+        print(email)
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
+
+---
+
+<!--
 **``**. 
 <br />
 
