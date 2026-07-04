@@ -3838,7 +3838,7 @@ print(list(filter(lambda x: (x%2==0), range(1, random.randint(1, 30) + 1))))
 
 ---
 
-## <a id="170"></a>
+## <a id="175"></a>
 **`175`**. Write a program that:
 
 Generates a random number between 1 and 20.
@@ -3918,10 +3918,48 @@ Expected output:
 
 ```python
 from operator import itemgetter
- 
+
 tuList = ("Tom", 19, 80), ("John", 20, 90), ("Jony", 17, 91), ("Jony", 17, 93), ("Json", 21, 85)
- 
+
 print(sorted(tuList, key = itemgetter(0, 1, 2)))
+```
+<br />
+
+---
+
+**`178`**. Write a program that extracts and prints:
+
+the words enclosed in parentheses, and
+the words that are preceded and followed by a period (.)
+
+from the following text:
+
+Lorem ipsum is (typically) a corrupted version of De .finibus. bonorum et malorum, a 1st-century BC (text) by the Roman .statesman and .philosopher. Cicero, with (words) altered, added, and removed to make it .nonsensical. and improper .Latin. The first two words. (themselves) are a truncation of dolorem ipsum (pain itself).
+
+Note:
+
+You may use the re module.
+<br />
+
+```python
+import re
+
+text = """
+Lorem ipsum is (typically) a corrupted version of De
+.finibus. bonorum et malorum, a 1st-century BC (text) by the Roman
+.statesman and .philosopher. Cicero, with (words) altered, added, and removed to make it
+.nonsensical. and improper .Latin. The first two words.
+(themselves) are a truncation of dolorem ipsum (pain itself).
+"""
+
+# Words inside parentheses
+parentheses = re.findall(r"\((.*?)\)", text)
+
+# Words enclosed by dots
+dots = re.findall(r"\.([A-Za-z]+)\.", text)
+
+print(parentheses)
+print(dots)
 ```
 <br />
 

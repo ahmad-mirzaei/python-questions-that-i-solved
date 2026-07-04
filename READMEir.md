@@ -3879,7 +3879,7 @@ print(list(filter(lambda x: (x%2==0), range(1, random.randint(1, 30) + 1))))
 
 ---
 
-## <a id="170"></a>
+## <a id="175"></a>
 **`175`**. برنامه ای بنویسید که یک عدد تصادفی از ۱ تا ۲۰ تولید کند؛ سپس در محدوده ی آن عدد تصادفی، یک تاپل ایجاد کند؛ اگر طول تاپل ایجاد شده زوج باشد، نمیه ی اول و دوم تاپل به صورت جداگانه به خروجی برود؛ و اگر طول تاپل ایجاد شده فرد باشد، نیمه ی اول و نیمه ی دوم و عدد وسط به صورت جداگانه به خروجی بروند.
 <br />
 
@@ -3966,6 +3966,37 @@ print(sorted(tuList, key = itemgetter(0, 1, 2)))
 
 ---
 
+**`178`**. برنامه ای بنویسید که در متن زیر، کلماتی که درون پرانتز هستند و کلماتی که قبل و بعد آنها نقطه دارد به خروجی بروند.
+Lorem ipsum is (typically) a corrupted version of De .finibus. bonorum et malorum, a 1st-century BC (text) by the Roman .statesman and .philosopher. Cicero, with (words) altered, added, and removed to make it .nonsensical. and improper .Latin. The first two words. (themselves) are a truncation of dolorem ipsum (pain itself).
+
+نکته:
+
+میتواند از ماژول re استفاده کنید.
+<br />
+
+```python
+import re
+
+text = """
+Lorem ipsum is (typically) a corrupted version of De
+.finibus. bonorum et malorum, a 1st-century BC (text) by the Roman
+.statesman and .philosopher. Cicero, with (words) altered, added, and removed to make it
+.nonsensical. and improper .Latin. The first two words.
+(themselves) are a truncation of dolorem ipsum (pain itself).
+"""
+
+# Words inside parentheses
+parentheses = re.findall(r"\((.*?)\)", text)
+
+# Words enclosed by dots
+dots = re.findall(r"\.([A-Za-z]+)\.", text)
+
+print(parentheses)
+print(dots)
+```
+<br />
+
+---
 
 <!-- 
 **``**. 
