@@ -4097,3 +4097,37 @@ except ValueError as error:
 <br />
 
 ---
+
+**`182`**. Write a program that:
+
+First outputs the duplicate elements, and then the non-duplicate elements of the two lists below.
+
+list1 = [1, 3, 6, 78, 35, 55, 24]
+list2 = [12, 24, 35, 24, 88, 120, 155, 6]
+
+<br />
+
+```python
+from operator import countOf
+
+list1 = [1, 3, 6, 78, 35, 55, 24]
+list2 = [12, 24, 35, 24, 88, 120, 155, 6]
+
+list3 = list1 + list2
+
+duplicateNumbers = []
+nonRepeatingNumbers = []
+
+for i in list3:
+    if countOf(list3, i) > 1:
+        if i not in duplicateNumbers:
+            duplicateNumbers.append(i)
+    else:
+        nonRepeatingNumbers.append(i)
+
+print("Non Repeating Numbers:", nonRepeatingNumbers)
+print("Duplicate Numbers:", duplicateNumbers)
+```
+<br />
+
+---
