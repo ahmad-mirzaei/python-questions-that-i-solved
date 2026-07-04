@@ -3967,6 +3967,7 @@ print(sorted(tuList, key = itemgetter(0, 1, 2)))
 ---
 
 **`178`**. برنامه ای بنویسید که در متن زیر، کلماتی که درون پرانتز هستند و کلماتی که قبل و بعد آنها نقطه دارد به خروجی بروند.
+<br />
 Lorem ipsum is (typically) a corrupted version of De .finibus. bonorum et malorum, a 1st-century BC (text) by the Roman .statesman and .philosopher. Cicero, with (words) altered, added, and removed to make it .nonsensical. and improper .Latin. The first two words. (themselves) are a truncation of dolorem ipsum (pain itself).
 
 نکته:
@@ -3997,6 +3998,52 @@ print(dots)
 <br />
 
 ---
+
+**`179`**. برنامه ای بنویسید که:
+
+نام و نام خانوادگی و شماره موبایل ده نفر را از ورودی بگیرد و در یک فایل txt به نام info ذخیره کند.
+
+سپس در همان دایرکتوری، یک پوشه با نام validation_info بسازید و در آن پوشه، اسامی دارای شماره موبایل صحیح را در یک فایل txt دیگر به نام finally_info ذخیره کنید.
+
+نکته:
+
+قبل از ساخت پوشه یا فولدر، چک کنید که این پوشه از قبل وجود داشته است یا خیر.
+
+ابزار مورد استفاده: ماژول os, ماژول r
+<br />
+
+```python
+from os import path, mkdir
+import re
+
+# Write information of 10 people to info.txt
+with open("info.txt", "w") as info:
+    for _ in range(10):
+        name = input("Enter your name: ")
+        family = input("Enter your family: ")
+        phone = input("Enter your phone number: ")
+
+        info.write(f"name:{name},family:{family},phoneNumber:{phone}\n")
+
+# Create folder if it does not exist
+if not path.exists("validation_info"):
+    mkdir("validation_info")
+
+# Regular expression for a valid record
+pattern = r"name:[A-Za-z]+,family:[A-Za-z]+,phoneNumber:09\d{9}"
+
+# Read info.txt and save valid records
+with open("info.txt", "r") as source, \
+     open("validation_info/finally_info.txt", "w") as dest:
+
+    for line in source:
+        if re.fullmatch(pattern, line.strip()):
+            dest.write(line)
+```
+<br />
+
+---
+
 
 <!-- 
 **``**. 

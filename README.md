@@ -3964,3 +3964,48 @@ print(dots)
 <br />
 
 ---
+
+**`179`**. Write a program that:
+
+Reads the first name, last name, and mobile phone number of 10 people from the user.
+Saves this information in a text file named info.txt.
+Then, in the same directory, creates a folder named validation_info.
+Inside that folder, saves the names of the people with valid mobile phone numbers in another text file named finally_info.txt.
+
+Note:
+
+Before creating the folder, check whether it already exists.
+Use the os and re modules.
+<br />
+
+```python
+from os import path, mkdir
+import re
+
+# Write information of 10 people to info.txt
+with open("info.txt", "w") as info:
+    for _ in range(10):
+        name = input("Enter your name: ")
+        family = input("Enter your family: ")
+        phone = input("Enter your phone number: ")
+
+        info.write(f"name:{name},family:{family},phoneNumber:{phone}\n")
+
+# Create folder if it does not exist
+if not path.exists("validation_info"):
+    mkdir("validation_info")
+
+# Regular expression for a valid record
+pattern = r"name:[A-Za-z]+,family:[A-Za-z]+,phoneNumber:09\d{9}"
+
+# Read info.txt and save valid records
+with open("info.txt", "r") as source, \
+     open("validation_info/finally_info.txt", "w") as dest:
+
+    for line in source:
+        if re.fullmatch(pattern, line.strip()):
+            dest.write(line)
+```
+<br />
+
+---
