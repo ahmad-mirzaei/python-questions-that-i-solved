@@ -4194,6 +4194,41 @@ print(list(permutations(sample(range(9), 3))))
 
 ---
 
+**`184`**. برنامه ای بنویسید که:
+
+حروف کوچک الفبای انگلیسی را شمارش کند.
+
+خروجی برنامه باید به صورت یک دیکشنری باشد که کلید ها اعداد، و مقادیر، حروف هستند.
+<br />
+{‘a’ : 0, ‘b’ : 1, ‘c’ : 2, …….}
+<br />
+نکته:
+<br />
+برای حل مسئله می‌توانید از ماژول string کمک بگیرید.
+<br />
+
+```python
+# Step 1 (Algorithmic)
+from string import ascii_lowercase
+
+asciDict = {}
+i = 0
+while i < len(ascii_lowercase):
+    asciDict[ascii_lowercase[i]] = i
+    i += 1
+print(asciDict)
+
+
+# Step 2 (Pythonic)
+from string import ascii_lowercase
+
+asciDict = {ch: i for i, ch in enumerate(ascii_lowercase)}
+print(asciDict)
+```
+<br />
+
+---
+
 
 <!--
 **``**. 

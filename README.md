@@ -4151,3 +4151,43 @@ print(list(permutations(sample(range(9), 3))))
 <br />
 
 ---
+
+**`184`**. Write a program that:
+
+Counts the lowercase letters of the English alphabet.
+The output should be a dictionary where:
+keys are letters
+values are numbers
+
+Example:
+
+{'a': 0, 'b': 1, 'c': 2, ...}
+
+Note:
+You can use the string module to solve this problem.
+<br />
+
+```python
+# Step 1 (Algorithmic)
+from string import ascii_lowercase
+
+asciDict = {}
+i = 0
+while i < len(ascii_lowercase):
+    asciDict[ascii_lowercase[i]] = i
+    i += 1
+print(asciDict)
+
+
+# Step 2 (Pythonic)
+from string import ascii_lowercase
+
+asciDict = {ch: i for i, ch in enumerate(ascii_lowercase)}
+print(asciDict)
+```
+<br />
+
+---
+
+
+
