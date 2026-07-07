@@ -4266,3 +4266,29 @@ print(sample(range(100, 301, 2), 10))
 <br />
 
 ---
+
+**`188`**. Write a program using dictionary comprehension that converts the following text into a dictionary, where the keys are numbers and the values are the characters of the text.
+
+text = "Python Dictionary Comprehension"
+
+Note:
+Spaces should not be counted when creating the dictionary.
+<br />
+
+```python
+# step 1 
+text = "".join("Python Dictionary Comprehension".split())
+
+result = {i: text[i] for i in range(len(text))}
+
+print(result)
+
+
+# step 2
+text = "Python Dictionary Comprehension".replace(" ", "")
+
+print({i: ch for i, ch in enumerate(text)})
+```
+<br />
+
+---

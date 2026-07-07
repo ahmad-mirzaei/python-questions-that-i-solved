@@ -4310,6 +4310,32 @@ print(sample(range(100, 301, 2), 10))
 
 ---
 
+**`188`**. با comprehension برنامه ای بنویسید که متن زیر را تبدیل به دیکشنری کند به گونه ای که اعداد کلید دیکشنری و حروف متن، مقدار باشند.
+<br />
+text = “Python Dictionary Comprehension”
+نکته:
+<br />
+خطوط فاصله در ساخت دیکشنری محاسبه نشوند.
+<br />
+
+```python
+# step 1 
+text = "".join("Python Dictionary Comprehension".split())
+
+result = {i: text[i] for i in range(len(text))}
+
+print(result)
+
+
+# step 2
+text = "Python Dictionary Comprehension".replace(" ", "")
+
+print({i: ch for i, ch in enumerate(text)})
+```
+<br />
+
+---
+
 
 <!--
 **``**. 
