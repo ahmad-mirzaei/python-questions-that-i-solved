@@ -4313,8 +4313,8 @@ print(sample(range(100, 301, 2), 10))
 **`188`**. با comprehension برنامه ای بنویسید که متن زیر را تبدیل به دیکشنری کند به گونه ای که اعداد کلید دیکشنری و حروف متن، مقدار باشند.
 <br />
 text = “Python Dictionary Comprehension”
-نکته:
 <br />
+نکته:
 خطوط فاصله در ساخت دیکشنری محاسبه نشوند.
 <br />
 
@@ -4331,6 +4331,55 @@ print(result)
 text = "Python Dictionary Comprehension".replace(" ", "")
 
 print({i: ch for i, ch in enumerate(text)})
+```
+<br />
+
+---
+
+**`189`**. لیست زیر را با comprehension تبدیل به دیکشنری کنید.
+<br />
+data = [(‘sirvan’, 23),
+<br />
+(‘maryam’, 15),
+<br />
+(‘lily’, 8),
+<br />
+(‘behroz’, 4),
+<br />
+(‘jimmy’, 20),
+<br />
+(‘jasem’, 87)]
+<br />
+
+```python
+# step 1
+data = [
+    ("sirvan", 23),
+    ("maryam", 15),
+    ("lily", 8),
+    ("behroz", 4),
+    ("jimmy", 20),
+    ("jasem", 87)
+]
+
+dataDict = {x[0]: x[1] for x in data}
+
+print(dataDict)
+
+
+# step 2
+data = [
+    ("sirvan", 23),
+    ("maryam", 15),
+    ("lily", 8),
+    ("behroz", 4),
+    ("jimmy", 20),
+    ("jasem", 87)
+]
+
+dataDict = {name: age for name, age in data}
+
+print(dataDict)
 ```
 <br />
 
