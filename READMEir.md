@@ -4409,6 +4409,39 @@ print(f"upper vowels: {[vowels for vowels in lettersDict.keys() if vowels in 'AE
 
 ---
 
+**`191`**. برنامه ای بنویسید که:
+توان ۲ اعداد درون دیکشنری زیر را محاسبه و جایگزین کند.
+
+dictionary = {
+“a”: [10, 20, 30, 40, 50],
+“b”: {“1”: 4, “2”: 7, “3”: 12},
+“c”: (18, 35, 98, 15, 56, 11)
+}
+<br />
+
+```python
+dictionary = {
+    "a": [10, 20, 30, 40, 50],
+    "b": {"1": 4, "2": 7, "3": 12},
+    "c": (18, 35, 98, 15, 56, 11)
+}
+
+for key, value in dictionary.items():
+    if isinstance(value, list):
+        dictionary[key] = [x**2 for x in value]
+
+    elif isinstance(value, dict):
+        dictionary[key] = {k: v**2 for k, v in value.items()}
+
+    elif isinstance(value, tuple):
+        dictionary[key] = tuple(x**2 for x in value)
+
+print(dictionary)
+```
+<br />
+
+---
+
 
 <!--
 **``**. 
