@@ -4366,7 +4366,12 @@ print(dataDict)
 ---
 
 ## <a id="190"></a>
-**`190`**. 
+**`190`**. Write a program that:
+
+Converts all English alphabet letters into a dictionary, where:
+uppercase letters are the keys
+lowercase letters are the values
+Then finds and prints all vowel letters, both uppercase and lowercase.
 <br />
 
 ```python
