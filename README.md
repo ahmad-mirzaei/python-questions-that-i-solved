@@ -4455,3 +4455,68 @@ print(reduce(lambda x, y: x + y, dictionary.values(), 0))
 <br />
 
 ---
+
+**`193`**. Write a program that:
+
+Finds the number of characters in the following text.
+Finds the number of words in the text.
+Finds the number of sentences in the text.
+Finds and prints the most frequently repeated character in the text along with its repetition count.
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+<br />
+
+```python
+# step 1
+from string import ascii_letters
+from collections import defaultdict
+
+text = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
+
+
+def most_repeated_letter(text):
+    d = defaultdict(int)
+
+    for char in text.lower():
+        if char in ascii_letters:
+            d[char] += 1
+
+    return max(d.items(), key=lambda x: x[1])
+
+
+print("Most repeated letter:", most_repeated_letter(text))
+print("Number of letters:", sum(1 for char in text if char in ascii_letters))
+print("Number of words:", len(text.split()))
+print("Number of sentences:", text.count("."))
+
+
+# step 2
+from collections import Counter
+import re
+
+text = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+"""
+
+letters = re.findall(r"[a-zA-Z]", text)
+print("Number of letters:", len(letters))
+
+words = re.findall(r"\b[a-zA-Z]+\b", text)
+print("Number of words:", len(words))
+
+sentences = re.findall(r"[.!?]", text)
+print("Number of sentences:", len(sentences))
+
+letter_count = Counter(letters)
+most_common_letter = letter_count.most_common(1)[0]
+
+print("Most repeated letter:", most_common_letter)
+```
+<br />
+
+---
