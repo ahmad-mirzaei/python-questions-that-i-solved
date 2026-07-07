@@ -4422,3 +4422,36 @@ print(dictionary)
 <br />
 
 ---
+
+**`192`**. Write a program that calculates the sum of the following dictionary:
+
+dictionary = {
+    "a": 100,
+    "b": 200,
+    "c": 300,
+    "d": 29,
+    "e": 92,
+    "f": 58
+}
+
+Note:
+Use the reduce() function to solve this problem.
+<br />
+
+```python
+from functools import reduce
+
+dictionary = {
+    "a": 100,
+    "b": 200,
+    "c": 300,
+    "d": 29,
+    "e": 92,
+    "f": 58
+}
+
+print(reduce(lambda x, y: x + y, dictionary.values(), 0))
+```
+<br />
+
+---

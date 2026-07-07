@@ -4442,6 +4442,31 @@ print(dictionary)
 
 ---
 
+**`192`**. برنامه ای بنویسید که مجموع دیکشنری زیر را به دست آورد:
+<br />
+dictionary = {“a”: 100, “b”: 200, “c”: 300, “d”: 29, “e”: 92, “f”: 58}
+<br />
+برای حل سوال از reduce استفاده کنید.
+<br />
+
+```python
+from functools import reduce
+
+dictionary = {
+    "a": 100,
+    "b": 200,
+    "c": 300,
+    "d": 29,
+    "e": 92,
+    "f": 58
+}
+
+print(reduce(lambda x, y: x + y, dictionary.values(), 0))
+```
+<br />
+
+---
+
 
 <!--
 **``**. 
