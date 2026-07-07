@@ -37,7 +37,7 @@ __اگر سوالات بیشتری دارید یا می‌خواهید راه‌
 | [10](#10) | [65](#65) | [120](#120) | [175](#175) |  |  |  |  |  |  |
 | [15](#15) | [70](#70) | [125](#125) | [180](#180) |  |  |  |  |  |  |
 | [20](#20) | [75](#75) | [130](#130) | [185](#185) |  |  |  |  |  |  |
-| [25](#25) | [80](#80) | [135](#135) |  |  |  |  |  |  |  |
+| [25](#25) | [80](#80) | [135](#135) | [190](#190) |  |  |  |  |  |  |
 | [30](#30) | [85](#85) | [140](#140) |  |  |  |  |  |  |  |
 | [35](#35) | [90](#90) | [145](#145) |  |  |  |  |  |  |  |
 | [40](#40) | [95](#95) | [150](#150) |  |  |  |  |  |  |  |
@@ -4382,6 +4382,30 @@ dataDict = {name: age for name, age in data}
 print(dataDict)
 ```
 <br />
+
+---
+
+## <a id="190"></a>
+**`190`**. برنامه ای بنویسید که:
+
+تمام حروف الفبای انگلیسی را تبدیل به دیکشنری کند؛
+
+به گونه ای که، حروف بزرگ کلید و حروف کوچک مقدار باشند.
+
+سپس حروف صدادار، چه بزرگ و کوچک را پیدا، و در خروجی چاپ کنید.
+<br />
+
+```python
+from string import ascii_lowercase, ascii_uppercase
+lettersDict = {ascii_uppercase[letters]:ascii_lowercase[letters] for letters in range(len(ascii_uppercase))}
+print(lettersDict)
+
+print(f"lower vowels: {[vowels for vowels in lettersDict.values() if vowels in 'aeiou']}")
+print(f"upper vowels: {[vowels for vowels in lettersDict.keys() if vowels in 'AEIOU']}")
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
 
 ---
 
