@@ -4476,6 +4476,7 @@ print(reduce(lambda x, y: x + y, dictionary.values(), 0))
 ۳. تعداد جملات متن زیر را پیدا کرده،
 
 ۴. و بیشترین حرفی که در متن تکرار شده، به همراه تعداد تکرار آن را به خروجی ببرد.
+<br />
 text = “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
 <br />
 
@@ -4530,6 +4531,45 @@ letter_count = Counter(letters)
 most_common_letter = letter_count.most_common(1)[0]
 
 print("Most repeated letter:", most_common_letter)
+```
+<br />
+
+---
+
+**`194`**. برنامه ای بنویسید که:
+
+    یک عدد تصادفی از ۱ تا ۵۰۰ تولید کند؛
+<br />
+از عدد ۱ تا عدد تصادفی پیدا شده یک دیکشنری بسازد : مثلا –>{…,3 :”3″,2 :”2″,1 :’1′}
+<br />
+سپس تمام مقسوم علیه های آن عدد تصادفی را محاسبه کرده و یک توالی جدا شده با کاما، در فایلی به نام divisor.txt ذخیره کند.
+<br />
+نکته:
+
+برای تولید عدد تصادفی میتوانید از ماژول random استفاده کنید.
+<br />
+
+```python
+from random import randint
+
+
+randomNumber = randint(1, 500)
+
+numberDict = {
+    key: str(key)
+    for key in range(1, randomNumber + 1)
+}
+
+print(numberDict)
+
+num = ",".join(
+    str(key)
+    for key in numberDict
+    if randomNumber % key == 0
+)
+
+with open("divisor.txt", "w") as divisor:
+    divisor.write(num)
 ```
 <br />
 

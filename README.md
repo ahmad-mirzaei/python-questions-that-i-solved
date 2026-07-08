@@ -4520,3 +4520,43 @@ print("Most repeated letter:", most_common_letter)
 <br />
 
 ---
+
+*`194`**. Write a program that:
+
+Generates a random number between 1 and 500.
+
+Creates a dictionary from 1 to the generated random number.
+Example:
+
+{1: "1", 2: "2", 3: "3", ...}
+Calculates all divisors (factors) of the random number and saves them in a file named divisor.txt as a comma-separated sequence.
+
+Note:
+You can use the random module to generate the random number.
+<br />
+
+```python
+from random import randint
+
+
+randomNumber = randint(1, 500)
+
+numberDict = {
+    key: str(key)
+    for key in range(1, randomNumber + 1)
+}
+
+print(numberDict)
+
+num = ",".join(
+    str(key)
+    for key in numberDict
+    if randomNumber % key == 0
+)
+
+with open("divisor.txt", "w") as divisor:
+    divisor.write(num)
+```
+<br />
+
+---
