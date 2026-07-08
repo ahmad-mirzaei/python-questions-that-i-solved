@@ -4645,3 +4645,24 @@ print(numDict)
 <br />
 
 ---
+
+**`197`**. Write a program that:
+
+Finds and prints the first non-repeating element in the following list:
+myList = [1, 2, 9, 85, 6, 2, 0, 1, 25, 9, 385, 85, 385, 3]
+<br />
+
+```python
+from operator import countOf
+
+myList = [1, 2, 9, 85, 6, 2, 0, 1, 25, 9, 385, 85, 385, 3]
+countOfnumber = [x for x in myList if countOf(myList, x) == 1]
+
+if countOfnumber:
+    print(countOfnumber[0])
+else:
+    print("No non-repeating element found")
+```
+<br />
+
+---
