@@ -4616,3 +4616,32 @@ print(dictionary)
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`196`**. Write a program that converts the following two lists into a dictionary.
+
+keys = ["one", "six", "five", "ten", "nine", "three", "four", "eight", "two", "seven"]
+
+values = [6, 7, 1, 2, 9, 4, 10, 3, 8, 5]
+
+Note:
+Before creating the dictionary, sort both lists, then combine the corresponding elements into a dictionary.
+<br />
+
+```python
+from n2w import convert
+
+key = ["one", "six", "five", "ten", "nine", "three", "four", "eight", "two", "seven"]
+value = [6, 7, 1, 2, 9, 4, 10, 3, 8, 5]
+
+value.sort()
+
+numDict = {}
+
+for i in value:
+    numDict[i] = convert(i)
+
+print(numDict)
+```
+<br />
+
+---

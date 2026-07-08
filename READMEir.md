@@ -4543,6 +4543,7 @@ print("Most repeated letter:", most_common_letter)
 از عدد ۱ تا عدد تصادفی پیدا شده یک دیکشنری بسازد : مثلا –> {…,3 :”3″,2 :”2″,1 :’1′}
 <br />
 سپس تمام مقسوم علیه های آن عدد تصادفی را محاسبه کرده و و یک توالی جدا شده با کاما، در یک فایل ذخیره کند.
+<br />
 نام فایل : divisor.txt
 <br />
 نکته :
@@ -4625,6 +4626,35 @@ print(dictionary)
 <br />
 
 👆[برو به فهرست](#go-to-the-question-list)
+
+---
+
+**`196`**. برنامه ای بنویسید که دو لیست زیر را تبدیل به دیکشنری کند.
+<br />
+keys = [“one”, “six”, “five”, “ten”, “nine”, “three”, “four”, “eight”, “two”, “seven”]
+
+values = [6, 7, 1, 2, 9, 4, 10, 3, 8, 5]
+<br />
+نکته :
+عناصر هر دو لیست باید به صورت مرتب شده تبدیل به یک دیکشنری شوند.
+<br />
+
+```python
+from n2w import convert
+
+key = ["one", "six", "five", "ten", "nine", "three", "four", "eight", "two", "seven"]
+value = [6, 7, 1, 2, 9, 4, 10, 3, 8, 5]
+
+value.sort()
+
+numDict = {}
+
+for i in value:
+    numDict[i] = convert(i)
+
+print(numDict)
+```
+<br />
 
 ---
 
