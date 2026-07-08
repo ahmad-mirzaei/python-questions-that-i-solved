@@ -42,7 +42,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [15](#15) | [70](#70) | [125](#125) | [180](#180) |  |  |  |  |  |  |
 | [20](#20) | [75](#75) | [130](#130) | [185](#185) |  |  |  |  |  |  |
 | [25](#25) | [80](#80) | [135](#135) | [190](#190) |  |  |  |  |  |  |
-| [30](#30) | [85](#85) | [140](#140) |  |  |  |  |  |  |  |
+| [30](#30) | [85](#85) | [140](#140) | [195](#195) |  |  |  |  |  |  |
 | [35](#35) | [90](#90) | [145](#145) |  |  |  |  |  |  |  |
 | [40](#40) | [95](#95) | [150](#150) |  |  |  |  |  |  |  |
 | [45](#45) | [100](#100) | [155](#155) |  |  |  |  |  |  |  |
@@ -4558,5 +4558,61 @@ with open("divisor.txt", "w") as divisor:
     divisor.write(num)
 ```
 <br />
+
+---
+
+## <a id="195"></a>
+**`195`**. Write a program for the following dictionary:
+
+dictionary = {
+    "a": [1, 2, 54, 100, 32, 73],
+    "b": [82, 34, 12, 67, 90, 37],
+    "c": (9, 8, 7, 6, 78, 65, 13)
+}
+
+Your program should:
+
+Find and print the maximum and minimum values of each dictionary key separately.
+Compute the sum of the numbers under each key, then print the maximum and minimum among these sums.
+Modify the dictionary as follows:
+Add 10 to every element in key "a".
+Subtract 10 from every element in key "b".
+Multiply every element in key "c" by 2.
+
+Note:
+Do not confuse a dictionary with a set. 😉
+<br />
+
+```python
+dictionary = {
+    'a': [1, 2, 54, 100, 32, 73],
+    'b': [82, 34, 12, 67, 90, 37],
+    'c': (9, 8, 7, 6, 78, 65, 13)
+}
+
+# Find the maximum, minimum, and sum for each dictionary key
+for key, value in dictionary.items():
+    print(f"{key}:")
+    print("Max:", max(value))
+    print("Min:", min(value))
+    print("Sum:", sum(value))
+    print()
+
+# Calculate the maximum and minimum of the sums
+sums = [sum(value) for value in dictionary.values()]
+print("Max Sum:", max(sums))
+print("Min Sum:", min(sums))
+
+# Modify the values in each key
+dictionary['a'] = [x + 10 for x in dictionary['a']]
+dictionary['b'] = [x - 10 for x in dictionary['b']]
+dictionary['c'] = tuple(x * 2 for x in dictionary['c'])
+
+# Print the updated dictionary
+print(dictionary)
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
