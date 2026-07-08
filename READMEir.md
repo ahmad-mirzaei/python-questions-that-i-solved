@@ -4633,6 +4633,7 @@ print(dictionary)
 **`196`**. برنامه ای بنویسید که دو لیست زیر را تبدیل به دیکشنری کند.
 <br />
 keys = [“one”, “six”, “five”, “ten”, “nine”, “three”, “four”, “eight”, “two”, “seven”]
+<br />
 values = [6, 7, 1, 2, 9, 4, 10, 3, 8, 5]
 <br />
 نکته :
