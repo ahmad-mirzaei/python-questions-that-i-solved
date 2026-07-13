@@ -4666,3 +4666,21 @@ else:
 <br />
 
 ---
+
+**`198`**. Write a function that finds all palindrome numbers from 100 to 1000 and stores them in a tuple.
+
+Note:
+
+A number is considered a palindrome if its hundreds digit is equal to its units digit.
+
+Since a tuple is an immutable data type, find a way to store all palindrome numbers in a tuple.
+<br />
+
+```python
+def palindrome():
+    return tuple(number for number in range(100, 1000) if (int(str(number)[0]) == int(str(number)[2])))
+print(palindrome())
+```
+<br />
+
+---
