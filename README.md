@@ -4684,3 +4684,19 @@ print(palindrome())
 <br />
 
 ---
+
+**`199`**. Write a function that finds all numbers with an even tens digit in the range 300 to 500 and stores them in a set.
+
+Note:
+Store the results in a set (not a list).
+<br />
+
+```python
+def middle_number():
+    return {x for x in range(300, 501) if (x // 10) % 10 % 2 == 0}
+
+print(middle_number())
+```
+<br />
+
+---

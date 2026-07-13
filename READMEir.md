@@ -4700,6 +4700,19 @@ print(palindrome())
 
 ---
 
+**`199`**. تابعی بنویسید که در محدوده ی ۳۰۰ تا ۵۰۰ تمام دهگان های زوج را محاسبه، و درون یک لیست set ذخیره کند.
+<br />
+
+```python
+def middle_number():
+    return {x for x in range(300, 501) if (x // 10) % 10 % 2 == 0}
+
+print(middle_number())
+```
+<br />
+
+---
+
 
 <!--
 **``**. 
