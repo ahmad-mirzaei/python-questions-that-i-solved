@@ -43,7 +43,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [20](#20) | [75](#75) | [130](#130) | [185](#185) |  |  |  |  |  |  |
 | [25](#25) | [80](#80) | [135](#135) | [190](#190) |  |  |  |  |  |  |
 | [30](#30) | [85](#85) | [140](#140) | [195](#195) |  |  |  |  |  |  |
-| [35](#35) | [90](#90) | [145](#145) |  |  |  |  |  |  |  |
+| [35](#35) | [90](#90) | [145](#145) | [200](#200) |  |  |  |  |  |  |
 | [40](#40) | [95](#95) | [150](#150) |  |  |  |  |  |  |  |
 | [45](#45) | [100](#100) | [155](#155) |  |  |  |  |  |  |  |
 | [50](#50) | [105](#105) | [160](#160) |  |  |  |  |  |  |  |
@@ -4698,5 +4698,33 @@ def middle_number():
 print(middle_number())
 ```
 <br />
+
+---
+
+## <a id="200"></a>
+**`200`**. Write a function that takes the following tuple as input and creates a dictionary within its range, where the sorted tuple values are the keys and the English alphabet letters are the values.
+<br />
+
+```python
+# step 1 
+from string import ascii_lowercase
+
+def tuple_to_dict(tu):
+    return {item: ascii_lowercase[item - 1] for item in sorted(tu)}
+
+tu = (10, 1, 4, 9, 6, 3, 5, 8, 2, 7)
+
+print(tuple_to_dict(tu))
+
+
+# step 2
+from string import ascii_lowercase
+
+def tuple_to_dict(tu):
+    return dict(zip(sorted(tu), ascii_lowercase))
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
