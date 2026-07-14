@@ -4811,3 +4811,28 @@ print(sorted(chain.from_iterable(lst)))
 <br />
 
 ---
+
+**`203`**. Write a program that:
+<br />
+Takes an integer as input from the user.
+<br />
+Creates a random list within the range of that number.
+<br />
+Then writes a generator comprehension that finds the odd numbers in the random list.
+<br />
+
+```python
+from random import sample
+
+number = int(input("Enter number: "))
+
+print(
+    list(
+        x for x in sample(range(1, number + 1), number)
+        if x % 2 != 0
+    )
+)
+```
+<br />
+
+---

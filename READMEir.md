@@ -4778,9 +4778,11 @@ def key_value(dictionary):
 ---
 
 **`202`**. برنامه ای بنویسید که لیست تو در توی زیر را یکجا و مرتب نمایش بدهد.
+<br />
 lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
 <br />
 نمونه خروجی :
+<br />
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 <br />
 
@@ -4814,6 +4816,29 @@ from itertools import chain
 lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
 
 print(sorted(chain.from_iterable(lst)))
+```
+<br />
+
+---
+
+**`203`**. برنامه ای بنویسید که : 
+<br />
+از ورودی یک عدد بگیرد؛ در محدوده ی آن عدد، یک لیست تصادفی ایجاد کند؛
+<br />
+سپس یک generator comprehension بنویسید که اعداد فرد لیست تصادفی را پیدا کند
+<br />
+
+```python
+from random import sample
+
+number = int(input("Enter number: "))
+
+print(
+    list(
+        x for x in sample(range(1, number + 1), number)
+        if x % 2 != 0
+    )
+)
 ```
 <br />
 
