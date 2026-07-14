@@ -4836,3 +4836,17 @@ print(
 <br />
 
 ---
+
+**`204`**. Write a program that converts the following list into a set comprehension.
+<br />
+lst = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7, 8, 9, 9, 8, 7]
+<br />
+
+```python
+lst = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7, 8, 9, 9, 8, 7]
+
+print({x for x in lst})
+```
+<br />
+
+---
