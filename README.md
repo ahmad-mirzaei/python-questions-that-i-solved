@@ -4732,6 +4732,7 @@ def tuple_to_dict(tu):
 **`201`**. Write a function that takes the following dictionary as input and produces:
 
 A sorted list of the dictionary keys.
+<br />
 A sorted list of the dictionary values.
 <br />
 ```python
@@ -4762,6 +4763,50 @@ print("Values:", values)
 # step 2
 def key_value(dictionary):
     return sorted(dictionary.keys()), sorted(dictionary.values(), key=str)
+```
+<br />
+
+---
+
+**`202`**. Write a program that flattens the following nested list into a single list and displays it in sorted order.
+
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+
+Expected output:
+
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+<br />
+
+```python
+# step 1
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+
+lst2 = []
+
+for i in lst:
+    for j in i:
+        lst2.append(j)
+
+print(sorted(lst2))
+
+# step 2
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+
+lst2 = [item for sublist in lst for item in sublist]
+
+print(sorted(lst2))
+
+# step 3
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+
+print(sorted(item for sublist in lst for item in sublist))
+
+# step 4
+from itertools import chain
+
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+
+print(sorted(chain.from_iterable(lst)))
 ```
 <br />
 

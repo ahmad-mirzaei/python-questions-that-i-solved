@@ -4777,6 +4777,47 @@ def key_value(dictionary):
 
 ---
 
+**`202`**. برنامه ای بنویسید که لیست تو در توی زیر را یکجا و مرتب نمایش بدهد.
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+<br />
+نمونه خروجی :
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+<br />
+
+```python
+# step 1
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+
+lst2 = []
+
+for i in lst:
+    for j in i:
+        lst2.append(j)
+
+print(sorted(lst2))
+
+# step 2
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+
+lst2 = [item for sublist in lst for item in sublist]
+
+print(sorted(lst2))
+
+# step 3
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+
+print(sorted(item for sublist in lst for item in sublist))
+
+# step 4
+from itertools import chain
+
+lst = [[7, 1, 9], [3, 6, 2], [5, 8, 4]]
+
+print(sorted(chain.from_iterable(lst)))
+```
+<br />
+
+---
 
 
 <!--
