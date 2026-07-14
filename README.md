@@ -44,7 +44,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [25](#25) | [80](#80) | [135](#135) | [190](#190) |  |  |  |  |  |  |
 | [30](#30) | [85](#85) | [140](#140) | [195](#195) |  |  |  |  |  |  |
 | [35](#35) | [90](#90) | [145](#145) | [200](#200) |  |  |  |  |  |  |
-| [40](#40) | [95](#95) | [150](#150) |  |  |  |  |  |  |  |
+| [40](#40) | [95](#95) | [150](#150) | [205](#205) |  |  |  |  |  |  |
 | [45](#45) | [100](#100) | [155](#155) |  |  |  |  |  |  |  |
 | [50](#50) | [105](#105) | [160](#160) |  |  |  |  |  |  |  |
 
@@ -4848,5 +4848,29 @@ lst = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7, 8, 9, 9, 8, 7]
 print({x for x in lst})
 ```
 <br />
+
+---
+
+## <a id="205"></a>
+**`205`**. Write a program that:
+
+Takes an integer as input from the user.
+Generates a random number in the range 1 to the entered number.
+Finds all even numbers in the range 1 to the generated random number.
+Use list comprehension as much as possible.
+<br />
+
+```python
+from random import randint
+
+number = int(input("Enter Number: "))
+random_number = randint(1, number)
+
+print(f"Random Number: {random_number}")
+print(f"Even Numbers: {[x for x in range(1, random_number + 1) if x % 2 == 0]}")
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
