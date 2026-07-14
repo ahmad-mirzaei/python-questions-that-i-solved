@@ -4742,6 +4742,42 @@ def tuple_to_dict(tu):
 
 ---
 
+**`201`**. تابعی بنویسید که به عنوان ورودی دیکشنری زیر را میگیرد و یک لیست از کلید ها و یک لیست از مقادیر دیکشنری به صورت مرتب شده تولید کند.
+<br />
+```python
+dictionary = {
+    'maryam': 20,
+    'jimmy': 9,
+    'naghi': 13,
+    'bagher': {1, 2, 3, 4, 5},
+    'maziyar': 0,
+    'mostafa': {1: 'a', 2: 'b', 3: 'c'}
+}
+```
+<br />
+
+```python
+# step 1
+def key_value(dictionary):
+    keys = sorted(dictionary.keys())
+    values = sorted(dictionary.values(), key=str)
+
+    return keys, values
+
+keys, values = key_value(dictionary)
+
+print("Keys:", keys)
+print("Values:", values)
+
+# step 2
+def key_value(dictionary):
+    return sorted(dictionary.keys()), sorted(dictionary.values(), key=str)
+```
+<br />
+
+---
+
+
 
 <!--
 **``**. 
