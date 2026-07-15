@@ -4918,3 +4918,48 @@ print(result)
 <br />
 
 ---
+
+**`207`**. Write a program using dictionary comprehension that converts the following text into a dictionary such that:
+<br />
+The keys are the uppercase letters.
+The values are the corresponding lowercase letters repeated three times.
+<br />
+text = "programmer"
+<br />
+Expected output:
+<br />
+{
+    'P': 'ppp',
+    'R': 'rrr',
+    'O': 'ooo',
+    'G': 'ggg',
+    'A': 'aaa',
+    'M': 'mmm',
+    'E': 'eee'
+}
+<br />
+Note:
+<br />
+Since dictionaries do not allow duplicate keys, repeated letters (such as r and m) appear only once in the output.
+<br />
+
+```python
+# step 1
+print({"programmer"[x].upper(): "programmer"[x] * 3
+       for x in range(len("programmer"))})
+```
+```python
+# step 2
+text = "programmer"
+
+print({text[i].upper(): text[i] * 3 for i in range(len(text))})
+```
+```python
+# step 3 --> better
+text = "programmer"
+
+print({char.upper(): char * 3 for char in text})
+```
+<br />
+
+---

@@ -4918,6 +4918,37 @@ print(result)
 
 ---
 
+**`207`**. با comprehension برنامه ای بنویسید که متن زیر را تبدیل به دیکشنری کند؛
+به گونه ای که کلید ها، حروف بزرگ، و مقادیر حروف کوچک ضربدر ۳ باشند.
+<br />
+text = “programmer”
+<br />
+نمونه خروجی :
+<br />
+{‘P’: ‘ppp’, ‘R’: ‘rrr’, ….}
+<br />
+
+```python
+# step 1
+print({"programmer"[x].upper(): "programmer"[x] * 3
+       for x in range(len("programmer"))})
+```
+```python
+# step 2
+text = "programmer"
+
+print({text[i].upper(): text[i] * 3 for i in range(len(text))})
+```
+```python
+# step 3 --> better
+text = "programmer"
+
+print({char.upper(): char * 3 for char in text})
+```
+<br />
+
+---
+
 
 <!--
 **``**. 
