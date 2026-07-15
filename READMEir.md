@@ -4949,6 +4949,44 @@ print({char.upper(): char * 3 for char in text})
 
 ---
 
+**`208`**. با استفاذه از لامبدا برنامه ای بنویسید تا مربع و مکعب اعداد لیست زیر را محاسبه کند.
+<br />
+lst = [1، ۲، ۳، ۴، ۵، ۶، ۷، ۸، ۹، ۱۰]
+<br />
+خروجی مورد انتظار :
+<br />
+مربع 
+[۱، ۴، ۹، ۱۶، ۲۵، ۳۶، ۴۹، ۶۴ , ۸۱, ۱۰۰]
+<br />
+مکعب 
+[۱, ۸, ۲۷, ۶۴, ۱۲۵, ۲۱۶, ۳۴۳, ۵۱۲, ۷۲۹, ۱۰۰۰]
+
+<br />
+
+```python
+# step 1
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+squareNumbers = lambda lst: [x ** 2 for x in lst]
+cubeOfNumbers = lambda lst: [x ** 3 for x in lst]
+
+print("Square Numbers:", squareNumbers(lst))
+print("Cube Numbers:", cubeOfNumbers(lst))
+```
+```python
+# step 2
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+squareNumbers = list(map(lambda x: x ** 2, lst))
+cubeNumbers = list(map(lambda x: x ** 3, lst))
+
+print("Square Numbers:", squareNumbers)
+print("Cube Numbers:", cubeNumbers)
+```
+<br />
+
+---
+
 
 <!--
 **``**. 

@@ -4963,3 +4963,40 @@ print({char.upper(): char * 3 for char in text})
 <br />
 
 ---
+
+**`208`**. Write a program using lambda to calculate the square and cube of the numbers in the following list.
+<br />
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+<br />
+Expected output:
+<br />
+Squares
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+<br />
+Cubes
+[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+<br />
+
+```python
+# step 1
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+squareNumbers = lambda lst: [x ** 2 for x in lst]
+cubeOfNumbers = lambda lst: [x ** 3 for x in lst]
+
+print("Square Numbers:", squareNumbers(lst))
+print("Cube Numbers:", cubeOfNumbers(lst))
+```
+```python
+# step 2
+lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+squareNumbers = list(map(lambda x: x ** 2, lst))
+cubeNumbers = list(map(lambda x: x ** 3, lst))
+
+print("Square Numbers:", squareNumbers)
+print("Cube Numbers:", cubeNumbers)
+```
+<br />
+
+---
