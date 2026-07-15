@@ -4874,3 +4874,47 @@ print(f"Even Numbers: {[x for x in range(1, random_number + 1) if x % 2 == 0]}")
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`206`**. Write a program using dictionary comprehension that converts the following text into a nested dictionary.
+<br />
+text = "GFG"
+<br />
+Expected output:
+<br />
+{
+    'G': {'G': 'GG', 'F': 'GF'},
+    'F': {'G': 'FG', 'F': 'FF'}
+}
+<br />
+Note:
+<br />
+Since dictionaries cannot have duplicate keys, the repeated 'G' in "GFG" appears only once in the output.
+<br />
+
+```python
+# step 1
+text = "GFG"
+
+result = {
+    i: {j: i + j for j in set(text)}
+    for i in set(text)
+}
+
+print(result)
+
+
+# step 2
+text = "GFG"
+
+letters = list(dict.fromkeys(text))
+
+result = {
+    i: {j: i + j for j in letters}
+    for i in letters
+}
+
+print(result)
+```
+<br />
+
+---

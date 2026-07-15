@@ -4881,6 +4881,43 @@ print(f"Even Numbers: {[x for x in range(1, random_number + 1) if x % 2 == 0]}")
 
 ---
 
+**`206`**. با comprehension برنامه ای بنویسید که متن زیر را تبدیل به یه دیکشنری تو در تو بکند.
+<br />
+text = “GFG”
+<br />
+نمونه خروجی :
+<br />
+{'G': {'G': 'GG', 'F': 'GF'}, 'F': {'G': 'FG', 'F': 'FF'}}
+<br />
+
+```python
+# step 1
+text = "GFG"
+
+result = {
+    i: {j: i + j for j in set(text)}
+    for i in set(text)
+}
+
+print(result)
+
+
+# step 2
+text = "GFG"
+
+letters = list(dict.fromkeys(text))
+
+result = {
+    i: {j: i + j for j in letters}
+    for i in letters
+}
+
+print(result)
+```
+<br />
+
+---
+
 
 <!--
 **``**. 
