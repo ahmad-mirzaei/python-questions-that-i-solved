@@ -5000,3 +5000,32 @@ print("Cube Numbers:", cubeNumbers)
 <br />
 
 ---
+
+**`209`**. Write a program using lambda to count the number of even and odd numbers in the following list.
+<br />
+lst = [1, 2, 3, 5, 7, 8, 9, 10]
+<br />
+
+```python
+# step 1
+lst = [1, 2, 3, 5, 7, 8, 9, 10]
+
+oddCount = lambda lst: len([x for x in lst if x % 2 != 0])
+evenCount = lambda lst: len([x for x in lst if x % 2 == 0])
+
+print("Odd Numbers:", oddCount(lst))
+print("Even Numbers:", evenCount(lst))
+```
+```python
+# step 2 with filter
+lst = [1, 2, 3, 5, 7, 8, 9, 10]
+
+oddCount = lambda lst: len(list(filter(lambda x: x % 2 != 0, lst)))
+evenCount = lambda lst: len(list(filter(lambda x: x % 2 == 0, lst)))
+
+print("Odd Numbers:", oddCount(lst))
+print("Even Numbers:", evenCount(lst))
+```
+<br />
+
+---
