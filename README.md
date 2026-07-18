@@ -5063,4 +5063,29 @@ print(list(map(lambda x, y: x + y, a, b)))
 ```
 <br />
 
+[list of questions](#go-to-the-question-list)👆
+
+---
+
+**`211`**. Write a program that outputs the numbers divisible by 13 from the following list.
+<br />
+lst = [19, 65, 57, 39, 152, 639, 121, 44, 90, 190]
+<br />
+
+```python
+# step 1 
+lst = [19, 65, 57, 39, 152, 639, 121, 44, 90, 190]
+
+func = lambda lst: [x for x in lst if x % 13 == 0]
+
+print(func(lst))
+```
+```python
+# step 2 with filter
+lst = [19, 65, 57, 39, 152, 639, 121, 44, 90, 190]
+
+print(list(filter(lambda x: x % 13 == 0, lst)))
+```
+<br />
+
 ---
