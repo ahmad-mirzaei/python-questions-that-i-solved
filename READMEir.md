@@ -5108,6 +5108,42 @@ print(list(filter(lambda x: x == x[::-1], lst)))
 
 ---
 
+**`213`**. تابعی بنویسید که آناگرام های لیست زیر را به خروجی ببرد.
+<br />
+lst = [‘bcda’, ‘abce’, ‘cbda’, ‘cbea’, ‘adcb’]
+<br />
+خروجی مورد انتظار :
+<br />
+[‘bcda’, ‘cbda’, ‘adcb’]
+<br />
+
+```python
+# step 1 
+def find_anagrams(lst):
+    sign = "".join(sorted(lst[0]))
+
+    return [word for word in lst if "".join(sorted(word)) == sign]
+
+
+lst = ["bcda", "abce", "cbda", "cbea", "adcb"]
+
+print(find_anagrams(lst))
+```
+```python
+# step 2
+def anagrams(lst):
+    base = sorted(lst[0])
+    return [word for word in lst if sorted(word) == base]
+
+lst = ['bcda', 'abce', 'cbda', 'cbea', 'adcb']
+
+print(anagrams(lst))
+```
+<br />
+
+---
+
+
 
 <!--
 **``**. 
