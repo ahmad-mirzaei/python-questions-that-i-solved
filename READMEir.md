@@ -5143,6 +5143,30 @@ print(anagrams(lst))
 
 ---
 
+**`214`**. برنامه ای بنویسید تا با نوع داده ای داده های درون لیست زیر، یک لیست جدید به نام typeList بسازد.
+<br />
+lst = [{1:”py”}, 23, ‘Python’, 23.98, [1, 2], {“a”, “b”}, True, 5j, (1,)]
+<br />
+
+```python
+# step 1
+lst = [{1:"py"}, 23, "Python", 23.98, [1, 2], {"a", "b"}, True, 5j, (1,)]
+
+typeList = [type(item) for item in lst]
+
+print(typeList)
+```
+```python
+# step 2
+lst = [{1:"py"}, 23, "Python", 23.98, [1, 2], {"a", "b"}, True, 5j, (1,)]
+
+typeList = [type(item).__name__ for item in lst]
+
+print(typeList)
+```
+<br />
+
+---
 
 
 <!--

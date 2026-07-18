@@ -5160,3 +5160,30 @@ print(anagrams(lst))
 <br />
 
 ---
+
+**`214`**. Write a program that creates a new list called typeList containing the data types of the elements inside the following list.
+<br />
+lst = [{1:"py"}, 23, "Python", 23.98, [1, 2], {"a", "b"}, True, 5j, (1,)]
+<br />
+The new list should contain the type of each element in lst.
+<br />
+
+```python
+# step 1
+lst = [{1:"py"}, 23, "Python", 23.98, [1, 2], {"a", "b"}, True, 5j, (1,)]
+
+typeList = [type(item) for item in lst]
+
+print(typeList)
+```
+```python
+# step 2
+lst = [{1:"py"}, 23, "Python", 23.98, [1, 2], {"a", "b"}, True, 5j, (1,)]
+
+typeList = [type(item).__name__ for item in lst]
+
+print(typeList)
+```
+<br />
+
+---
