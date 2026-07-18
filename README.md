@@ -5034,6 +5034,7 @@ print("Even Numbers:", evenCount(lst))
 **`210`**. Write a program using lambda to calculate the sum of the corresponding elements of the following two lists.
 <br />
 a = [1, 5, 8, 14]
+<br />
 b = [3, 54, 12, 7]
 <br />
 
@@ -5085,6 +5086,39 @@ print(func(lst))
 lst = [19, 65, 57, 39, 152, 639, 121, 44, 90, 190]
 
 print(list(filter(lambda x: x % 13 == 0, lst)))
+```
+<br />
+
+---
+
+**`212`**. Write a program using lambda to output the palindromes from the following list.
+<br />
+lst = [
+    "php",
+    "jimmiji",
+    "Python",
+    "abcdcb",
+    "JavavJ",
+    "aaa",
+    "2345432",
+    "pip",
+    "lala"
+]
+<br />
+A palindrome is a string that reads the same forwards and backwards.
+<br />
+
+```python
+# step 1
+lst = ['php', 'jimmiji', 'Python', 'abcdcb', 'JavavJ', 'aaa', '2345431', 'pip', 'lala']
+func = lambda lst: [st for st in lst if(st==st[::-1])]
+print(func(lst))
+```
+```python
+# step 2 with filter
+lst = ['php', 'jimmiji', 'Python', 'abcdcb', 'JavavJ', 'aaa', '2345431', 'pip', 'lala']
+
+print(list(filter(lambda x: x == x[::-1], lst)))
 ```
 <br />
 

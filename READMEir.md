@@ -5020,6 +5020,7 @@ print("Even Numbers:", evenCount(lst))
 **`210`**. با استفاده از لامبدا برنامه ای بنویسید که مجموع اعداد نظیر به نظیر دو لیست زیر را به خروجی ببرد.
 <br />
 a = [1, 5, 8, 14]
+<br />
 b = [3, 54, 12, 7]
 <br />
 
@@ -5071,6 +5072,37 @@ print(func(lst))
 lst = [19, 65, 57, 39, 152, 639, 121, 44, 90, 190]
 
 print(list(filter(lambda x: x % 13 == 0, lst)))
+```
+<br />
+
+---
+
+**`212`**. با استفاده از لامبدا برنامه ای بنویسید تا پالیندروم های لیست زیر را به خروجی ببرد.
+<br />
+lst = [
+    "php",
+    "jimmiji",
+    "Python",
+    "abcdcb",
+    "JavavJ",
+    "aaa",
+    "2345432",
+    "pip",
+    "lala"
+]
+<br />
+
+```python
+# step 1
+lst = ['php', 'jimmiji', 'Python', 'abcdcb', 'JavavJ', 'aaa', '2345431', 'pip', 'lala']
+func = lambda lst: [st for st in lst if(st==st[::-1])]
+print(func(lst))
+```
+```python
+# step 2 with filter
+lst = ['php', 'jimmiji', 'Python', 'abcdcb', 'JavavJ', 'aaa', '2345431', 'pip', 'lala']
+
+print(list(filter(lambda x: x == x[::-1], lst)))
 ```
 <br />
 
