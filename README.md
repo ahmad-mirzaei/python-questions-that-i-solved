@@ -5328,3 +5328,71 @@ analyze(text)
 [list of questions](#go-to-the-question-list)👆
 
 ---
+
+**`216`**. Write a function that takes a text as a parameter and outputs the number of vowels and the number of consonants in that text.
+<br />
+Note:
+<br />
+For the text:
+<br />
+"pythonlobby"
+<br />
+the number of vowels is 2, and the number of consonants is 9.
+<br />
+
+```python
+# step 1 --> standard
+def vowels_and_consonants(text):
+    vowels = "aeiou"
+
+    vowels_count = len([c for c in text.lower() if c in vowels])
+    consonants_count = len([c for c in text.lower() if c.isalpha() and c not in vowels])
+
+    print("Vowels:", vowels_count)
+    print("Consonants:", consonants_count)
+
+
+vowels_and_consonants("pythonlobby")
+```
+```python
+# step 2 --> pro
+from collections import Counter
+
+def vowels_and_consonants(text):
+    letters = [c.lower() for c in text if c.isalpha()]
+    counter = Counter("vowel" if c in "aeiou" else "consonant" for c in letters)
+
+    print(counter["vowel"])
+    print(counter["consonant"])
+
+
+vowels_and_consonants("pythonlobby")
+```
+```python
+# step 3 --> 
+def vowels_and_consonants(text):
+    text = text.lower()
+
+    vowels = sum(c in "aeiou" for c in text)
+    consonants = sum(c.isalpha() and c not in "aeiou" for c in text)
+
+    return vowels, consonants
+
+
+print(vowels_and_consonants("pythonlobby"))
+```
+```python
+# step 4 --> with filter & lambda
+def vowels_and_consonants(text):
+    vowels = len(list(filter(lambda c: c.lower() in "aeiou", text)))
+    consonants = len(list(filter(lambda c: c.isalpha() and c.lower() not in "aeiou", text)))
+
+    print("Vowels:", vowels)
+    print("Consonants:", consonants)
+
+
+vowels_and_consonants("pythonlobby")
+```
+<br />
+
+---
