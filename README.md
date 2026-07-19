@@ -46,7 +46,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 | [35](#35) | [90](#90) | [145](#145) | [200](#200) |  |  |  |  |  |  |
 | [40](#40) | [95](#95) | [150](#150) | [205](#205) |  |  |  |  |  |  |
 | [45](#45) | [100](#100) | [155](#155) | [210](#210) |  |  |  |  |  |  |
-| [50](#50) | [105](#105) | [160](#160) |  |  |  |  |  |  |  |
+| [50](#50) | [105](#105) | [160](#160) | [215](#215) |  |  |  |  |  |  |
 
 ---
 
@@ -5185,5 +5185,146 @@ typeList = [type(item).__name__ for item in lst]
 print(typeList)
 ```
 <br />
+
+---
+
+## <a id="210"></a>
+**`215`**. Write one or more functions that take the following text as input and:
+<br />
+Determine the number of consonants.
+<br />
+Determine the frequency of each consonant.
+<br />
+Determine the number of uppercase and lowercase letters.
+<br />
+Store all words that start with an uppercase letter in a list named myInfo and print it.
+<br />
+text = “lorem ipsum is typically You corrupted version of Are definos , a century boC tExt by the roman statesman and philosopher The cicero, witH the Best words altered, added, and removed to make it nonsensical and Programmer and improper latin.”
+<br />
+
+```python
+# step 1 --> standard
+from collections import Counter
+
+def number_of_consonants(text):
+    vowels = "aeiouAEIOU"
+    consonants = [c for c in text if c.isalpha() and c not in vowels]
+    return consonants
+
+
+def consonant_count(consonants):
+    return Counter(consonants)
+
+
+def upper_lower_count(text):
+    upper = sum(ch.isupper() for ch in text)
+    lower = sum(ch.islower() for ch in text)
+    return upper, lower
+
+
+def upper_words(text):
+    return [word.strip(".,") for word in text.split() if word[0].isupper()]
+
+
+text = """lorem ipsum is typically You corrupted version of Are definos,
+a century boC tExt by the roman statesman and philosopher The cicero,
+witH the Best words altered, added,
+and removed to make it nonsensical and Programmer and improper latin."""
+
+consonants = number_of_consonants(text)
+
+print("Number Of Consonants:", len(consonants))
+print("Consonant Repetitions:", consonant_count(consonants))
+
+upper, lower = upper_lower_count(text)
+print("Upper Letters:", upper)
+print("Lower Letters:", lower)
+
+myInfo = upper_words(text)
+print("myInfo:", myInfo)
+```
+```python
+# step 2 --> with counter
+from collections import Counter
+
+text = """lorem ipsum is typically You corrupted version of Are definos,
+a century boC tExt by the roman statesman and philosopher The cicero,
+witH the Best words altered, added,
+and removed to make it nonsensical and Programmer and improper latin."""
+
+vowels = "aeiouAEIOU"
+
+consonants = [c for c in text if c.isalpha() and c not in vowels]
+
+counter = Counter(consonants)
+
+upper = sum(map(str.isupper, text))
+lower = sum(map(str.islower, text))
+
+myInfo = [w.strip(".,") for w in text.split() if w[0].isupper()]
+
+print("Number Of Consonants:", len(consonants))
+print(counter)
+print("Upper:", upper)
+print("Lower:", lower)
+print(myInfo)
+```
+```python
+# step 3 --> pythonic
+from collections import Counter
+
+text = """lorem ipsum is typically You corrupted version of Are definos,
+a century boC tExt by the roman statesman and philosopher The cicero,
+witH the Best words altered, added,
+and removed to make it nonsensical and Programmer and improper latin."""
+
+vowels = set("aeiouAEIOU")
+
+consonants = [c for c in text if c.isalpha() and c not in vowels]
+
+print(len(consonants))
+
+print(Counter(consonants))
+
+print(sum(c.isupper() for c in text))
+print(sum(c.islower() for c in text))
+
+myInfo = [w.strip(".,") for w in text.split() if w[0].isupper()]
+print(myInfo)
+```
+```python
+# step 4 --> only with functions & without counter
+def analyze(text):
+    vowels = "aeiouAEIOU"
+
+    consonants = [c for c in text if c.isalpha() and c not in vowels]
+
+    repetition = {}
+
+    for c in consonants:
+        repetition[c] = repetition.get(c, 0) + 1
+
+    upper = sum(c.isupper() for c in text)
+    lower = sum(c.islower() for c in text)
+
+    myInfo = [w.strip(".,") for w in text.split() if w[0].isupper()]
+
+    print("Number Of Consonants:", len(consonants))
+    print("Repetitions:", repetition)
+    print("Upper:", upper)
+    print("Lower:", lower)
+    print("myInfo:", myInfo)
+
+
+text = """lorem ipsum is typically You corrupted version of Are definos,
+a century boC tExt by the roman statesman and philosopher The cicero,
+witH the Best words altered, added,
+and removed to make it nonsensical and Programmer and improper latin."""
+
+analyze(text)
+```
+<br />
+
+[list of questions](#go-to-the-question-list)👆
 
 ---
