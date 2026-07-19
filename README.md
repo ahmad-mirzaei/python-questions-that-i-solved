@@ -34,7 +34,7 @@ __If you have more questions or would like to suggest better solutions, I’d be
 <a id="go-to-the-question-list"></a>
 
 ## ✍️ I have categorized the questions so that you have better access to both the questions and the index.
-| `1 - 50` | `55 - 105` | `110 - 160` | `165 - 215` |  |  |  |  |  |  |
+| `1 - 50` | `55 - 105` | `110 - 160` | `165 - 215` | `220 - 270` |  |  |  |  |  |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | [1](#1) | [55](#55) | [110](#110) | [165](#165) |  |  |  |  |  |  |
 | [5](#5) | [60](#60) | [115](#115) | [170](#170) |  |  |  |  |  |  |
