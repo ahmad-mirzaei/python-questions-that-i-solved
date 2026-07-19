@@ -5470,3 +5470,69 @@ print(upper_and_lower_counter("The quick Brow Fox"))
 <br />
 
 ---
+
+**`218`**. Write a function that creates a tuple by taking elements from the end of each inner list in the following nested list, in order.
+<br />
+lst = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20]
+]
+<br />
+The output should be in the following form:
+<br />
+(5, 10, 15, 20)
+<br />
+(4, 9, 14, 19)
+<br />
+
+```python
+# step 1 --> standard
+def create_tuples(lst):
+    result = []
+
+    for index in range(len(lst[0]) - 1, -1, -1):
+        result.append(tuple(row[index] for row in lst))
+
+    return result
+
+
+lst = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20]
+]
+
+print(*create_tuples(lst))
+```
+```python
+# step 2 --> pythonic with zip
+def create_tuples(lst):
+    return list(zip(*[row[::-1] for row in lst]))
+
+
+lst = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20]
+]
+
+print(*create_tuples(lst))
+```
+```python
+# step 3 --> The shortest version
+lst = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20]
+]
+
+print(*zip(*map(reversed, lst)))
+```
+<br />
+
+---
