@@ -5345,7 +5345,7 @@ def vowels_and_consonants(text):
 vowels_and_consonants("pythonlobby")
 ```
 ```python
-# step 3 --> 
+# step 3 --> pythonic
 def vowels_and_consonants(text):
     text = text.lower()
 
@@ -5368,6 +5368,13 @@ def vowels_and_consonants(text):
 
 
 vowels_and_consonants("pythonlobby")
+```
+```python
+# step 5 with comperhention
+def vowels_and_consonants(text):
+    return f"""vowels: {len([x for x in text if (x=="a" or x=="e" or x=="i" or x=="o" or x=="u")])}
+consonants: {len([y for y in text if (y!="a" and y!="e" and y!="i" and y!="o" and y!="u")])}"""
+print(vowels_and_consonants("pythonlobby"))
 ```
 <br />
 
