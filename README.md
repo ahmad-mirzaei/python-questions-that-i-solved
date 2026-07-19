@@ -5403,3 +5403,70 @@ print(vowels_and_consonants("pythonlobby"))
 <br />
 
 ---
+
+**`217`**. Write a function that accepts a string and counts the number of uppercase and lowercase letters.
+<br />
+Sample string:
+<br />
+"The quick Brow Fox"
+<br />
+Expected output:
+<br />
+Number of uppercase letters: 3
+<br />
+Number of lowercase letters: 12
+<br />
+
+```python
+# step 1 --> standard
+def upper_and_lower_counter(text):
+    upper_letters = [c for c in text if c.isupper()]
+    lower_letters = [c for c in text if c.islower()]
+
+    return f"Upper Letters: {len(upper_letters)}\nLower Letters: {len(lower_letters)}"
+
+
+print(upper_and_lower_counter("The quick Brow Fox"))
+```
+```python
+# step 2 --> pythonic
+def upper_and_lower_counter(text):
+    upper = sum(c.isupper() for c in text)
+    lower = sum(c.islower() for c in text)
+
+    return f"Upper Letters: {upper}\nLower Letters: {lower}"
+
+
+print(upper_and_lower_counter("The quick Brow Fox"))
+```
+```python
+# step 3 --> with lambda & filter
+def upper_and_lower_counter(text):
+    upper = len(list(filter(lambda c: c.isupper(), text)))
+    lower = len(list(filter(lambda c: c.islower(), text)))
+
+    return f"Upper Letters: {upper}\nLower Letters: {lower}"
+
+
+print(upper_and_lower_counter("The quick Brow Fox"))
+
+```
+```python
+# step 4 --> pro with counter
+from collections import Counter
+
+def upper_and_lower_counter(text):
+    result = Counter(
+        "upper" if c.isupper() else "lower"
+        for c in text
+        if c.isalpha()
+    )
+
+    return result
+
+
+print(upper_and_lower_counter("The quick Brow Fox"))
+```
+<br />
+
+---
