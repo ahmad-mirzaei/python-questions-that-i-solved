@@ -5460,12 +5460,126 @@ lst = [
 <br />
 
 ```python
+# step 1 --> standard
+def create_tuples(lst):
+    result = []
 
+    for index in range(len(lst[0]) - 1, -1, -1):
+        result.append(tuple(row[index] for row in lst))
+
+    return result
+
+
+lst = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20]
+]
+
+print(*create_tuples(lst))
+```
+```python
+# step 2 --> pythonic with zip
+def create_tuples(lst):
+    return list(zip(*[row[::-1] for row in lst]))
+
+
+lst = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20]
+]
+
+print(*create_tuples(lst))
+```
+```python
+# step 3 --> The shortest version
+lst = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 8, 9, 10],
+    [11, 12, 13, 14, 15],
+    [16, 17, 18, 19, 20]
+]
+
+print(*zip(*map(reversed, lst)))
 ```
 <br />
 
 ---
 
+**`219`**. تابعی بنویسید که از لیست زیر اعداد را به صورت جفت جفت بررسی کند و هر جفتی که مجموع آنها برابر با عدد ۲۰ باشد را به خروجی ببرد.
+<br />
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+<br />
+نمونه خروجی :
+<br />
+1 & 19
+<br />
+
+```python
+# step 1 
+from itertools import combinations
+
+def check_the_numbers(lst):
+    numbers = combinations(lst, 2)
+    for item in numbers:
+        if sum(item) == 20:
+            print(item)
+
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+check_the_numbers(lst)
+```
+```python
+# step 2 --> stndard
+def check_the_numbers(lst):
+    result = []
+
+    for i in range(len(lst)):
+        for j in range(i + 1, len(lst)):
+            if lst[i] + lst[j] == 20:
+                result.append((lst[i], lst[j]))
+
+    return result
+
+
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+
+print(check_the_numbers(lst))
+```
+```python
+# step 3 --> pro and faster with set
+def check_the_numbers(lst):
+    result = []
+    seen = set()
+
+    for num in lst:
+        target = 20 - num
+
+        if target in seen:
+            result.append((target, num))
+
+        seen.add(num)
+
+    return result
+
+
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+
+print(check_the_numbers(lst))
+```
+```python
+# step 4 --> Pythonic
+from itertools import combinations
+
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+
+print([pair for pair in combinations(lst, 2) if sum(pair) == 20])
+```
+<br />
+
+---
 
 
 <!--

@@ -5536,3 +5536,75 @@ print(*zip(*map(reversed, lst)))
 <br />
 
 ---
+
+**`219`**. Write a function that checks the numbers in the following list pair by pair and outputs every pair whose sum is equal to 20.
+<br />
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+<br />
+Expected output:
+<br />
+1 and 19
+<br />
+
+```python
+# step 1 
+from itertools import combinations
+
+def check_the_numbers(lst):
+    numbers = combinations(lst, 2)
+    for item in numbers:
+        if sum(item) == 20:
+            print(item)
+
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+check_the_numbers(lst)
+```
+```python
+# step 2 --> stndard
+def check_the_numbers(lst):
+    result = []
+
+    for i in range(len(lst)):
+        for j in range(i + 1, len(lst)):
+            if lst[i] + lst[j] == 20:
+                result.append((lst[i], lst[j]))
+
+    return result
+
+
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+
+print(check_the_numbers(lst))
+```
+```python
+# step 3 --> pro and faster with set
+def check_the_numbers(lst):
+    result = []
+    seen = set()
+
+    for num in lst:
+        target = 20 - num
+
+        if target in seen:
+            result.append((target, num))
+
+        seen.add(num)
+
+    return result
+
+
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+
+print(check_the_numbers(lst))
+```
+```python
+# step 4 --> Pythonic
+from itertools import combinations
+
+lst = [1, 2, 8, 19, 12, 11, 10, 16, 5, 13]
+
+print([pair for pair in combinations(lst, 2) if sum(pair) == 20])
+```
+<br />
+
+---
