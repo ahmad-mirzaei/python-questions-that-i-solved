@@ -5168,7 +5168,7 @@ print(typeList)
 
 ---
 
-## <a id="210"></a>
+## <a id="215"></a>
 **`215`**. تابع یا توابعی بنویسید که متن زیر را به عنوان ورودی گرفته، و:
 <br />
 ۱. تعداد حروف صامت را مشخص کند
@@ -5580,6 +5580,76 @@ print([pair for pair in combinations(lst, 2) if sum(pair) == 20])
 <br />
 
 ---
+
+## <a id="220"></a>
+**`220`**. تابعی بنویسید که کلمات commodo و ullamco  و Excepteur  و officia را از تاپل زیر حذف کرده و به خروجی ببرد.
+<br />
+text = (“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”,)
+<br />
+
+```python
+# step 1
+def remove_in_tuple(text):
+    words_to_remove = {"commodo", "ullamco", "Excepteur", "officia"}
+
+    words = text[0].split()
+
+    result = [word for word in words if word not in words_to_remove]
+
+    return " ".join(result)
+
+
+text = (
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+)
+
+print(remove_in_tuple(text))
+```
+```python
+# step 2 --> re
+import re
+
+def remove_in_tuple(text):
+    remove = {"commodo", "ullamco", "Excepteur", "officia"}
+
+    words = re.findall(r"\w+|[^\w\s]", text[0])
+
+    result = [w for w in words if w not in remove]
+
+    return " ".join(result)
+
+
+print(remove_in_tuple(text))
+```
+```python
+# step 3
+def remove_in_tuple(text):
+    remove = {"commodo", "ullamco", "Excepteur", "officia"}
+
+    return " ".join(word for word in text[0].split() if word not in remove)
+
+
+print(remove_in_tuple(text))
+```
+```python
+# step 4
+def remove_in_tuple(text):
+    sentence = text[0]
+
+    for word in ("commodo", "ullamco", "Excepteur", "officia"):
+        sentence = sentence.replace(word, "")
+
+    return sentence
+
+
+print(remove_in_tuple(text))
+```
+<br />
+
+👆[برو به فهرست](#go-to-the-question-list)
+
+---
+
 
 
 <!--
