@@ -5914,3 +5914,69 @@ except FileNotFoundError:
 <br />
 
 ---
+
+**`224`**. Write a program that creates a folder, and inside that folder creates a file for each letter of the alphabet.
+<br />
+Each alphabet letter should have its own file.
+<br />
+Expected files:
+<br />
+a.txt
+<br />
+b.txt
+<br />
+c.txt
+<br />
+...
+<br />
+z.txt
+<br />
+
+```python
+# step 1
+import os
+from string import ascii_lowercase
+
+
+def create_alphabet_files(folder):
+    if not os.path.exists(folder):
+        os.mkdir(folder)
+
+    for letter in ascii_lowercase:
+        file_path = os.path.join(folder, f"{letter}.txt")
+
+        with open(file_path, "w") as file:
+            file.write(letter)
+
+
+create_alphabet_files("alphabet")
+```
+```python
+# step 2
+from pathlib import Path
+from string import ascii_lowercase
+
+
+def create_alphabet_files(folder):
+    folder = Path(folder)
+    folder.mkdir(exist_ok=True)
+
+    for letter in ascii_lowercase:
+        (folder / f"{letter}.txt").write_text(letter)
+
+
+create_alphabet_files("alphabet")
+```
+```python
+# step 3
+from pathlib import Path
+from string import ascii_lowercase
+
+Path("alphabet").mkdir(exist_ok=True)
+
+for letter in ascii_lowercase:
+    Path(f"alphabet/{letter}.txt").write_text(letter)
+```
+<br />
+
+---
