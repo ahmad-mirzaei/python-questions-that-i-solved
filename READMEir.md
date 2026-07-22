@@ -32,7 +32,7 @@ __اگر سوالات بیشتری دارید یا می‌خواهید راه‌
 ## ✍️ سوالات را تقسیم بندی کرده ام که هم به سوالات و هم به فهرست دسترسی بهتری داشته باشید.
 | `1 - 50` | `55 - 105` | `110 - 160` | `165 - 215` | `220 - 270` |  |  |  |  |  |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| [1](#1) | [55](#55) | [110](#110) | [165](#165) |  |  |  |  |  |  |
+| [1](#1) | [55](#55) | [110](#110) | [165](#165) | [220](#220) |  |  |  |  |  |
 | [5](#5) | [60](#60) | [115](#115) | [170](#170) |  |  |  |  |  |  |
 | [10](#10) | [65](#65) | [120](#120) | [175](#175) |  |  |  |  |  |  |
 | [15](#15) | [70](#70) | [125](#125) | [180](#180) |  |  |  |  |  |  |
@@ -5650,6 +5650,114 @@ print(remove_in_tuple(text))
 
 ---
 
+**`221`**. تابعی بنویسید که اعداد غیر تکراری لیست زیر را درون یک تاپل ذخیره و به خروجی ببرد.
+<br />
+lst = [
+    [-2,1,8,5,6,7],
+    [-2,2,4,6,8,8],
+    [-2,3,4,5,12,5],
+    [-1,23,1,4,6,4],
+    [-1,2,3,3,6,-3],
+    [-1,2,40,4,5,4],
+    [1,9,2,3,3,4]
+]
+
+<br />
+
+```python
+# step 1
+def non_repeating_numbers(lst):
+    numbers = []
+
+    for row in lst:
+        numbers.extend(row)
+
+    result = []
+
+    for num in numbers:
+        if numbers.count(num) == 1:
+            result.append(num)
+
+    return tuple(result)
+
+
+lst = [
+    [-2,1,8,5,6,7],
+    [-2,2,4,6,8,8],
+    [-2,3,4,5,12,5],
+    [-1,23,1,4,6,4],
+    [-1,2,3,3,6,-3],
+    [-1,2,40,4,5,4],
+    [1,9,2,3,3,4]
+]
+
+print(non_repeating_numbers(lst))
+```
+```python
+# step 2
+from collections import Counter
+
+def non_repeating_numbers(lst):
+    numbers = [num for row in lst for num in row]
+    counter = Counter(numbers)
+
+    return tuple(num for num in numbers if counter[num] == 1)
+
+lst = [
+    [-2,1,8,5,6,7],
+    [-2,2,4,6,8,8],
+    [-2,3,4,5,12,5],
+    [-1,23,1,4,6,4],
+    [-1,2,3,3,6,-3],
+    [-1,2,40,4,5,4],
+    [1,9,2,3,3,4]
+]
+print(non_repeating_numbers(lst))
+```
+```python
+# step 3
+from collections import Counter
+
+lst = [
+    [-2,1,8,5,6,7],
+    [-2,2,4,6,8,8],
+    [-2,3,4,5,12,5],
+    [-1,23,1,4,6,4],
+    [-1,2,3,3,6,-3],
+    [-1,2,40,4,5,4],
+    [1,9,2,3,3,4]
+]
+nums = [n for row in lst for n in row]
+
+c = Counter(nums)
+
+print(tuple(n for n in nums if c[n] == 1))
+```
+```python
+# step 4
+def non_repeating_numbers(lst):
+    freq = {}
+
+    for row in lst:
+        for num in row:
+            freq[num] = freq.get(num, 0) + 1
+
+    return tuple(num for num, count in freq.items() if count == 1)
+
+lst = [
+    [-2,1,8,5,6,7],
+    [-2,2,4,6,8,8],
+    [-2,3,4,5,12,5],
+    [-1,23,1,4,6,4],
+    [-1,2,3,3,6,-3],
+    [-1,2,40,4,5,4],
+    [1,9,2,3,3,4]
+]
+print(non_repeating_numbers(lst))
+```
+<br />
+
+---
 
 
 <!--
