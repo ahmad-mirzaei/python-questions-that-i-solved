@@ -5759,6 +5759,78 @@ print(non_repeating_numbers(lst))
 
 ---
 
+**`222`**. تابعی بنویسید تا لیست زیر را بر اساس عنصر یکم تاپل ها مرتب کند.
+<br />
+lst = [
+    ("item2", "15.10"),
+    ("item1", "12.20"),
+    ("item3", "24.5")
+]
+<br />
+<br />
+خروجی مورد انتظار :
+<br />
+[
+    ("item1", "12.20"),
+    ("item2", "15.10"),
+    ("item3", "24.5")
+]
+<br />
+
+```python
+# step 1
+def sorted_tuple(lst):
+    return sorted(lst, key=lambda x: float(x[1]))
+
+
+lst = [
+    ('item2', '15.10'),
+    ('item1', '12.20'),
+    ('item3', '24.5')
+]
+
+print(sorted_tuple(lst))
+```
+```python
+# step 2
+from operator import itemgetter
+
+def sorted_tuple(lst):
+    return sorted(lst, key=lambda x: float(x[1]))
+
+
+lst = [
+    ('item2', '15.10'),
+    ('item1', '12.20'),
+    ('item3', '24.5')
+]
+
+print(sorted_tuple(lst))
+```
+```python
+# step 3
+lst = [
+    ('item2', '15.10'),
+    ('item1', '12.20'),
+    ('item3', '24.5')
+]
+
+print(sorted(lst, key=lambda x: float(x[1])))
+```
+```python
+# step 4
+lst = [
+    ('item2', 15.10),
+    ('item1', 12.20),
+    ('item3', 24.5)
+]
+
+print(sorted(lst, key=lambda x: x[1]))
+```
+<br />
+
+---
+
 
 <!--
 **``**. 
