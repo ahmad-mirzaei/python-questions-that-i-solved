@@ -5827,6 +5827,60 @@ print(sorted(lst, key=lambda x: x[1]))
 
 ---
 
+**`223`**. برنامه ای بنویسید که فایلی به نام none.txt را بخواند و در صورت عدم وجود این فایل، استثناء FileNotFoundError را مدیریت کند.
+<br />
+
+```python
+# step 1
+try:
+    with open("none.txt", "r") as noneFile:
+        noneFile.read()
+except FileNotFoundError as error:
+    print(error)
+```
+```python
+# step 2
+def read_file(filename):
+    try:
+        with open(filename, "r") as file:
+            return file.read()
+
+    except FileNotFoundError:
+        return "File not found!"
+
+
+print(read_file("none.txt"))
+```
+```python
+# step 3
+def read_file(filename):
+    try:
+        with open(filename, "r", encoding="utf-8") as file:
+            content = file.read()
+            return content
+
+    except FileNotFoundError:
+        return f"{filename} does not exist."
+
+    except PermissionError:
+        return "Permission denied."
+
+
+print(read_file("none.txt"))
+```
+```python
+# step 4
+try:
+    print(open("none.txt").read())
+
+except FileNotFoundError:
+    print("File not found!")
+```
+<br />
+
+---
+
+
 
 <!--
 **``**. 
